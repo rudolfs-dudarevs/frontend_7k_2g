@@ -1,0 +1,24 @@
+Lesson topics/themes
+
+    About teacher
+    
+    About course 
+    
+    How web works
+        How web works
+        Difference bettween BE and FE
+        What FE Devs do
+
+    Why we need HTML CSS and JS 
+    
+    How big is FE world
+        Where we be after this course
+
+    Materials for learning
+
+    Work enviropment
+        visual studio code
+        GIT commands
+        init work repository
+    
+    Development team \ Roles

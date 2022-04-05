@@ -1,0 +1,27 @@
+Lesson topics/themes
+    JS
+
+    Difference between JS and JAVA
+
+    Js history
+
+    Variables
+
+    Data types and data transformation
+        boolean
+        null
+        undefined
+        number
+        bigInt
+        string
+        symbol
+
+        array
+        objects
+        functions
+
+    Logical operators
+        == and ===
+        &&
+        ||
+        !

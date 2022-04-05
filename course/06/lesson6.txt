@@ -1,0 +1,13 @@
+Lesson topics/themes
+    JS
+
+    how to create functions
+
+    loops
+        if else 
+        switch
+        while
+        for
+        foreach
+
+    work with arrays and objects

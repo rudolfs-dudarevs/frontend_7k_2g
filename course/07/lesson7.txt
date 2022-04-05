@@ -1,0 +1,7 @@
+Lesson topics/themes
+    JS
+
+    DOM manipulations
+    Events
+    JSON
+    API

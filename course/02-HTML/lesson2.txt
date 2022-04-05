@@ -1,0 +1,24 @@
+Lesson topics/themes
+    HTML
+
+    HTML history
+
+    syntaxis
+        tags atributes
+
+    what is DOM and how browser parse page
+
+    Tags groups
+        main
+        img
+        text formating
+        semantic
+        forms
+        links
+        list
+        media
+        tables
+        meta
+        resources
+        
+    Work with atributes

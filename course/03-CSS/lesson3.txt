@@ -1,0 +1,16 @@
+Lesson topics/themes
+    CSS
+
+    How css works
+
+    Css syntaxis
+
+    Selectors
+        how selectors works
+        weight of selectors
+
+    BEM methadology
+
+    Text formating
+
+    Margins paddings / box model
