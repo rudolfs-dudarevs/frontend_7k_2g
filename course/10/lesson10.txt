@@ -1,5 +1,0 @@
-Lesson topics/themes
-    Bootstrap
-
-    create layout
-        

@@ -1,8 +1,0 @@
-Lesson topics/themes
-    JS
-
-    DevTools
-        LightHouse
-        debugging
-
-    Code optimizations and layout optimizations
