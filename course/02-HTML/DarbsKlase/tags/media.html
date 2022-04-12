@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Interaktiva birkas</title>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="main.html">Basic birkas</a></li>
+        <li><a href="textformat.html">Formatting birkas</a></li>
+        <li><a href="semantic.html">Styles un semantics birkas
+        </a></li>
+        <li><a href="form.html">Forms and inputs birkas
+        </a></li>
+        <li><a href="img.html">Images birkas
+        </a></li>
+        <li><a href="link.html">Link birkas</a></li>
+        <li><a href="list.html">List birkas</a></li>
+        <li><a href="media.html">Interaktiv birkas</a></li>
+        <li><a href="tables.html">Tables birkas</a></li>
+        <li><a href="meta.html">Meta info birkas</a></li>
+        <li><a href="resources.html">Resursu birkas</a></li>
+      </ul>
+    </header>
+    <article id="content">
+      audio | video | iframe | source | embed | details summary | meter | progress
+
+      <!-- audio -->
+      <hr>
+      <h2>audio</h2>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        <p>
+          Error browser not support this file 
+          <a href="audio.mp3" download>download</a>failu.
+        </p>
+      </audio>
+      <!-- /audio -->
+
+      <!-- video -->
+      <hr>
+      <h2>video</h2>
+      <video controls width="250">
+        <source src="flower.webm" type="video/webm">
+        <source src="flower.mp4" type="video/mp4">
+        Not supported 
+      </video>
+      <!-- /video -->
+
+      <!-- iframe -->
+      <hr>
+      <h2>iframe</h2>
+      <iframe
+        id="inlineFrameExample"
+        title="Inline Frame Map"
+        width="200"
+        height="200"
+        frameborder="1"
+        allowfullscreen="true"
+        src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A"
+      >
+      </iframe>
+      <!-- /iframe -->
+
+      <!-- embed -->
+      <hr>
+      <h2>embed</h2>
+      <embed src="../../FRONTEND_2.pdf" type="application/pdf">
+      <!-- /embed -->
+
+      <!-- details summary -->
+      <hr>
+      <h2>details summary</h2>
+      <details>
+        <summary>Legeng</summary>
+        <p>legend content</p>
+      </details>
+      <!-- /details summary -->
+
+      <!-- meter -->
+      <hr>
+      <h2>meter</h2>
+      <meter id="fuel"
+        min="0" max="100"
+        low="33" high="66" optimum="80"
+        value="83">
+        at 50/100
+      </meter>
+      <!-- /meter -->
+
+      <!-- progress -->
+      <hr>
+      <h2>progress</h2>
+      <progress value="30" max="100"></progress>
+      <!-- /progress -->
+
+    </article>
+  </body>
+</html>

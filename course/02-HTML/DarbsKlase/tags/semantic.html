@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Styles un semantics birkas</title>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="main.html">Basic birkas</a></li>
+        <li><a href="textformat.html">Formatting birkas</a></li>
+        <li><a href="semantic.html">Styles un semantics birkas
+        </a></li>
+        <li><a href="form.html">Forms and inputs birkas
+        </a></li>
+        <li><a href="img.html">Images birkas
+        </a></li>
+        <li><a href="link.html">Link birkas</a></li>
+        <li><a href="list.html">List birkas</a></li>
+        <li><a href="media.html">Interaktiv birkas</a></li>
+        <li><a href="tables.html">Tables birkas</a></li>
+        <li><a href="meta.html">Meta info birkas</a></li>
+        <li><a href="resources.html">Resursu birkas</a></li>
+      </ul>
+    </header>
+    <article id="content">
+      div | span | header | footer | main | article | aside | nav | time | del | ins | kbd | output | strong | em | cite | var | dfn |
+
+<!-- header -->
+      <hr>
+      <h2>header</h2>
+      <header>
+        <nav>
+          <a href="#">link1</a>
+          <a href="#">link2</a>
+          <a href="#">link3</a>
+        </nav>
+      </header>
+<!-- /header -->
+
+<!-- footer -->
+      <hr>
+      <h2>footer</h2>
+      <article>
+        <footer>
+          <address>
+            <p>vards uzvards</p>
+            <p>Epasts: <a href="mailto:jevgenijsvoronovs@gmail.com">jevgenijsvoronovs@gmail.com</a>.</p>
+          </address>
+        </footer>
+      </article>
+<!-- footer -->
+
+<!-- Main -->
+      <hr>
+      <h2>Main</h2>
+      <header>Header</header>
+
+      <main>
+        <h3>title</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+      </main>
+      
+      <footer>Footer</footer>  
+<!-- Main -->
+
+<!-- Section -->
+      <hr>
+      <h2>Section</h2>
+      <section>
+        <h1>Section1</h1>
+        <p>section paragraf</p>
+      </section>
+      
+      <section>
+        <h1>Section2</h1>
+        <p>section paragraf</p>
+      </section>
+<!-- Section -->
+
+<!-- Article -->
+      <hr>
+      <h2>article</h2>
+      <article>
+        <h1>text <code>&lt;article&gt;</code></h1>
+        <h2>title</h2>
+        <p>
+          text <code>&lt;article&gt;</code> 
+        </p>
+        <h2>Text</h2>
+        <pre>
+          <code>Code! 💥</code>
+        </pre>
+      </article>
+<!-- Article -->
+
+<!-- Aside -->
+      <hr>
+      <h2>aside</h2>
+      <aside>
+        <ul>
+          <li>item1</li>
+          <li>item2</li>
+        </ul>
+      </aside>
+<!-- Aside -->
+
+<!-- nav -->
+      <hr>
+      <h2>nav</h2>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">menu1</a></li>
+          <li><a href="#">menu2</a></li>
+          <li><a href="#">menu3</a></li>
+        </ul>
+      </nav>  
+<!-- nav -->
+
+<!-- time -->
+      <hr>
+      <h2>time</h2>
+      This happened in 
+      <time datetime="2013-02-15T09:20+06:00">
+        15 february 2013 about 09am
+      </time>    
+<!-- time -->
+
+<!-- del / ins -->
+      <hr>
+      <h2>del / ins</h2>
+      <pre>
+        body {
+          font-size: 16px;
+          <del>color: black;</del>
+          <ins>color: white;</ins>
+        }
+      </pre> 
+<!-- del / ins -->
+
+<!-- kbs -->
+      <hr>
+      <h2>kbs</h2>
+      <p>
+        To print page
+        <kbd>
+          <kbd>Ctrl</kbd> + <kbd>P</kbd>
+        </kbd>.
+      </p>
+<!-- kbs -->
+
+<!-- output -->
+      <hr>
+      <h2>output</h2>
+      <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="b" name="b" value="50" /> +
+        <input type="number" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">60</output>
+      </form>
+<!-- output -->
+
+<!-- strong -->
+      <hr>
+      <h2>strong</h2>
+      <p>This <strong>is very</strong> important</p>
+<!-- strong -->
+
+<!-- em -->
+      <hr>
+      <h2>em</h2>
+      <p>This  <em>is very</em> important.</p>
+<!-- /em -->
+
+<!-- cite -->
+      <hr>
+      <h2>cite</h2>
+      <p>
+        — follow 
+        <cite>
+          <a href="#">my page</a>
+        </cite>.
+      </p>
+<!-- /cite -->
+
+<!-- var -->
+      <hr>
+      <h2>var</h2>
+      <var>E</var> = <var>m</var> × <var>c<sup>2</sup></var>
+<!-- /var -->
+
+<!-- dfn -->
+      <hr>
+      <h2>dfn</h2>
+      <p>
+        <dfn><abbr>HTML</abbr></dfn> — hypertext markup language
+      </p>
+<!-- /dfn -->
+    </article>
+  </body>
+</html>

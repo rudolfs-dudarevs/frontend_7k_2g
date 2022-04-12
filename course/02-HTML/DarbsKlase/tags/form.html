@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Forms and inputs birkas</title>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="main.html">Basic birkas</a></li>
+        <li><a href="textformat.html">Formatting birkas</a></li>
+        <li><a href="semantic.html">Styles un semantics birkas
+        </a></li>
+        <li><a href="form.html">Forms and inputs birkas
+        </a></li>
+        <li><a href="img.html">Images birkas
+        </a></li>
+        <li><a href="link.html">Link birkas</a></li>
+        <li><a href="list.html">List birkas</a></li>
+        <li><a href="media.html">Interaktiv birkas</a></li>
+        <li><a href="tables.html">Tables birkas</a></li>
+        <li><a href="meta.html">Meta info birkas</a></li>
+        <li><a href="resources.html">Resursu birkas</a></li>
+      </ul>
+    </header>
+    <article id="content">
+      form |input | textarea | button | select | option | optgroup | datalist | label | fieldset | legend
+
+      <!-- form -->
+      <hr>
+      <h2>Form</h2>
+      <form action="" method="get">
+        <fieldset>
+          <legend>Input</legend>
+          <label for="name">Vards:</label>
+          <input type="text" name="name" id="name" required>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Textarea</legend>
+          <label for="story">Par mani:</label>
+          <textarea id="story" name="story" rows="5" cols="33">Frontend developer</textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Button</legend>
+          <button type="submit">Send</button>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Select</legend>
+          <label for="city-select">Pilseta</label>
+          <select name="city" id="city-select">
+            <optgroup label="Latvija">
+              <option value="riga">Riga</option>
+              <option value="jelgava">Jelgava</option>
+            </optgroup>
+            <optgroup label="USA">
+              <option value="New York">New York</option>
+              <option value="Chicago">Chicago</option>
+            </optgroup>
+          </select>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Datalist</legend>
+          <label for="my-browser">Browser from list:</label>
+          <input list="browsers" id="my-browser" name="my-browser">
+          <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Yandex Browser">
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Microsoft Edge">
+          </datalist>
+        </fieldset>
+      </form>
+      <!-- /form -->
+    </article>
+  </body>
+</html>
