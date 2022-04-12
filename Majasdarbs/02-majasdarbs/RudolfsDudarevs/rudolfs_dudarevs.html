@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rudolfs Dudarevs | Front end developer</title>
+    <meta name="description" content="Jevgenijs Voronovs | Front end developer">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        section {
+            padding: 50px;
+            min-height: 20vh;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#work-experience">Work experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#contactme">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ABOUT ME -->
+        <section id="aboutme">
+            <img src="./profileImg.jpeg" alt="profileImg" width="100px" height="100px">
+            <address>
+                <h1>Rudolfs Dudarevs | Frontend developer</h1>
+                <a href="tel:+37120034102">+371 20034102</a><br/>
+                <a href="mailto:rudolf.dudarevs@gmail.com">rudolf.dudarevs@gmail.com</a><br/>
+                <a href="https://www.linkedin.com/in/rudolfs-dudarevs-509323167/" target="_blank">LinkedIn</a><br/>
+                <a href="#contactme">contact me</a>
+            </address>
+        </section>
+        <!-- /ABOUT ME -->
+
+        <hr/>
+        <!-- WORK EXPERIENCE -->
+        <section id="work-experience">
+            <h2>Work experience</h2>
+
+            <h3>Neotech Development – Frontend developer</h3>
+            <em>08/2020 – present</em>
+            <br/>
+            <p><i>AngularJS, Angular 2+, Cordova, LESS</i></p>
+            <ul>
+                <li>Develop mobile hybrid application and new features.</li>
+            </ul>
+
+            <h3>Catchbox – Frontend developer, Scrum Master</h3>
+            <em>02/2019 – 07/2020</em>
+            <br/>
+            <p><i>Vue, Vuex, Webpack, JavaScript, SCSS, Twig templates</i></p>
+            <ul>
+                <li>Implement new website front-end architecture and new featureswith reusable components for a custom made CMS.</li>
+                <li>Coordination and lead of agile process. (Scrum master)Maintenance of legacy website.</li>
+            </ul>
+            <h3>Accenture, Avanade (subsidiary of Accenture) – Fullstack developer, Mentor</h3>
+            <em>02/2017 – 07/2019</em>
+            <br/>
+            <p><i>React, Redux, Node.js, MongoDB, JavaScript, Backbone, jQuery, SCSS</i></p>
+            <ul>
+                <li>FE developer in a UX research and development team.</li>
+                <li>Responsible for feature implementation in both new and legacy large-scale projects.</li>
+                <li>Node.js API development with MongoDB.</li>
+                <li>Mentoring new front-end recruits, establishing training methodology and educational materials for Avanade</li>
+                <li>Mentor at Accenture Bootcamp.</li>
+            </ul>
+        </section>
+        <!-- /WORK EXPERIENCE -->
+
+        <hr/>
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>Education</h2>
+            <p>Latvia University of Life Sciences and Technologies (LLU), Jelgava – Bachelor's degree <em>2014 – 2018</em></p>
+            <p> Jelgava State Gymnasium nr. 1, Jelgava <em>2007 – 2010</em></p>
+        </section>
+        <!-- EDUCATION -->
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>FAQ</h2>
+            <details>
+                <summary>My hobbyies?</summary>
+                <ul>
+                    <li>Tap dance</li>
+                    <li>Drums</li>
+                    <li>Guitar</li>
+                    <li>Ukulele</li>
+                    <li>Swimming</li>
+                </ul>
+              </details>
+              <br/>
+              <details>
+                <summary>My favorite playlist</summary>
+                <br/>
+                <iframe 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/playlist/3UqqLSrGsqeXvURBblOnpX?utm_source=generator"
+                    width="100%" 
+                    height="380" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                </iframe>
+              </details>
+        </section>
+        <!-- LANGUAGES -->
+
+        <hr/>
+        <!-- LANGUAGES -->
+        <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>Latvian (native)</li>
+                <li>English (working Professional)</li>
+                <li>Russian (beginner)</li> 
+            </ul>
+        </section>
+        <!-- LANGUAGES -->
+
+        <hr/>
+        <!-- CONTACT FORM -->
+        <section id="contactme">
+            <h2>Contact me </h2>
+
+            <form action="action_page.php">
+                <input type="text" id="firstname" name="firstname" placeholder="Your name.." style="width: 200px;">
+                <br/><br/>
+
+                <input type="text" id="company" name="lastname" placeholder="Company name.." style="width: 200px;">
+                <br/><br/>
+            
+                <textarea id="subject" name="subject" placeholder="Write something.." style="width: 200px; height:100px"></textarea>
+                <br/><br/>
+
+                <input type="submit" value="Submit">            
+              </form>
+        </section>
+        <!-- CONTACT FORM -->
+    </main>
+</body>
+</html>
