@@ -3,33 +3,90 @@
 <html>
     <head>
         <title>
-            <h1>Forma</h1>
+            Forma
         </title>
     </head>
     <body>
         <header>
             <h2>Reģistrācijas forma</h2>
         </header>
-        <form>
+        <form action="./paldies.html">
             <fieldset>
-            <label>Ievietot vārdu</label>
-            <input>
-            <label>Ievietot paroli</label>
-            <input>
+            <label>Ievietot vārdu:</label>
+            <input type="text">
+            <label>Ievietot paroli:</label>
+            <input type="password">
             </fieldset>
             <br/>
 
             <fieldset>
                 <legend>
-                    <mark>Informācija par sevi</mark><br/>
+                    <mark>Informācija par sevi</mark><br/></legend><br/>
                 </legend>
                 <label><b>Dzimums</b></label><br/><br/>
-                <input type="checkbox">
+                <input type="radio" name="dzimums">
                 <label>vīrietis</label><br/>
-                <input type="checkbox">
-                <label>sieviete</label>
-
+                <input type="radio" name="dzimums">
+                <label>sieviete</label><br/><br/>
+                <label>
+                    dzimšanas datums
+                </label>
+                <input type="date"><br/><br/>
+                <label><b>Adrese</b></label><br/><br/>
+                <label>Jūsu pilsēta</label>
+                <input list="cities">
+                <datalist id="cities">
+                    <option value="Rīga"></option>
+                    <option value="Aizkraukle"></option>
+                    <option value="Jēkabpils"></option>
+                    <option value="Liepāja"></option>
+                    <option value="Ventspils"></option>
+                    <option value="Rēzekne"></option>
+                </datalist>
             </fieldset>
+            <br/>
+
+            <fieldset>
+                <legend>
+                    <mark>Jūsu hobiji</mark><br/>
+                </legend>
+                <label style="padding-left:20px">
+                        Jūs varat izvēlēties jebkuru hobiju skaitu
+                    </label><br/>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                                <label>Ceļojumi</label>
+                            </td>
+                            <td>
+                                <input type="checkbox">
+                                <label>Programmēšana</label><br/>
+                            </td>
+                        </tr>   
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                                <label>Zīmēt</label>
+                            </td>
+                            <td>
+                                <input type="checkbox">
+                                <label>Spēlēt mūzikas instrumentus</label>
+                            </td>
+                        </tr>
+                </table>    
+            </fieldset><br/>
+
+            <fieldset>
+                <legend>
+                    <mark>Mīļākā krāsa</mark><br/>
+                </legend>
+                <label>Izvēlies savu mīļāko krāsu:</label>
+                <input type="color">
+            </fieldset><br/>
+
+            <input type="submit" value="Sūtīt">
+
         </form>
     </body>
 </html>
