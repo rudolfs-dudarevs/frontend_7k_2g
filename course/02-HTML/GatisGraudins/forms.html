@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+ <html>
+    <head>
+        <title>
+            <h1>Forma</h1>
+        </title>
+    </head>
+    <body>
+        <header>
+            <h2>Reģistrācijas forma</h2>
+        </header>
+        <form>
+            <fieldset>
+            <label>Ievietot vārdu</label>
+            <input type="text" name="name" id="name" required="">
+            <label>Ievietot paroli</label>
+            <input type="password" name="password" id="password" required="">
+            </fieldset>
+            <br/>
+              <fieldset>
+                <legend>
+                    <mark>Informācija par sevi</mark><br/>
+                </legend>
+                <label><b>Dzimums</b></label><br/><br/>
+                <input type="radio" name="same">
+                <label>vīrietis</label><br/>
+                <input type="radio" name="same">
+                <label>sieviete</label>
+                <br/><br/>
+            
+           
+               <label>
+              Dzimšanas diena:
+                <input type="date" name="bday">
+                </label>
+               <br/><br/>
+               <label><b>Adrese</b></label><br/><br/>
+               <label for="cities">Jūsu pilsēta:</label>
+               <input list="cities" >
+               <datalist id="cities" style="background-color:rgb(1, 1, 2)">
+                <option value="Rīga">
+                    <option value="Ogre">
+                    <option value="Salaspils">
+                    <option value="Cēsis">
+                    <option value="Sigulda">
+                    <option value="Valmiera">
+                    <option value="Liepāja">
+                    <option value="Ventspils">
+                </datalist>
+                </fieldset><br></form><br>
+           
+                <fieldset>
+                    <legend><mark>Jūsu hobiji</mark><br/></legend>
+                       <label style="padding-left:20px">Jūs varat izvēlēties jebkuru hobiju skaitu</label>
+                        <p></p>
+                        <table>
+                        <tr>
+                        <td> <input type="checkbox">
+                        <label>Mūzika</label> </td> 
+                        <td>
+                        <input type="checkbox">
+                        <label>Ceļošana</label><br/> </td>
+                         </tr>   
+                        <tr>
+                        <td>
+                        <input type="checkbox">
+                        <label>Fotogrāfēšana</label>
+                        </td>
+                        <td>
+                        <input type="checkbox">
+                        <label>Programmēšana</label>
+                        </td>
+                       </tr>
+                        </table>  
+                    </legend>
+                </fieldset>
+               <br>
+
+                <fieldset>
+                    <legend>
+                        <mark>Citi komentāri</mark><br/></legend>
+                          <br> 
+                          <textarea id="story" name="story" 
+                                    rows="5" cols="33">
+                          
+                          </textarea>
+
+                    </fieldset>
+            <br/>
+            <button type="submit" onclick="myFunction()">Sūtīt</button>
+            <script>
+                function myFunction() {
+                  document.body.style.backgroundColor = "yellow";
+                }
+                </script>
+        </form>
+    </body>
+</html>
