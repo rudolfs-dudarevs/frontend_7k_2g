@@ -1,4 +1,33 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="lv">
+    <head>
+        <meta charset="UFT-8"/>
+        <title>Reģistrācijas forma</title>
+    </head>
+    <body>
+        <h1>Reģistrācijas forma</h1>
+        <form action="/" method="get">
+            <fieldset>
+            <label>Ievietot vārdu:</label>
+            <input type="text"/>
+            <label>Ievietot paroli:</label>
+            <input type="password"/>
+            </fieldset>
+        </form><br>
+        
+        <form action="/" method="get">
+            <fieldset>
+                <legend>Informācija par sevi</legend><br>
+                <label>
+                    <b>Dzimums</b>
+                </label><br><br>
+                <input type="radio" id="sex1" name="sex" value="male">
+                <label for="sex1">vīrietis</label><br>
+                <input type="radio" id="sex2" name="sex" value="female">
+                <label for="sex2">sieviete</label><br><br>
+                <label>dzimšanas datums</label>
+                <input type="date">
+            </fieldset>
+        </form>
+    </body>
 </html>
