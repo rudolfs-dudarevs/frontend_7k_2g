@@ -12,22 +12,44 @@
             <input type="text"/>
             <label>Ievietot paroli:</label>
             <input type="password"/>
-            </fieldset>
-        </form><br>
-        
-        <form action="/" method="get">
+            </fieldset><br>
+    
             <fieldset>
-                <legend>Informācija par sevi</legend><br>
-                <label>
-                    <b>Dzimums</b>
-                </label><br><br>
-                <input type="radio" id="sex1" name="sex" value="male">
-                <label for="sex1">vīrietis</label><br>
-                <input type="radio" id="sex2" name="sex" value="female">
-                <label for="sex2">sieviete</label><br><br>
-                <label>dzimšanas datums</label>
-                <input type="date">
-            </fieldset>
+                <legend><mark>Informācija par sevi</mark></legend><br>
+                <label><b>Dzimums</b></label><br><br>
+                  <input type="radio" id="sex1" name="sex" value="male">
+                  <label for="sex1">vīrietis</label><br>
+                  <input type="radio" id="sex2" name="sex" value="female">
+                  <label for="sex2">sieviete</label><br><br>
+                  <label>dzimšanas datums</label>
+                  <input type="date"><br><br>
+                <label><b>Adrese</b></label><br><br>
+                <label>jūsu pilsēta</label>
+                  <select>
+                      <option>Rīga</option>
+                      <option>Jelgava</option>
+                  </select>
+            </fieldset><br>
+            
+            <fieldset>
+                <legend><mark>Jūsu hobbies</mark></legend>
+                  <label>Jūs varat izvēlēties jebkuru hobiju skaitu</label><br>
+                    <input type="checkbox" id="hobby1" name="hobby1" value="travel"> 
+                    <label for="hobby1">Ceļojumi</label>
+                    <input type="checkbox" id="hobby2" name="hobby2" value="programming">
+                    <label for="hobby2">Programmēšana</label><br>
+                    <input type="checkbox" id="hobby3" name="hobby3" value="drawing">
+                    <label for="hobby3">Zīmēt</label>
+                    <input type="checkbox" id="hobby4" name="hobby4" value="music">
+                    <label for="hobby4">Spēlēt mūzikas instrumentus</label><br>
+            </fieldset><br>
+
+            <fieldset>
+                <legend><mark>Augšupielādē savu attēlu</mark></legend>
+                <label for="myfile">Izvēlies failu:</label>
+                <input type="file" id="myfile" name="myfile" accept="image/png, image/jpg">
+            </fieldset><br>
+            <input type="submit" value="Sūtīt">
         </form>
     </body>
 </html>
