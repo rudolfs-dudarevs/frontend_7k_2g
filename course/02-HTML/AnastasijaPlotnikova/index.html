@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <meta charset="UTF-8">
+        <title>Majas darbs 02</title> 
+    </head>
+    <body>
+        <div>
+            <h1>Reģistrācijas forma</h1>
+            <fieldset>
+                <label>Ievietot vārdu:</label>
+                <input type="text"/>
+                <label>Ievietot paroli:</label>
+                <input type="password"/>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+            <legend>
+                <mark>Informacija par sevi</mark> 
+            </legend>
+            <h3>Dzimums</h3>
+        <div>
+            <input type="radio" id="virietis" name="dzimums" value="virietis" checked>
+            <label for="virietis">virietis</label>
+        </div>    
+        <div>
+            <input type="radio" id="sieviete" name="dzimums" value="sieviete">
+            <label for="sieviete">sieviete</label>
+        </div>
+        <div> 
+            <p>dzimšanas datums<input type="date" id="start" name="trip-start" value="yyyy-mm-dd" min="1986-01-01" max="2004-01-01"> </p>
+        </div>
+        <h3>Adrese</h3>
+        <div>
+            <label for="">Jūsu pilsēta</label>
+            <select name="Jūsu Pilsēta" id="">
+                <option value="Riga">Rīga</option>
+                <option value="Jelgava">Jelgava</option>
+            </select>
+        </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                <mark>Jusu hobbies</mark>
+            </legend>
+            <div>
+                <p>Jūs varat izvēlēties jebkuru hobiju skaitu</p>
+                <input type="checkbox" id="celojumi" name="celojumi" checked>
+                <label for="celojumi">Ceļojumi</label>
+                <input type="checkbox" id="programmesana" name="programmesana" checked>
+                <label for="programmesana">Programmēšana</label>
+            </div>
+            <div>
+                <input type="checkbox" id="zimet" name="zimet" checked>
+                <label for="zimet">Zīmēt</label>
+                <input type="checkbox" id="muzika" name="muzika" checked>
+                <label for="muzika">Spēlēt mūzikas instrumentus</label>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                <mark>Pastastiet mums vairāk par sevim</mark>
+            </legend>
+            <div>
+                <textarea id="story" name="story" rows="5" cols="33">Esmu ieinteresēta šajā pasākumā...</textarea>
+            </div>
+        </fieldset>
+        </div>
+    </body>
+</html>
