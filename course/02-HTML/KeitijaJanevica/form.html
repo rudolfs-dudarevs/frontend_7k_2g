@@ -24,11 +24,13 @@
                 <label>dzimšanas datums</label>
                 <input type="date"><br><br>
                 <label><b>Adrese</b></label><br><br>
-                <label>jūsu pilsēta</label>
-                  <select>
-                      <option>Rīga</option>
-                      <option>Jelgava</option>
-                  </select>
+                
+                <label for="address">Jūsu pilsēta</label>
+                <input list="addresses" name="adress" id="address">                
+                <datalist id="addresses">
+                      <option value="Rīga">
+                      <option value="Jelgava">
+                  </datalist>
             </fieldset><br>
             
             <fieldset>
