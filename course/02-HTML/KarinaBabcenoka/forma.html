@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2.mājasdarbs</title>
+</head>
+<body>
+<header>
+    <h2>Reģistrācijas forma</h2>
+<header>
+    <form action="/">
+        <fieldset>
+            <label>Ievietot vārdu:</label>
+            <input type="text">
+            <label>Ievietot paroli:</label>
+            <input type="password">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><mark>Informācija par sevi</mark></legend>
+            <h5>Dzimums</h5>
+                <input type="radio">
+                <label>vīrietis</label><br>
+                <input type="radio">
+                <label>sieviete</label><br>
+            <br>
+                <label>dzimšanas datums</label>
+                <input type="date">
+            <br>
+            <h5>Adrese</h5>
+            <label>Jūsu pilsēta</label>
+            <input list="pilseta">
+                <datalist id="pilseta">
+                <option value="Rīga">
+                <option value="Liepāja">
+                <option value="Ventspils">
+                <option value="Sigulda">
+                <option value="Cēsis">
+              </datalist>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><mark>Jūsu hobbies</mark></legend>
+            <div style="text-indent: 10px">Jūs varat izvēlēties jebkuru hobiju skaitu</div>
+                <input type="checkbox">
+                <label>Ceļojumi</label>
+                <input type="checkbox">
+                <label>Programmēšana</label>
+            <br>
+                <input type="checkbox">
+                <label>Zīmēt</label>
+                <input type="checkbox"style="margin-left: 25.5px">
+                <label>Spēlēt mūzikas instrumentus</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><mark>Savs laukums</mark></legend>
+            <label>Izvēlēties Jūsu mīļāko krāsu:</label>
+            <input type="color" value="#ff0000">
+        </fieldset>
+    </form>
+    <br>
+    <input type="submit" value="Sūtīt">
+</body>
+</html>
