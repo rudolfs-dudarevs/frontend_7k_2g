@@ -1,0 +1,89 @@
+<DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>
+          Everything about forms
+        </title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href="index.html">HOME</a> </li>
+                    <li>TABLES </li>
+                    <li> <a href="forms.html">FORMS</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Reģistrācijas forma</h1>
+        <form  method="get"  oninput="x.value=parseInt(a.value)*10">
+            <fieldset>
+                <legend><mark></mark></legend>
+                <label>Ievadiet vārdu:</label>
+                <input name='name' required type="text" placeholder="lietotājvārds" id="name"/> 
+
+                <label>Ievadiet paroli:</label>
+                <input name='password' required type="password" placeholder="parole" id="password"/> 
+            </fieldset>
+            <br/> 
+            <fieldset>
+                <legend><mark>Informācija par sevi</mark></legend>
+                <p><strong>Dzimums</strong></p>
+                <input type="radio" name="gender"  id="woman" value="woman" /> 
+                    <label for="woman">sieviete</label><br>
+                <input type="radio" id="man" name="gender" value="man">
+                    <label for="man">vīrietis</label>
+                 <br/> 
+                 <label for="bdate">dzimšanas datums</label>
+                <input type="date" id="bdate" name="bdate">    
+                <p><strong>Adrese</strong></p>
+                <label for="city-select">Jūsu pilsēta</label>
+                <select name="city" id="city-select">
+                    <optgroup label="Latvija">
+                        <option value="RIX">Riga</option>
+                        <option value="JLG">Jelgava</option>
+                    </optgroup>
+                    <optgroup label="UK">
+                        <option value="LOX">London</option>
+                        <option value="MCH">Manchester</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend><mark>Jūsu hobiji</mark></legend>
+                &nbsp;&nbsp;&nbsp;&nbsp;Jūs varat izvēlēties jebkuru hobiju skaitu<br/>
+                <table >
+                    <tr>
+                        <td><input  type="checkbox" name="hobby"  id="travel" value="travel" /> 
+                            <label for="travel">Ceļojumi</label></td>
+                        <td> <input type="checkbox" id="coding" name="hobby" value="coding">
+                            <label for="coding">Programmēšana</label></td>   
+                    </tr>
+                    <tr>
+                        <td><input  type="checkbox" name="hobby"  id="drawing" value="drawing" /> 
+                            <label for="drawing">Zīmēt</label></td>
+                        <td><input type="checkbox" id="music" name="hobby" value="music">
+                            <label for="music">Spēlēt mūzikas instrumentus</label></td>
+                    </tr>
+                </table >  
+            </fieldset>       
+            <br/>
+            <fieldset>
+                <legend><mark>Savs laukums</mark></legend>
+                <label for="favcolor">Mums ir svarīgi zināt Jūsu mīļāko krāsu ---> </label>
+                <input type="color" id="favcolor" name="favcolor" value="#00bfff">
+                
+            </fieldset>      
+            <br/>  
+            <label for="a">Cik liela ir Jūsu vēlme apgūt Front-end prasmes? </label>
+            <input type="range" id="a" name="vol" min="0" max="10" value="0">
+            <output name="x" for="x" ></output> %
+            <br/><br/>
+            <!-- <button type="submit">PUSH IT!</button> -->
+            <input type="image"  src="./Submit_bttn.png"  alt="Iesniegt" height="30" id="button">
+        </form>
+                      
+    </body>
+</html>
