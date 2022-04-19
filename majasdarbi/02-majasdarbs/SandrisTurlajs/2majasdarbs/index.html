@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Reģistrācijas forma</title>
+    </head>
+    <body>
+        <header>
+            <h2>Reģistrācijas forma</h2>   
+        </header>
+        <form action="" method="get">
+        <fieldset>
+            <Label for="name">Ievietot vārdu:</Label>
+            <Input type="text" id="name" name="name">
+            <Label for="password">Ievietot paroli:</Label>
+            <Input type="password" id="password" name="password">
+        </fieldset>
+        <br>
+        <fieldset>
+            <Legend><mark>Informacija par sevi</mark></Legend>
+            <p><b>Dzimums</b></p>
+                <Input type="radio" id="virietis" name="virietis" value="vīrietis">
+                    <label for="virietis">vīrietis</label><br>
+                <Input type="radio" id="sieviete" name="sieviete" value="sieviete">
+                    <label for="sieviete">sieviete</label><br>
+            <p></p>
+                    <Label>dzimšanas datums</Label>
+                    <Input type="date">
+                <p><b>Adresse</b></p>
+                    <Label>Jūsu pilsēta</Label>
+                    <Input type="list" list="cities">
+                    <datalist id="cities">
+                        <option>Rīga</option>
+                        <option>Jelgava</option>
+                    </datalist>        
+        </fieldset>
+        <br>
+        <fieldset>
+            <Legend><mark>Jusu hobbies</mark></Legend>
+            <table>
+                <caption>Jūs varat izvēlēties jebkuru hobiju skaitu</caption>
+                <tbody>
+                    <tr>
+                        <td>
+                            <Input type="checkbox">Ceļojumi
+                        </td>
+                        <td>
+                            <Input type="checkbox">Programmēšana
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <Input type="checkbox">Zīmēt
+                        </td>
+                        <td>
+                            <Input type="checkbox">Spēlēt mūzikas instrumentus
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <Legend><mark>Telefona numurs</mark></Legend>
+            <p>Ievadiet savu telefona nr.</p>
+            <input type="tel", pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}"> 
+            <p>formāts: 22-222-222</p>       
+        </fieldset>
+        <br>
+        <button type="submit">Sūtīt</button>
+    </form>
+    </body>
+</html>
