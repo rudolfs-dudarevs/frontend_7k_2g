@@ -1,0 +1,42 @@
+/* 
+    uzrakstiet selector specifitāti komentaros
+    failu nokopet failu 03-majasdarbs/VardsUzvards/specifitāte.css
+*/
+
+
+
+a {}        /* 0.0.1 */
+
+
+
+
+p {}                                    
+
+.titleClass {}                          
+
+#titleId {}                            
+
+p.titleClass {}                         
+
+p#titleId {}                            
+
+p#titleId.titleClass1.titleClass2 {}    
+
+p em {}                                 
+
+p .class {}                             
+
+p .class {                              
+    color: red !important
+}                             
+
+
+/*  
+    zīme vieta pievinot zīme < vai > vai =
+    atkariba no specifitātes
+*/
+
+(p em) /* zīme */ (p.class) 
+(#m_d) /* zīme */ (em.m_cl)
+(div p#my_id span) /* zīme */ (div[title*="City"] span#s_id) 
+(div>div.my_class p[contenteditable].red_color span:hover) /* zīme */ (div p+div[title="css"] p.green_color span) 
