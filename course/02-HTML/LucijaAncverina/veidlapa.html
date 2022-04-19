@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>
+            Reģistrācijas forma
+        </title>
+    </head>
+    <body>
+        <header>
+            <h2>
+                Reģistrācijas forma
+            </h2>
+        </header>
+        <form action="/" method="GET">
+            <fieldset>
+            <label>
+                Ievietot vārdu:
+            </label>
+            <input type="text"/>
+            <label>
+                Ievietot paroli:
+            </label>
+            <input type="password">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>
+                <mark>
+                    Infromācija par sevi
+                </mark>
+                <br>
+            </legend><br>
+                    <label>
+                        <b>
+                            Dzimums
+                        </b>
+                        <br>
+                        <br>
+                    </label>
+                    <input type="radio" name="dzimums">
+                    <label>vīrietis</label>
+                    <br>
+                    </label>
+                    <input type="radio" name="dzimums">
+                    <label>sieviete</label>
+                    <br>
+                    <br>
+                    <label>dzimšanas datums</label>
+                    <input type="date">
+                <br>
+                <br>
+                <label>
+                    <b>Adrese</b>
+                </label>
+                <br>
+                <br>
+
+                <label>
+                    Jūsu pilsēta
+                </label>
+                <select name="pilseta" id="pilseta">
+                    <option value=" "> </option>
+                    <option value="Rīga">Rīga</option>
+                    <option value="Jelgava">Jelgava</option>
+                    <option value="Valmiera">Valmiera</option>
+                    <option value="Saulkrasti">Saulkrasti</option>
+                </select>        
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>
+                <mark>Jūsu hobiji</mark>
+                <br>
+            </legend>
+            <label style="padding-left:22px">
+            Jūs varat izvēlēties jebkuru hobiju skaitu
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                    <label>Ceļojumi</label>
+                </td>
+                <td>
+                    <input type="checkbox">
+                    <label>Programmēšana</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                    <label>Zīmēt</label>
+                </td>
+                <td>
+                    <input type="checkbox">
+                    <label>Spēlēt mūzikas instrumentus</label>
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>
+                <mark>Jūsu foto</mark>
+                <br>
+            </legend>
+                                        
+                    <label for="email">Augšuplādējiet savu foto:</label>
+                    <form action="/action_page.php">
+                        <input type="file" id="myFile" name="filename">
+                    </fieldset>
+<br>
+                     <button type="submit">Sūtīt</button>  
+        </form>
+    
+    </body>
+</html>
