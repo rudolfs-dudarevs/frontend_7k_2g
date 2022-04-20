@@ -1,0 +1,39 @@
+body * + * { margin-top: 1.5em;}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  min-height: 500px;
+  background-color: grey;
+  flex-flow: row wrap; /* sounds right */
+  justify-content: space-around; /* sounds right */
+}
+
+.flex-container > div {
+  background-color: lightgrey;
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.div1 {
+  align-self:center;
+}
+.div2 {
+  align-self:center;
+}
+.div3 {
+  align-self:center;
+}
+.div4 {
+  align-self:center;
+}
+.div5, .div6, .div7 {
+  align-self:flex-end;
+}
