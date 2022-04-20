@@ -11,6 +11,7 @@ body * + * { margin-top: 1.5em;}
   background-color: grey;
   flex-flow: row wrap; /* sounds right */
   justify-content: space-around; /* sounds right */
+  flex-shrink: 1;
 }
 
 .flex-container > div {
@@ -22,16 +23,19 @@ body * + * { margin-top: 1.5em;}
   font-size: 30px;
 }
 
-.div1 {
+.flex-container .div1 {
   align-self:center;
+  height: 100px;
 }
-.div2 {
+.flex-container .div2 {
   align-self:center;
+  height: 50px;
 }
-.div3 {
+.flex-container .div3 {
   align-self:center;
+  height: 300px;
 }
-.div4 {
+.flex-container .div4 {
   align-self:center;
 }
 .div5, .div6, .div7 {
