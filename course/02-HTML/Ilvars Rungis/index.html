@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mājas darbs 02</title>
+  </head>
+
+  <body>
+    <hr />
+    <h2>Reģistrācijas forma</h2>
+    <form action="" method="get">
+      <fieldset>
+        <label for="Ievietot vārdu">Ievietot vārdu:</label>
+        <input type="text" name="name" id="name" required />
+        <label for="Ievietot paroli">Ievietot paroli:</label>
+        <input type="text" name="name" id="name" required />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>
+          <span style="background-color: #ffff00">Informācija par sevi</span>
+        </legend>
+        <h4>Dzimums</h4>
+        <input type="radio" id="virietis" name="dzimums" value="virietis" />
+        <label for="html">Vīrietis</label><br />
+        <input type="radio" id="sieviete" name="dzimums" value="sieviete" />
+        <label for="sieviete">Sieviete</label><br />
+        <br />
+        <label for="dzimšanas datums">Dzimšanas datums:</label>
+        <input type="date" id="dzimene" name="dzimene" />
+        <br />
+        <h4>Adrese</h4>
+        <label for="jūsu pilsēta">Jūsu pilsēta:</label>
+        <select name="pilseta" id="pilseta">
+          <option></option>
+          <option value="Rīga">Rīga</option>
+          <option value="Tukums">Tukums</option>
+          <option value="Liepāja">Liepājs</option>
+          <option value="Jūrmala">Jūrmala</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>
+          <span style="background-color: #ffff00">Jūsu hobijs</span>
+        </legend>
+        <p>Jūs variet izvēlēties jebkuru hobiju skaitu</p>
+        <input type="checkbox" id="hobijs" name="hobijs" value="peldet" />
+        <label for="hobijs"> Peldēt</label>
+        <input type="checkbox" id="hobijs1" name="hobijs1" value="Ceļot" />
+        <label for="hobijs1"> Ceļot</label>
+        <input type="checkbox" id="hobijs2" name="hobijs2" value="velo" />
+        <label for="hobijs2"> Velo</label><br />
+        <input type="checkbox" id="hobijs3" name="hobijs3" value="Laivoju" />
+        <label for="vehicle3"> Laivot</label>
+        <input type="checkbox" id="hobijs4" name="hobijs4" value="programmēt" />
+        <label for="hobijs4"> Programmēt</label>
+        <input type="checkbox" id="hobijs5" name="hobijs5" value="sports" />
+        <label for="hobijs5"> Sports</label><br />
+        <input type="checkbox" id="hobijs6" name="hobijs6" value="lidot" />
+        <label for="hobijs"> Lidot</label>
+        <input type="checkbox" id="hobijs7" name="hobijs7" value="Gulēt" />
+        <label for="hobijs7"> Gulēt</label>
+        <br /><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>
+          <span style="background-color: #ffff00">Papildus informācija</span>
+        </legend>
+        <p>Uzraksti nedaudz par sevi</p>
+        <textarea rows="4" cols="90" name="comment" form="usrform"> </textarea>
+      </fieldset>
+    </form>
+    <br />
+    <br />
+    <input type="submit" />
+  </body>
+</html>
