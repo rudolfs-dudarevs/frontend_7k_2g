@@ -1,0 +1,16 @@
+.work-description li {
+    padding: 10px 0px;
+}
+
+.frontend-tools {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.workExperience__item li:last-child {
+    padding-bottom: 40px;
+}
+
+.work-experience-item {
+    margin-bottom: 50px;
+}

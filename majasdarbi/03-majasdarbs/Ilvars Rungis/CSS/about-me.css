@@ -1,0 +1,60 @@
+.about-me {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap;
+
+    text-align: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+.about-me > ul {
+    text-align: left;
+}
+
+.title-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.profile-img {
+    display: inline-block;
+    height: 175px;
+    width: 175px;
+    border-radius: 60%;
+    margin-left: 60px;
+}
+
+.pre-title { 
+    font-size: 4vw; 
+}
+.title {
+    font-size: 7vw;
+}
+
+.contact-btn,
+.contact-info {
+    display: inline-block;
+    padding: 15px 0px;
+    font-size: 1.5vw;
+    color: var(--font-hover-color);
+    text-decoration: none;
+}
+
+.contact-btn {
+    margin-top: 15px;
+    border: 1px solid var(--font-hover-color);
+    border-radius: 5px;
+    padding: 10px 70px;
+}
+
+.contact-info:hover {color: var(--font-main-color);}
+.contact-btn:hover {
+    color: var(--color-black);
+    background-color: var(--font-main-color);
+    border-color: var(--font-main-color);
+}
