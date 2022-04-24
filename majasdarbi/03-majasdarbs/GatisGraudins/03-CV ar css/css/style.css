@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+/* lapas fons */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 600px;
+  margin: 0 auto;
+  background-color: #efe3cb;
+  padding: 0 20px 20px 20px;
+  border: black;
+
+}
+
+/* lapas augšas navigācija */
+
+.navigation {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  padding: 20px 0;
+  background-color: #efe3cb
+}
+
+.navigation-item {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.navigation-item {
+  color: black;
+}
+
+.navigation-item:hover {
+  color: white;
+
+}
+
+/* profil bildes animācija  */
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #efe3cb;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  transform: scale(1);
+}
+
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* Vārda Uzvārda teksta efekti */
+
+.typing {
+  height: 10vh;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.typing-effect {
+  width: 50ch;
+  animation: typing 3s steps(22), effect .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes effect {
+  50% {
+    border-color: transparent
+  }
+}
+
+/* kontakt informācijas bloka action */
+
+.contactme {
+  display: flex;
+  justify-content: right;
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: blue;
+  }
+
+  100% {
+    color: red; 
+  }
+}
+
+
+/* H2 virsrakstu efekti */
+
+h2 {
+  color: black;
+}
+
+h2:hover {
+  color: white;
+
+}
+
