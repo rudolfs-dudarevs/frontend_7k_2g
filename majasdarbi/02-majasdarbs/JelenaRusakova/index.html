@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <title>
+        Registracijasforma
+    </title>
+</head>
+
+<body>
+    <h1>Reģistrācijas forma
+    </h1>
+    <fieldset>
+        <label>Ievietot vārdu:</label>
+        <input name="name" type="text" />
+        <label>Ievietot paroli:</label>
+        <input name="password" type="password" />
+    </fieldset>
+    <fieldset>
+        <legend>
+            <mark>Informācija par sevi</mark>
+        </legend>
+        <p><b>Dzimums</b></p>
+        <div>
+            <input name="vīrietis" type="radio" />
+            <label>vīrietis</label>
+        </div>
+        <div>
+            <input name="sieviete" type="radio" />
+            <label>sieviete</label>
+        </div>
+        <label>dzimšanas datums</label>
+        <input name="date" type="date" />
+        <p> <strong>Adrese</strong></p>
+        <label>Jūsu pilsēta</label>
+        <select>
+            <option>Rīga</option>
+            <option>Jelgava</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <mark>
+                Jusu hobbies
+            </mark>
+        </legend>
+        <p>Jūs varat izvēlēties jebkuru hobiju skaitu</p>
+        <div>
+            <input name="Ceļojumi" type="checkbox" />
+            <label>Ceļojumi</label>
+            <input name="Programmēšana" type="checkbox" />
+            <label>Programmēšana</label>
+        </div>
+        <div>
+            <input name="Zīmēt" type="checkbox" />
+            <label>Zīmēt</label>
+            <input name="Spēlēt" type="checkbox" />
+            <label>Spēlēt mūzikas instrumentus</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <mark>
+                Savs laukums
+            </mark>
+        </legend>
+        <p>&#128512;</p>
+        <h1 style="background-color:rgb(200, 200, 200);">Paldies par uzmanību!</h1>
+    </fieldset>
+    <button type="submit">Sūtīt</button>
+</body>
+</html>

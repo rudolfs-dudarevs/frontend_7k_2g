@@ -1,13 +1,33 @@
-@import "./reset.css";
-@import "./variables.css";
-@import "./common.css";
-@import "./navigation.css";
-@import "./about-me.css";
-@import "./work-experience.css";
-@import "./education.css";
-@import "./skills.css";
-@import "./faq.css";
-@import "./languages.css";
-@import "./contact-me.css";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 
-@import "./media.css";
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+.navigation {
+    display: flex;
+    height: 30px;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #163436;
+}
+
+.navigation-item {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+}
+
+.navigation-item:hover {
+    color: red;
+}
+
+.tile {
+
+}
+
+.pre-title {
+    
+}

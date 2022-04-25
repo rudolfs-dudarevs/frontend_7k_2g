@@ -8,37 +8,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-    <div class="block">
     <!--Navigation bar-->
-    <div class = "navbar">
-        <a class = "navigation" href="#work-experience"><div>Work experience</div></a>
-        <a class = "navigation" href="#education"><div> Education</div></a>
-        <a class = "navigation" href="#skills"><div>Skills</div></a>
-        <a class = "navigation" href="#faq"><div>FAQ</div></a>
-        <a class = "navigation" href="#languages"><div>Languages</div></a>
-        <a class = "navigation" href="#contactme"><div>Contact me</div></a>
-    </div>   
+    <div class ="navblock">
+        <div class = "navbar">
+            <a class = "navigation" href="#work-experience"><div class="navdiv">Work experience</div></a>
+            <a class = "navigation" href="#education"><div class="navdiv"> Education</div></a>
+            <a class = "navigation" href="#skills"><div class="navdiv">Skills</div></a>
+            <a class = "navigation" href="#faq"><div class="navdiv">FAQ</div></a>
+            <a class = "navigation" href="#languages"><div class="navdiv">Languages</div></a>
+            <a class = "navigation" href="#contactme"><div class="navdiv">Contact me</div></a>
+        </div> 
+    </div>
+    <!--Navigation bar end-->
+
+    <!--content block-->
+    <div class="block">
+    
     <main>
         <!-- ABOUT ME -->
         <section id="aboutme">
-            <div class="flexbox" style="width:760px">
+            <div class="flexbox padding" style="width:760px">
                 <div>
                     <img src="./css/image.jpg" alt="profileImg" width="250px">
                 </div>
-                    <div class="margin-left">
+                <div class="margin-left">
                     <h2>Valts Klibikis | Frontend developer</h2>
                     <p id="soon">...soon to be</p></br></br></br>
                     <div class="gray" style="margin-right:30px">
                         This is my more or less IT based CV, so I will indicate my IT skills, experience and visions here.
                     </div>
-                    </div>
+                </div>
              </div>
-             <div class="flexbox-right">
+             <div class="flexbox-left">
                 <div class="aboutme">Contact me:</div>
                 <a class="aboutme" href="tel:+37128748221"><i class="material-icons" style="font-size:18px">phone_iphone</i>+371 28748221</a><br/>
                 <a class="aboutme" href="mailto:vklibikis@gmail.com"><i class="material-icons" style="font-size:18px">mail</i>vklibikis@gmail.com</a><br/>
@@ -52,7 +59,7 @@
         <section id="work-experience">
             <h2>Work experience</h2>
             <ul>
-                <li>6 month struggle at Accenture as DevOps intern - my first IT experience</li>
+                <li>6 month at Accenture as DevOps intern - my first IT experience</li>
             </ul>
         </section>
         <!-- /WORK EXPERIENCE -->
