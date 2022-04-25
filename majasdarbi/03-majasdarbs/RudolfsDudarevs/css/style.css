@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+.navigation {
+    display: flex;
+    height: 30px;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #163436;
+}
+
+.navigation-item {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+}
+
+.navigation-item:hover {
+    color: red;
+}
+
+.tile {
+
+}
+
+.pre-title {
+    
+}
