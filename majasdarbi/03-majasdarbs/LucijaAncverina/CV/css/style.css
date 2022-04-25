@@ -1,0 +1,5 @@
+@import "./aboutme.css";
+@import "./navigation.css";
+.body {
+    font-family: serif;
+}
