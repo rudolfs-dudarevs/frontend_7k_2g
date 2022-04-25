@@ -9,9 +9,10 @@ body * + * { margin-top: 1.5em;}
   display: flex;
   min-height: 500px;
   background-color: grey;
-  flex-flow: row wrap; /* sounds right */
-  justify-content: space-around; /* sounds right */
+  flex-flow: row wrap; 
+  justify-content: space-around; 
   flex-shrink: 1;
+  flex-grow: 1;
 }
 
 .flex-container > div {
