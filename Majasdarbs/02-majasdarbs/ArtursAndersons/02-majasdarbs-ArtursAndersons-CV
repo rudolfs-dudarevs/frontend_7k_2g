@@ -22,8 +22,8 @@
         <section id="aboutme">
             <img src="" alt="" width="100px" height="100px">
             <address>
-                <h1>Kontakt informacija</h1>
-                
+                <h1>Kontakta informacija</h1>
+                <p>Artūrs Andersons</p>
             </address>
         </section>
         <!-- /ABOUT ME -->
@@ -32,6 +32,9 @@
         <!-- WORK EXPERIENCE -->
         <section id="work-experience">
             <h2>Work experience</h2>
+            <p> 2020.g. - pašlaik: Ziņu portāla LSM satura tehniskais redaktors</P>
+            <p> 2019.g. - 2020.g. SIA "Nordic Industries" skatuves iekārtu meistars</P>
+            <p> 2017.g. - 2019.g. SIA "RiaTech" Dokumentu arhīva vadītājs </p>
         </section>
         <!-- /WORK EXPERIENCE -->
 
@@ -39,6 +42,8 @@
         <!-- EDUCATION -->
         <section id="education">
             <h2>Education</h2>
+            <p> 2013.g. - 2021.g.: RISEBA, Bakalaura grāds TV un Kino režijā </P>
+            <p> 2001-2013.g. - Rīgas Hanzas vidusskola</P>
         </section>
         <!-- EDUCATION -->
 
@@ -46,6 +51,9 @@
         <!-- SKILLS -->
         <section id="skills">
             <h2>Skills</h2>
+            <p> "B" kategorijas auto vadītāja apliecība </P>
+            <p> Vokālās nodarbības Latvijas Nacionālajā operā</P>
+            <p> Ģitārspēles prasme</P>
         </section>
         <!-- SKIllS -->
 
@@ -54,7 +62,7 @@
         <section id="faq">
             <h2>FAQ</h2>
             <details>
-                <summary></summary>
+                <summary><p>What is my IP address?</p></summary>
             </details>
         </section>
         <!-- LANGUAGES -->
@@ -63,6 +71,9 @@
         <!-- LANGUAGES -->
         <section id="languages">
             <h2>Languages</h2>
+            <p>Latviešu valoda - dzimtā</p>
+            <p>Angļu valoda - B2</p>
+            <p>Krievu valoda - B1</p>
         </section>
         <!-- LANGUAGES -->
 
@@ -70,7 +81,9 @@
         <!-- CONTACT FORM -->
         <section id="contactme">
             <h2>Contact me </h2>
-
+            <p>Tel. +371 29337089</p>
+            <p>E-pasts: arturs.s.andersons@gmail.com</p>
+            <p>Rudzāju iela 15, Rāmava</p>
             <form>
                             
             </form>
