@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberts Form</title>
+</head>
+<body>
+    <h1>Registracijas forma</h1>
+    <br>
+    <fieldset>
+        <label for="name">Vards:</label>
+        <input type="text" name="name" required>
+        <label for="surname">Uzvards:</label>
+        <input type="text" name="surname" required >
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><mark>Informacija par sevi</mark></legend>
+        <h2>Dzimums</h2>
+        
+        <input type="radio" name="sex">
+        <label for="male">Virietis</label>
+        <br>
+        <input type="radio" name="sex">
+        <label for="woman" value>Sieviete</label>
+        <br>
+        <br>
+        <label for="year">Dzimsanas datums</label>
+        <input type="date">
+        <h2>Adrese</h2>
+        <label for="city-select">Pilseta</label>
+        <select name="city" id="city-select">
+            <option value="engure">Engure</option>
+            <option value="riga">Riga</option>
+        </select>         
+    </fieldset>
+    
+        <br>
+    <fieldset>
+        <legend><mark>Hobiji</mark></legend>
+        <input type="checkbox" name="hobbie">
+        <label for="hobbies">Celojumi</label>
+        <input type="checkbox" name="hobbie">
+        <label for="hobbies">Programmesana</label>
+        <br>
+        <input type="checkbox" name="hobbie">
+        <label for="hobbies">Futbols</label>
+        <input type="checkbox" name="hobbie">
+        <label for="hobbies">Makskeresana</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><mark>Skana</mark></legend>
+        <form action="/action_page.php">
+            <label for="vol">Pagriez skalak:</label>
+            <input type="range" name="vol" min="0" max="10">
+            
+          </form>
+    </fieldset>
+</body>
+</html>
