@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+body {font-family: sans-serif;}
+
+.about-me {
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap;
+
+    text-align: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+.about-me > ul {
+    text-align: left;
+}
+
+.title-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.profile-img {
+    display: inline-block;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.pre-title { 
+    font-size: 25px;
+margin: 12px 0px 6px 0}
+
+.title {
+    font-size: 4vw;
+margin: 6px 0;}
+
+.vards2 {
+    font-style: normal;
+}
+
+.navigation {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px 30px;
+    background-color: burlywood;
+}
+
+.navigation-item {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color:white
+
+}
+.navigation-item:hover {
+    color: black
+}
+
+
+
+
+
+
+
+
