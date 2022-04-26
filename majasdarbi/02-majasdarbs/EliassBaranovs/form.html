@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Reģistrācijas forma</h1>
+
+    <form action="">
+      <fieldset>
+        <label for="name">Ievietot vārdu:</label>
+        <input type="text" id="name" />
+        <label for="pw">Ievietot paroli:</label>
+        <input type="password" id="pw" />
+      </fieldset>
+    </form>
+    <form action="" style="padding-top: 25px">
+      <fieldset>
+        <legend>Informācija par Jums</legend>
+        <h3>Dzimums</h3>
+        <input type="radio" id="man" id="" />
+        <label for="man">Vīrietis</label>
+        <br />
+        <input type="radio" id="woman" id="" />
+        <label for="woman">Sieviete</label>
+        <br />
+        <br />
+        <label for="birthdate">Dzimšanas datums:</label>
+        <input type="date" id="birthdate" />
+        <br />
+        <br />
+        <label for="city">Dzīvesvietas adrese</label>
+        <select name="" id="city">
+          <option value="vieta1">Vieta1</option>
+          <option value="vieta2">Vieta2</option>
+        </select>
+      </fieldset>
+      <form action="">
+        <fieldset>
+          <legend>Jūsu hobiji</legend>
+          <p>Izvēlaties savus hobijus</p>
+          <form action="">
+            <table>
+               <tr>
+             <td> <input type="checkbox" id="soccer" name="soccer" />
+              <label for="soccer">Futbols</label></td>
+              <td><input type="checkbox" id="basketball" name="basketball" />
+              <label for="basketball">Basketbols</label></td>
+              </tr>
+              <tr>
+              <td><input type="checkbox" id="fishing" name="fishing" />
+              <label for="fishing">Makšķerēšana</label></td>
+              <td><input type="checkbox" id="coding" name="coding" />
+              <label for="coding">Programmēšana</label></td>
+              </tr>
+               </tbody>
+            </table>
+          </form>
+        </fieldset>
+        <form action="">
+          <fieldset>
+            <legend>Savs laukums</legend>
+            <label for="color">Mīļākā krāsa</label>
+            <input type="color" id="color" name="color" />
+            <br />
+            <input
+              type="button"
+              onclick="alert('Forma iesniegta!')"
+              value="Iesniegt"
+            />
+          </fieldset>
+        </form>
+      </form>
+    </form>
+  </body>
+</html>
