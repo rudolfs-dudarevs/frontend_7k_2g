@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <title>Formulārs</title>
+    </head>
+    <body>
+<h1>Reģistrācijas forma</h1>
+
+<from action="/" method= "GET">
+<fieldset>
+    <label>Ievietot vārdu</label>
+    <input type="text"/>
+    <label>Ievietot paroli</label>
+    <input type="password"/>
+</fieldset>
+<br>
+<fieldset>
+    <legend><mark>Informācija par sevi</mark></legend>
+    <br>
+   <b><label>Dzimums</label></b>
+</br>
+<br>
+   <div> 
+       <label>Vīrietis</label>
+   <input type="radio"/>
+   </div>
+   <div> 
+    <label>Sieviete</label>
+<input type="radio"/>
+</div><br/>
+<div>
+<label>Dzimšanas datums</label>
+<input type="date"/>
+</div>
+<br>
+<b><label>Adrese</label></b>
+</br>
+<br>
+<label>Jūsu pilsēta</label>
+    <select>
+        <option value="Rīga">Rīga</option>
+        <option value="Jelgava">Jelgava</option>
+    </select>
+</br>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend><mark>Jūsu hobijs</mark></legend>
+    <br>
+   <label>Jūs varat izvēlēties jebkuru hobiju skaitu</label>   
+  <div><input type="checkbox">Ceļošana      
+    <input type="checkbox">Zīmēšana</div>
+
+   <div><input type="checkbox">Programmēšana
+    <input type="checkbox">Mūzika 
+    </div>    
+</fieldset>
+</br>
+
+<fieldset>
+    <legend><mark>Savs laukums</mark></legend>
+    <br>
+    <label for="punkti">Cik izdevusies būs šī vasara? (no 0 līdz 10):</label>
+<input type="range" id="punkti" name="punkti" min="0" max="10">
+</fieldset>
+<br>
+<button type="submit">Sūtīt</button>
+</from>
+    </body>
+</html>
+

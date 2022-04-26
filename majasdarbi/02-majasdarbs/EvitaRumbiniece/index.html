@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <from action="/" method="GET">
+        <body>
+        <title>Reģistrācijas forma</title>
+<h1>Reģistrācijas forma</h1>
+<br>
+        <fieldset>
+            <label>Ievietot vārdu:</label> 
+            <input type="text"/>
+            <label>Ievietot paroli:</label>
+            <input type="password"/>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend><mark>Informācija par sevi<mark></legend>
+            <br>
+<label><b>Dzimums</label></b></label>
+    <br>
+    <br>
+<form>
+  <input type="radio" value="vīrietis">
+  <label for="vīrietis">vīrietis</label><br>
+  <input type="radio" value="sieviete">
+  <label for="sieviete">sieviete</label><br>
+</form> 
+<br>
+
+    <label for="birthday">dzimšanas datums</label>
+    <input type="date" id="birthday" name="birthday"><br>
+<br>
+<form>
+<legend><b>Adrese</b></legend><br>
+<label>Jūsu pilsēta<label>
+<input list="pilseta" name="pilseta">
+  <datalist id="pilseta">
+      <option value="Rīga"></option>
+      <option value="Jūrmala"></option>
+      <option value="Bauska"></option>
+      <option value="Jelgava"></option>
+  </datalist>
+  </form>
+  </fieldset><br>
+
+<fieldset>
+    <legend><mark>Jūsu hobiji<mark></legend>
+        <br>
+        <label>Jūs varat izvēlēties jebkuru hobiju skaitu</label><br>
+  <input type="checkbox" id="hobijs" name="hobijs" value="celojumi">
+  <label for="hobijs"> Ceļojumi</label><br>
+  <input type="checkbox" id="hobijs2" name="hobijs2" value="programmesana">
+  <label for="hobijs2"> Programmēšana</label><br>
+  <input type="checkbox" id="hobijs3" name="hobijs3" value="zimet">
+  <label for="hobijs3"> Zīmēt</label><br>
+  <input type="checkbox" id="hobijs4" name="hobijs4" value="muzika">
+  <label for="hobijs4"> Spēlēt mūzikas instrumentus</label><br><br>
+</fieldset><br>
+
+<fieldset>
+    <legend><mark>Kontaktinformācija<mark></legend>
+        <br>
+        <label for="email">Ievadiet e-pasta adresi</label>
+        <input type="email" id="email" name="email"><br>
+        <br>
+        <label for="phone">Tālrunis</label>
+        <input type="tel" id="phone" name="phone" placeholder="+371"><br><br>
+</fieldset>
+<br>
+    <input type="submit" value="Sūtīt">
+
+
+
+
+   

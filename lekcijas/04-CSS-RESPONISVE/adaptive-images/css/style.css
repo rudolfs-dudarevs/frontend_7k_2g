@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.image {
+    background: url(../images/density/image.jpg) no-repeat;
+    /* background-size: contain;
+    height: 100%;
+    width: 100%; */
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+ .image { 
+     background-image: url(../images/density/image@2x.jpg); 
+    }
+} 
+
+
+/* .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/picture-tag/small.jpg);
+}
+
+@media only screen and (min-width: 768px) {
+    .image {
+      background-image: url(../images/picture-tag/medium.jpg);
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .image {
+      background-image: url(../images/picture-tag/large.jpg);
+    }
+  } */
+  
