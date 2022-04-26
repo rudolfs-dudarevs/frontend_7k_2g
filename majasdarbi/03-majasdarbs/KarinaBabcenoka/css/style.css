@@ -1,0 +1,55 @@
+body {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    border-top: 1px solid #ffd617;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin-top: 10px;
+
+}
+
+.navbar-menu li {
+    display: inline;
+    
+}
+
+.navbar-menu li:after {
+    content: "\007C";
+    color: #dfdbdb;
+    position: relative;
+    padding-left: 10px;
+}
+
+.navbar-menu li:last-child::after {
+    content: "";
+}
+
+.navbar-link {
+    text-decoration: none;
+    color:#2660a4;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.navbar-link:hover {
+    background-color:#dfdbdb;
+}
+
+
+
+
