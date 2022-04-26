@@ -1,0 +1,12 @@
+circle {
+    fill: blue;
+}
+
+circle:hover {
+    fill: pink;
+    stroke: none;
+}
+
+circle:hover {
+    stroke: none;
+}
