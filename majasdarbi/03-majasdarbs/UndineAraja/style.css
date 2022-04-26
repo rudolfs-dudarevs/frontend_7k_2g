@@ -1,0 +1,25 @@
+h1 {color: red;}
+h2 {color: green;}
+.small-title {color: blue;}
+.class1 
+    {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+    }
+.class2 
+    {
+        height: 100px;
+        width: 100px;
+        background-color: violet;      
+    }
+
+/*.class1 .class2 
+    {
+        background-color: brown;
+    }
+*/
+.class1 
+{
+ background-color: blue;
+}
