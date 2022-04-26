@@ -1,8 +1,8 @@
-*, *::before, *::after {
+/* *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 body {
     padding: 50px;
@@ -27,8 +27,8 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-out;		
-    /* animation:
-        circle-to-square 5s infinite alternate ease-out 1s,
+    animation:
+        /* circle-to-square 5s infinite alternate ease-out 1s,
         color-change 5s alternate linear infinite; */
 }
 
@@ -69,11 +69,6 @@ body {
 
 
 /* Transition */
-.button-container {
-    width: 50%;
-    text-align: center;
-}
-
 .button {
     min-width: 140px;
     border: 1px solid #18191c;
@@ -83,9 +78,6 @@ body {
     font-size: 16px;
     font-weight: 300;
     cursor: pointer;
-}
-
-.button {
     transition: background-color 0.6s, padding 3s, color 5s;
 }
 
@@ -96,55 +88,49 @@ body {
 }
 
 
-
-
-
-
-
 /* Transform */
-  h2 {
-    font-size: 24px;
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+h2, h3 {
+  font-weight: 500;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+  .nav-item {
+      border: 10px solid red;
+      padding: 10px;
+      margin-left: 20px;
   }
 
-  h3 {
-    margin-top: 50px;
-    margin-bottom: 10px;
-    font-size: 22px;
+  .nav .nav-item {
+      transition: padding 0.3s;
   }
 
-  h2, h3 {
-    font-weight: 500;
-    text-align: center;
+  .nav.font-size .nav-item:hover {
+      padding: 50px;
   }
 
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    list-style-type: none;
-  }
+.nav.transform a {
+  display: block;
+  transition: transform 0.3s;
+}
 
-  .nav-item + .nav-item {
-    margin-left: 20px;
-  }
-
-  .nav a {
-    color: inherit;
-    text-decoration-color: #1A5AD7;
-    text-decoration-thickness: 2px;
-    transition: font-size 0.3s;
-  }
-
-  .nav.font-size a:hover {
-    font-size: 22px;
-  }
-
-  .nav.transform a {
-    display: block;
-    transition: transform 0.3s;
-  }
-
-  .nav.transform a:hover {
-    transform: scale(1.2);
-  }
+.nav.transform .nav-item:hover {
+  transform: scale(2);
+}
