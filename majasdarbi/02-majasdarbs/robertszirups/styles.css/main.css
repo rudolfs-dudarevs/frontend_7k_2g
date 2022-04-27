@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 header {
     width: 90%;
@@ -11,8 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+    border-bottom: 1px solid #BC9542;   
 }
 
 .nav-bar ul {
@@ -36,19 +38,130 @@ header h2:hover {
 
 /* header ends */
 
-.hero-section {
-    height: 80vh;
-    width: 80%;
-    padding-top: 3em;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 .hero-img img{
+   position: relative;
+   left: 60%;
+   top: -10%;
+   height: 280px;
+}
+.hero-section {
+    position: relative;
+    z-index: 10;
+    width: 60%;
+    height: 60vh;  
+    margin: 7em auto 0;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    color: #BC9542;
+    font-weight: bold;
+    font-size: 5rem;
+    max-width: 600px;
+    position: absolute;
+    z-index: 100;
+}
+
+.page-two,
+.education {
+    height: 60vh;
+    background-color: #BC9542;
+}
+.page-two h2,
+.education h2 {
+    font-size: 4rem;
+    color: whitesmoke;
+    margin-left:2.6em ;
+}
+
+.page-two p,
+.education p  {
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.4rem;
+    max-width: 50%;
+    margin: 2.5em auto ;
+    line-height: 1.7em;
+}
+
+.page-three {
+    height: 80vh;
+}
+.page-three h2 {
+    font-size: 4rem;
+    color: #BC9542;
+    margin-left:2.6em ;
+}
+.page-three p {
+    font-weight: 500;
+    font-size: 1.4rem;
+    max-width: 50%;
+    margin: 2.5em auto ;
+    line-height: 1.7em;
+    color: #BC9542;
+}
+
+.achievements-img {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.achievements-img img {
+    height: 100px;
+}
+
+.faq {
+    height: 60vh;
+    color: #BC9542;
+    display: flex;
+    
+    
+}
+.faq h2 {
+    font-size: 4rem;
+    color: #BC9542;
+    margin-left:2.6em ;
+}
+.faq details {
+    font-weight: 500;
+    font-size: 1.4rem;
+    max-width: 50%;
+    margin: 5em auto ;
+    
+}
+.faq img {
+    height: 230px;
+}
+.contactme {
+    border-top: 2px solid #BC9542;
+    width: 90%;
     margin: 0 auto;
-    height: 70%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    padding: 1rem 0;
+}
+.contactme h2 {
+    font-size: 4rem;
+    color: #BC9542;
+    margin-left:2em ;
+}
+.contactme input {
+    color: #BC9542;
+    
+}
+.firstname,
+.company,
+.subject {
+    width: 33%;
+    border: #BC9542 solid 2px;
+    border-radius: 4px;
+    padding: .5em;
+    margin-left: 5em;
+}
+
+.submit {
+    border: none;
+    padding: .5em 3.8em;
+    margin-left: 5em;
+    border-radius: 4px;
+    cursor: pointer;
+    
 }
