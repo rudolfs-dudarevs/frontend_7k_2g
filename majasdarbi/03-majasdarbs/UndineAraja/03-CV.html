@@ -3,38 +3,36 @@
     <head>
         <meta charset="UTF-8"/>
         <title>CV</title>
+        <link rel="stylesheet" href="03-CV-style.css"/>
     </head>
     
     <body>
         <!--Navigation-->
         <header>
-            <nav>
-                <ul>
-                    <li><a href="#work-experience">Work experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#languages">Languages</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact-me">Contact me</a></li>
-                </ul>
+            <nav class="navigation">
+                <div><a class="navigation-item" href="#work-experience">Work experience</a></div>
+                <div><a class="navigation-item" href="#education">Education</a></div>
+                <div><a class="navigation-item" href="#languages">Languages</a></div>
+                <div><a class="navigation-item" href="#faq">FAQ</a></div>
+                <div><a class="navigation-item" href="#contact-me">Contact me</a></div>
             </nav>
         </header>
         
         <!--Main info-->
-        <section id="main-info">
+        <section class="section" id="main-info">
             <img src="undine.JPG"><br>
-            <h2><em>Undīne Arāja | Literary editor</em></h2>
-            <address>
-                <a href="tel.+37128352689">+371 28352689</a><br>
-                <a href="mailto:undine.araja@inbox.lv">undine.araja@inbox.lv</a><br>
-                <a href="https://www.linkedin.com/in/und%C4%ABne-ar%C4%81ja-75b6131b9/" target="_blank">LinkedIn</a><br>
-                <a href="#contact-me">Contact me</a>
+            <h2 class="section-title" id="name-surname">Undīne Arāja | Literary editor</h2>
+            <address class="address">
+                <a class="address-item" href="mailto:undine.araja@inbox.lv">undine.araja@inbox.lv</a><br>
+                <a class="address-item" href="https://www.linkedin.com/in/und%C4%ABne-ar%C4%81ja-75b6131b9/" target="_blank">LinkedIn</a><br>
+                <a class="address-item" href="#contact-me">Contact me</a>
             </address>
         </section>
         <hr>
 
         <!--Work experience-->
-        <section id="work-experience">
-            <h2>Work experience</h2>
+        <section class="section" id="work-experience">
+            <h2 class="section-title" >Work experience</h2>
             <h3>“Rigas aprinka avize” – freelance literary editor, news portal assistant editor</h3>
             <em>2016–current</em>
             <ul>
@@ -52,8 +50,8 @@
         <hr>
 
         <!--Education-->
-        <section id="education">
-            <h2>Education</h2>
+        <section class="section" id="education">
+            <h2 class="section-title">Education</h2>
             <h3>Liepaja University, Writing Studies (Master's degree)</h3>
             <em>2014–2016</em>
             <h3>University of Latvia, Asian Studies, Japanese language module
@@ -63,8 +61,8 @@
         <hr>
 
         <!--Languages-->
-        <section id="languages">
-            <h2>Languages</h2>
+        <section class="section" id="languages">
+            <h2 class="section-title">Languages</h2>
             <ul>
                 <li>Latvian (native)</li>
                 <li>English (pre-advanced)</li>
@@ -75,8 +73,8 @@
         <hr>
 
         <!--FAQ-->
-        <section id="faq">
-            <h2>FAQ</h2>
+        <section class="section" id="faq">
+            <h2 class="section-title">FAQ</h2>
             <details>
                 <summary>My hobbies</summary>
                 <ul>
@@ -90,14 +88,22 @@
 
             <details>
                 <summary>My favorite song at the moment</summary>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Vwhrqd3UaKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/Vwhrqd3UaKo" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </details>
         </section>
         <hr>
 
         <!--Contact me-->
-        <section id="contact-me">
-            <h2>Contact me</h2>
+        <section class="section" id="contact-me">
+            <h2 class="section-title">Contact me</h2>
             <form action="/" method="GET"> 
                     <p>
                     <label></label>
