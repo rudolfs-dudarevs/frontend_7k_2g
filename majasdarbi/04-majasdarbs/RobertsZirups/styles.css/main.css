@@ -3,9 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --gold: #BC9542;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
+
 
 header {
     width: 90%;
@@ -14,26 +20,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #BC9542;   
+    border-bottom: 1px solid var(--gold);   
 }
 
 .nav-bar ul {
     list-style: none;
     display: flex;
 }
+
 .nav-bar a {
     text-decoration: none;
     margin-left: 1.3rem;
-    color: #BC9542;
+    color: var(--gold);
     font-weight: bold;
 }
+
 .nav-bar a:hover {
     color: black;
-    text-decoration: 3px solid underline #BC9542;
+    text-decoration: 3px solid underline var(--gold)
 }
 
 header h2:hover {
-    color: #BC9542;
+    color: var(--gold);
 }
 
 /* header ends */
@@ -44,6 +52,7 @@ header h2:hover {
    top: -10%;
    height: 280px;
 }
+
 .hero-section {
     position: relative;
     z-index: 10;
@@ -54,7 +63,7 @@ header h2:hover {
 
 .title h1 {
     text-transform: uppercase;
-    color: #BC9542;
+    color: var(--gold);
     font-weight: bold;
     font-size: 5rem;
     max-width: 600px;
@@ -65,8 +74,9 @@ header h2:hover {
 .page-two,
 .education {
     height: 60vh;
-    background-color: #BC9542;
+    background-color: var(--gold);
 }
+
 .page-two h2,
 .education h2 {
     font-size: 4rem;
@@ -87,18 +97,20 @@ header h2:hover {
 .page-three {
     height: 80vh;
 }
+
 .page-three h2 {
     font-size: 4rem;
-    color: #BC9542;
+    color: var(--gold);
     margin-left:2.6em ;
 }
+
 .page-three p {
     font-weight: 500;
     font-size: 1.4rem;
     max-width: 50%;
     margin: 2.5em auto ;
     line-height: 1.7em;
-    color: #BC9542;
+    color: var(--gold);
 }
 
 .achievements-img {
@@ -106,22 +118,23 @@ header h2:hover {
     justify-content: space-around;
     
 }
+
 .achievements-img img {
     height: 100px;
 }
 
 .faq {
     height: 60vh;
-    color: #BC9542;
-    display: flex;
-    
-    
+    color: var(--gold);
+    display: flex;   
 }
+
 .faq h2 {
     font-size: 4rem;
-    color: #BC9542;
+    color: var(--gold);
     margin-left:2.6em ;
 }
+
 .faq details {
     font-weight: 500;
     font-size: 1.4rem;
@@ -132,26 +145,29 @@ header h2:hover {
 .faq img {
     height: 230px;
 }
+
 .contactme {
-    border-top: 2px solid #BC9542;
+    border-top: 2px solid var(--gold);
     width: 90%;
     margin: 0 auto;
     padding: 1rem 0;
 }
+
 .contactme h2 {
     font-size: 4rem;
-    color: #BC9542;
+    color: var(--gold);
     margin-left:2em ;
 }
+
 .contactme input {
-    color: #BC9542;
-    
+    color: var(--gold);   
 }
+
 .firstname,
 .company,
 .subject {
     width: 33%;
-    border: #BC9542 solid 2px;
+    border: var(--gold) solid 2px;
     border-radius: 4px;
     padding: .5em;
     margin-left: 5em;
@@ -162,6 +178,45 @@ header h2:hover {
     padding: .5em 3.8em;
     margin-left: 5em;
     border-radius: 4px;
-    cursor: pointer;
-    
+    cursor: pointer;  
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    /* saspiezot ekranu vel mazaku,
+    paradas horizotalais scroll bars.
+    ka to labot ? */
+
+    header {
+        flex-direction: column;
+    }
+
+    .title h1 {
+        font-size: 4rem;
+        min-width: 350px;
+        max-width: 400px;
+    }
+
+    .hero-img img {
+        left: 50%;
+    }
+
+    .page-two p,
+    .education p{
+        font-size: 1.2rem;
+    }
+
+    .achievements-img {
+        display: none;
+    }
+
+    .faq details{
+        font-size: 1.4rem;
+    }
+
+    .contactme input {
+        width: 80%;
+    }
 }
