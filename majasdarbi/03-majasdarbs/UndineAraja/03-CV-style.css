@@ -47,23 +47,15 @@ body
     color: black;
     }
 
-/* Main info */
-
 #main-info
     {
-        margin-top: 20px;
+    margin-top: 20px;
     }
 
-#name-surname
-    {
-
-    }
-
-/* Sections */
 .section-title
     {
-        background-color: #2e293d;
-        color: whitesmoke;
-        padding: 5px;
-        padding-left: 10px;
+    background-color: #2e293d;
+    color: whitesmoke;
+    padding: 5px;
+    padding-left: 10px;
     }
