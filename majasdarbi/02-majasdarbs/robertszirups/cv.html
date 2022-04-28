@@ -4,6 +4,9 @@
     <title>David Goggins</title>
     <meta name="description" content="Jevgenijs Voronovs | Front end developer">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles.css/main.css">
     
@@ -15,11 +18,11 @@
         <div class="nav-bar">
             <nav>
                 <ul>
-                    <li><a href="about">About</a></li>
-                    <li><a href="achievements">Achievements</a></li>
-                    <li><a href="education">Education</a></li>
-                    <li><a href="faq">FAQ</a></li>
-                    <li><a href="contact">Contact Me</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,20 +32,22 @@
         
         <!-- hero img -->
 
-        <section class="hero-section">
-            <div class="title">
-                <h1>There is only one David Goggins</h1>  <!--upercase- Z-index+100--->
-            </div>
-            <div class="hero-img">
-                <img src="#" alt="hero image">     
-            </div>
+            <section class="hero-section">
+                <div class="title">
+                    <h1>There is only one David Goggins</h1>  <!--upercase- Z-index+100--->
+                </div>
+                <div class="hero-img">
+                    <img src="./images/download.jpeg" alt="hero image">     
+                </div>
+            </section>
+            
         
         <!-- /hero img -->
 
         
 <!---------- About Me ----------->
 
-
+        <section class="page-two">
             <div id="about">
                 <h2>About</h2>
                 <p>Retired Navy SEAL and is the only member of the U.S.
@@ -57,24 +62,24 @@
 
 
                 <!------------ Achievements ------------>
-        <section id="achievements">
+        <section id="achievements" class="page-three">
             <h2>Achievements</h2>
             <p>David is indisputably one of the world’s best endurance athletes.
                  He has completed over 60 endurance races,
                   regularly placing in the top five and taken home first place several times.</p>
             <p>Guinness World Record for most pull-ups in 17 hours, completing 4,030 pull-ups.</p>
             <div class="achievements-img">
-                <div><img src="#" alt="Navy logo"></div>
-                <div><img src="#" alt="Guinnes logo"></div>
-                <div><img src="#" alt="Ranger logo"></div>
-                <div><img src="#" alt="Air force logo"></div>
+                <div><img src="./images/333.webp" alt="Navy logo"></div>
+                <div><img src="./images/United_States_Navy_Special_Warfare_insignia.png" alt="Guinnes logo"></div>
+                <div><img src="./images/4444.webp" alt="Ranger logo"></div>
+                <div><img src="./images/U.S._Navy_and_U.S._Marine_Corps_Parachutist_Insignia-redone.png" alt="Air force logo"></div>
             </div>
         </section>
                 <!------------ /Achievements ------------>
 
       
 <!----- EDUCATION ----->
-        <section id="education">
+        <section id="education" class="education">
             <h2>Education</h2>
             <p>After three attempts, Goggins succeeded in graduating from BUD/S
                  training with Class 235 in 2001 and was assigned to SEAL Team 5.
@@ -85,7 +90,7 @@
 <!----- /EDUCATION ----->
 
         <!-------- FAQ --------->
-        <section id="faq">
+        <section id="faq" class="faq">
             <h2>FAQ</h2>
             <details>
                 <summary>My hobbies?</summary>
@@ -99,30 +104,30 @@
               <br/>
               <details>
                     <summary>My Book "Can't Hurt Me"</summary>                
-                    <iframe >
-                        <img src="#" alt="Cant Hurt Me">
-                    </iframe>                                    
+                    
+                        <img src="./images/812jTyNSu1L.jpeg" alt="Cant Hurt Me">
+                                                        
               </details>
         </section>
         <!-------- /FAQ --------->
 
-        <hr/>
+        
         
         <!-- CONTACT FORM -->
-        <section id="contactme">
+        <section id="contactme" class="contactme">
             <h2>Contact me </h2>
 
             <form action="action_page.php">
-                <input type="text" id="firstname" name="firstname" placeholder="Your name.." style="width: 200px;">
+                <input type="text" class="firstname" name="firstname" placeholder="Your name..">
                 <br/><br/>
 
-                <input type="text" id="company" name="lastname" placeholder="Company name.." style="width: 200px;">
+                <input type="text" class="company" name="lastname" placeholder="Company name..">
                 <br/><br/>
             
-                <textarea id="subject" name="subject" placeholder="Write something.." style="width: 200px; height:100px"></textarea>
+                <textarea class="subject" name="subject" placeholder="Write something.."></textarea>
                 <br/><br/>
 
-                <input type="submit" value="Submit">            
+                <input type="submit" value="Submit" class="submit">            
               </form>
         </section>
         <!-- CONTACT FORM -->
