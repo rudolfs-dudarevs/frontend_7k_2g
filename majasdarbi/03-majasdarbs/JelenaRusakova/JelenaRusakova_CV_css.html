@@ -11,97 +11,98 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#personal information">Personal Information</a></li>
-                <li><a href="#work experience">Work Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#languages">Languages</a></li>
-                <li><a href="#contactme">Contact me</a></li>
+            <ul class="header">
+                <li class="header-link"><a href="#personal information">Personal Information</a></li>
+                <li class="header-link"><a href="#work experience">Work Experience</a></li>
+                <li class="header-link"><a href="#education">Education</a></li>
+                <li class="header-link"><a href="#skills">Skills</a></li>
+                <li class="header-link"><a href="#faq">FAQ</a></li>
+                <li class="header-link"><a href="#languages">Languages</a></li>
+                <li class="header-link"><a href="#contactme">Contact me</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <!-- PERSONAL INFORMATION -->
-        <section id="personal information">
-            <img src="./JelenaR_profilefoto.jpg" alt="" width="100px" height="100px">
-
-            <address>
-                <h1>Jelena Rusakova</h1>
-                <h1>Customer Service Manager / Beginner Frontend Developer</h1>
-
-                <a href="tel:+37126303108">+371 26 303108</a><br />
-                <a href="mailto:jelerusa@gmail.com">jelerusa@gmail.com</a><br />
-                <a href="https://www.linkedin.com/in/jelerusa/" target="_blank">LinkedIn</a><br />
-            </address>
+        <section class="personal information">
+            <div class="title-container">
+                <div>
+                    <p class="pre-title">
+                        Customer Service Manager / Beginner Frontend Developer
+                    </p>
+                    <h1 class="title">Jelena Rusakova</h1>
+                </div>
+                <img class="profile-img" src="images/JelenaR_profilefoto.jpg" alt="JelenaR_profilefoto.jpg"
+                    width="100px" height="100px">
+            </div>
+            <ul>
+                <li>
+                    <a class="contact-info" href="mailto:jelerusa@gmail.com">jelerusa@gmail.com</a>
+                </li>
+                <li>
+                    <a class="contact-info" href="https://www.linkedin.com/in/jelerusa/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a class="contact-info" href="tel:+37126303108" target="_blank">+371 26 303108</a>
+                </li>
+                <li>
+                    <a class="contact-btn" href="#contactme">contact me</a>
+                </li>
+            </ul>
         </section>
         <!-- /PERSONAL INFORMATION -->
 
-        <hr />
         <!-- WORK EXPERIENCE -->
         <section id="work experience">
             <h2>Work Experience</h2>
-
-            <h3>AS Rigensis Bank – Senior Client Manager at Customer Service</h3>
-            <em>05/2015 – 07/2021</em>
-            <br />
-            <p><i>Relationship Management, KYC, Financial Analysis</i></p>
-            <ul>
-                <li>Providing client service to existing and prospective customers (residents and non-residents of the
-                    Republic of Latvia).</li>
-                <li>Understanding of companies legal documentation (jurisdictions Latvia, Malta, Cyprus and other), AML
-                    concepts and issues, in particular AML regulatory standards.</li>
-            </ul>
-
-            <h3>AS NORVIK BANKA - Project Manager at Corporate Customer Service</h3>
-            <em>2004 – 05/2015</em>
-            <br />
-            <p><i>Relationship Management, KYC, Lending, Financial Analysis, Credit Restructuring</i></p>
-            <ul>
-                <li>Providing services, related with crediting, to existing and prospective customers (residents and
-                    non-residents of the Republic of Latvia).</li>
-                <li>Evaluating the creditworthiness of potential customers, including evaluation of business plans,
-                    planned cash flows, analyzing of financial statements.</li>
-                <li>Preparation of credit memo and presentation of projects at credit committee, for their approval.
-                </li>
-                <li>Participation in problem credit management, including collateral recovery, enforcement of guarantees
-                    and collection.</li>
-            </ul>
-            <h3>AS BALTIC INTERNATIONAL BANK – VIP banker</h3>
-            <em>2002 – 2004</em>
-            <br />
-            <p><i>Relationship management, KYC</i></p>
-            <ul>
-                <li>Advise customers on bank services.</li>
-                <li>Manage customer bank accounts: open, close and oversee transactions.</li>
-                <li>Resolve issues with banking services and accounts.</li>
-                <li>Present financial products and services to existing and potential customers.</li>
-            </ul>
+            <div class="work experience-item">
+                <h3>AS Rigensis Bank – Senior Client Manager at Customer Service</h3>
+                <h4>05/2015 – 07/2021</h4>
+                <p class="frontend-tools">Relationship Management, KYC, Financial Analysis</p>
+                <ul>
+                    <li>Providing client service to existing and prospective customers (residents and non-residents of
+                        the
+                        Republic of Latvia).</li>
+                    <li>Understanding of companies legal documentation (jurisdictions Latvia, Malta, Cyprus and other),
+                        AML
+                        concepts and issues, in particular AML regulatory standards.</li>
+                </ul>
+                <h3>AS NORVIK BANKA - Project Manager at Corporate Customer Service</h3>
+                <h4>2004 – 05/2015</h4>
+                <p class="frontend-tools">Relationship Management, KYC, Lending, Financial Analysis, Credit
+                    Restructuring</p>
+                <ul>
+                    <li>Providing services, related with crediting, to existing and prospective customers (residents and
+                        non-residents of the Republic of Latvia).</li>
+                    <li>Evaluating the creditworthiness of potential customers, including evaluation of business plans,
+                        planned cash flows, analyzing of financial statements.</li>
+                    <li>Preparation of credit memo and presentation of projects at credit committee, for their approval.
+                    </li>
+                    <li>Participation in problem credit management, including collateral recovery, enforcement of
+                        guarantees
+                        and collection.</li>
+                </ul>
+                <h3>AS BALTIC INTERNATIONAL BANK – VIP banker</h3>
+                <h4>2002 – 2004</h4>
+                <p class="frontend-tools">Relationship management, KYC</p>
+                <ul>
+                    <li>Advise customers on bank services.</li>
+                    <li>Manage customer bank accounts: open, close and oversee transactions.</li>
+                    <li>Resolve issues with banking services and accounts.</li>
+                    <li>Present financial products and services to existing and potential customers.</li>
+                </ul>
         </section>
         <!-- /WORK EXPERIENCE -->
 
-        <hr />
         <!-- EDUCATION -->
         <section id="education">
             <h2>Education</h2>
-            <p>Latvia University of Life Sciences and Technologies (LLU), Jelgava – Bachelor's degree <em>2014 –
-                    2018</em></p>
-            <p> Jelgava State Gymnasium nr. 1, Jelgava <em>2007 – 2010</em></p>
+            <p>Riga Technical University, Riga – Master of Science in Economics <em>1998 – 2000</em></p>
+            <p>Riga Technical University, Riga - Bachelor of Engineering Economics <em>1995 – 1998</em></p>
         </section>
         <!-- EDUCATION -->
 
-        <hr />
-        <!-- SKILLS -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>Riga Technical University, Riga – Master of Science in Economics, <em>1998 – 2000</em></p>
-            <p>Riga Technical University, Riga - Bachelor of Engineering Economics, <em>1995 – 1998</em></p>
-        </section>
-        <!-- SKILLS -->
-
-        <hr />
         <!-- FAQ -->
         <section id="faq">
             <h2>FAQ</h2>
@@ -109,7 +110,8 @@
                 <summary>My hobbyies?</summary>
                 <ul>
                     <li>Travelling</li>
-                    <li>Reading books/li>
+                    <li>Reading books
+                    <li>
                     <li>Riding two-wheele vehicles (bicycle, e-scooter, motorbike)</li>
                     <li>Classical music</li>
                 </ul>
@@ -125,9 +127,8 @@
                 </iframe>
             </details>
         </section>
-        <!-- LANGUAGES -->
+        <!-- FAQ -->
 
-        <hr />
         <!-- LANGUAGES -->
         <section id="languages">
             <h2>Languages</h2>
@@ -140,23 +141,20 @@
         </section>
         <!-- LANGUAGES -->
 
-        <hr />
         <!-- CONTACT FORM -->
         <section id="contactme">
             <h2>Contact me </h2>
+            <form class="contact-me-input-form" action="action_page.php">
+                <input class="contact-me-input" type="text" id="firstname" name="firstname" placeholder="Your name.."
+                    style="width: 200px;">
 
-            <form action="action_page.php">
-                <input type="text" id="firstname" name="firstname" placeholder="Your name.." style="width: 200px;">
-                <br /><br />
+                <input class="contact-me-input" type="text" id="company" name="lastname" placeholder="Company name.."
+                    style="width: 200px;">
 
-                <input type="text" id="company" name="lastname" placeholder="Company name.." style="width: 200px;">
-                <br /><br />
-
-                <textarea id="subject" name="subject" placeholder="Write something.."
+                <textarea class="contact-me-text-area" id="subject" name="subject" placeholder="Write something.."
                     style="width: 200px; height:100px"></textarea>
-                <br /><br />
 
-                <input type="submit" value="Submit">
+                <input class="contact-me-submit-btn" type="submit" value="Submit">
             </form>
         </section>
         <!-- CONTACT FORM -->
