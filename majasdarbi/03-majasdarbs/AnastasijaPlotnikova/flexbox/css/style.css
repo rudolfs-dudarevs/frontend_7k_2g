@@ -1,0 +1,27 @@
+body * + * { margin-top: 1.5em;}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  min-height: 500px;
+  background-color: grey;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.flex-container > div {
+  background-color: lightgrey;
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  padding: 20px;
+  font-size: 30px;
+}
+.flex-container > div:nth-child(1){
+  align-content: stretch;
+}
