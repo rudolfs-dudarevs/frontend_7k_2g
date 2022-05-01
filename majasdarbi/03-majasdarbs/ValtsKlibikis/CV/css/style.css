@@ -26,6 +26,7 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     font-size:20px;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -37,6 +38,7 @@ h2{
     margin-right:10vw;
     font-size:22px;
     font-family: 'Roboto Slab', serif;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 div.navdiv{
     width: 100px;
