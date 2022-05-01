@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <h2>Reģistrācijas forma</h2>
+  <form action="/action_page.php">
+    <label for="name">Ievietot vārdu:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="password">Ievietot paroli:</label><br>
+    <input type="text" id="password" name="password">
+    <form action="/action_page.php">
+      <form>
+        <fieldset>
+          <legend>Informācija par sevi</legend>
+          <h4>Dzimums</h4>
+          <form action="/action_page.php">
+            <input type="radio" id="vīrietis" name="dzimums" value="vīrietis"> <label for="vīrietis">vīrietis</label><br>
+            <input type="radio" id="sieviete" name="dzimums" value="sieviete"> <label for="sieviete">sieviete</label><br>
+            <form action="/action_page.php">
+              <label for="birthday">dzimšanas datums:</label> <input type="date" id="birthday" name="birthday">
+              <h4>Adrese</h4>
+              <form action="/action_page.php">
+                <input list="adrese" name="adrese"> <datalist id="adrese">
+                  <option value="Rīga">
+                  </option>
+                  <option value="Jelgava">
+                  </option>
+                  <option value="Cēsis">
+                  </option>
+                </datalist>
+              </form>
+            </form>
+          </form>
+        </fieldset>
+      </form>
+      <form action="/action_page.php">
+        <form>
+          <fieldset>
+            <legend>Jūsu hobbies</legend>
+            <p>Jūs varat izvēlēties jebkuru hobiju skaitu</p><input type="checkbox" id="hobijs" name="hobijs" value="Ceļojumi"> <label for="hobijs">Ceļojumi</label><br>
+            <input type="checkbox" id="hobijs" name="hobijs" value="Programmēšana"> <label for="hobijs">Programmēšana</label><br>
+            <input type="checkbox" id="hobijs" name="hobijs" value="Zīmēt"> <label for="hobijs">Zīmēt</label><br>
+            <input type="checkbox" id="hobijs" name="hobijs" value="Spēlēt mūzikas instrumentus"> <label for="hobijs">Spēlēt mūzikas instrumentus</label><br>
+          </fieldset>
+        </form>
+        <form action="/action_page.php">
+          <form>
+            <fieldset>
+              <legend>Jūsu vecums</legend>
+              <p>Lūdzu, norādiet savu vecumu:</p><input type="number" id="quantity" name="quantity" min="18" max="100" step="1" value="18">
+            </fieldset>
+          </form>
+        </form>
+      </form>
+    </form>
+    <p></p>
+    <form action="/action_page.php">
+      <input type="submit" value="Sūtīt">
+    </form>
+  </form>
+</body>
+</html>
