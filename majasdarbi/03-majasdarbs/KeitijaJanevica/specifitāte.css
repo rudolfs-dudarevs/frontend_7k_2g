@@ -36,7 +36,7 @@ p .class {
     atkariba no specifitātes
 */
 
-(p em) /* > */ (p.class) 
-(#m_d) /* zīme */ (em.m_cl)
-(div p#my_id span) /* zīme */ (div[title*="City"] span#s_id) 
-(div>div.my_class p[contenteditable].red_color span:hover) /* zīme */ (div p+div[title="css"] p.green_color span) 
+(p em) /* < */ (p.class) 
+(#m_d) /* > */ (em.m_cl)
+(div p#my_id span) /* < */ (div[title*="City"] span#s_id) 
+(div>div.my_class p[contenteditable].red_color span:hover) /* < */ (div p+div[title="css"] p.green_color span) 
