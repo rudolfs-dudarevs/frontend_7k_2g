@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Forma</title>
+    </head>
+    <body>
+        <header>
+            <h1>Reģistrācijas forma</h1>
+        </header>
+        
+        <p>
+        <form action="/" method="GET"> 
+            <p>
+            <fieldset>
+                <label>Ievietot vārdu:</label>
+                <input name="name" type="text" required/>
+                <label>Ievietot paroli:</label>
+                <input name="password" type="password" required/>
+            </fieldset>
+            </p>
+
+            <p>
+            <fieldset>
+                <legend><mark>Informācija par sevi</mark></legend>
+                
+                <p>
+                    <label><strong>Dzimums</strong></label><br><br/>
+                    <input name="Gender" type="radio"/>
+                    <label>vīrietis</label><br>
+                    <input name="Gender" type="radio"/>
+                    <label>sieviete</label>
+                </p>
+
+                <p>
+                <label>Dzimšanas datums:</label>                
+                <input name="date" type="date"/>               
+                </p>
+
+                <label><strong>Adrese</strong></label><br><br/>
+                <label>Jūsu pilsēta:</label>                
+                <select name="city" type="list">
+                    <option value="riga">Rīga</option>
+                    <option value="valmiera">Valmiera</option>
+                    <option value="liepaja">Liepāja</option>
+                    <option value="daugavpils">Daugavpils</option>
+                    <option value="jurmala">Jūrmala</option>
+                    <option value="ventspils">Ventspils</option>
+                    <option value="cita">cita</option>
+                </select>
+
+            </fieldset>
+            </p>
+
+            <p>
+            <fieldset>
+                <legend><mark>Jūsu hobiji</mark></legend>
+                <table>
+                    <tr>
+                        <label>Jūs varat izvēlēties jebkuru hobiju skaitu</label><br>
+                        <td>
+                            <input name="hobby" type="checkbox"/>
+                            <label>Ceļojumi</label>
+                        </td>
+                        <td>
+                            <input name="hobby" type="checkbox"/>
+                            <label>Programmēšana</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="hobby" type="checkbox"/>
+                            <label>Zīmēt</label>
+                        </td>
+                        <td>
+                            <input name="hobby" type="checkbox"/>
+                            <label>Spēlēt mūzikas instrumentus</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            </p>
+
+            <p>
+            <fieldset>
+                <legend><mark>Jūsu sapņu mājoklis</mark></legend>
+                <label>Kur Jūs vēlētos dzīvot? Ja jau dzīvojat savā sapņu mājoklī, atzīmējiet to.</label><br>
+                <input name="home" type="radio"/>
+                <label>dzīvoklis pilsētā</label><br/>
+                <input name="home" type="radio"/>
+                <label>privātmāja pilsētā</label><br/>
+                <input name="home" type="radio"/>
+                <label>privātmāja laukos</label>
+            </fieldset>
+            </p>
+
+        </form>
+        </p>
+
+        <button type="submit">Sūtīt</button>
+
+    </body>
+
+
+</html>

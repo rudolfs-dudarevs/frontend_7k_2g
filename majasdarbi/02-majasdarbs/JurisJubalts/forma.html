@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Juris Jubalts"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Forma</title>   
+    </head>
+    <body>
+        <form action="/" method="GET">
+            <fieldset>
+                <label>Ievietot vārdu:</label>
+                <input type="text"/>
+                <label>Ievietot paroli</label>
+                <input type="password"/>
+            </fieldset>
+
+            <fieldset>
+                <legend><mark>Informācija par sevi</mark></legend>
+                <h4>Dzimums</h4>
+                <input type="radio" id="male" value="Vīrietis"/>
+                <label for="male">Vīrietis</label><br/>
+                <input type="radio" id="female" value="Sieviete"/>
+                <label for="female">Sieviete</label><br/><br/>
+                <label>Dzimšanas datums</label>
+                <input type="date"/>
+                <h4>Adrese</h4>
+                <label for="city">Jūsu pilsēta</label>
+                <input list="city"/>
+                <datalist id="city">
+                    <option value="Riga">
+                    <option value="Jelgava">
+                </datalist>             
+            </fieldset>
+
+            <fieldset>
+                <legend><mark>Jūsu hobiji</mark></legend>
+                <label>Jūs varat izvēlēties jebkuru hobiju skaitu</label>
+                <div>
+                    <input type="checkbox" id="travel" name="travel"/>
+                    <label for="travel">Ceļošana</label>
+                    <input type="checkbox" id="movies" name="movies"/>
+                    <label for="movies">Kino</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sport" name="sport"/>
+                    <label for="sport">Fitness</label>
+                    <input type="checkbox" id="food" name="food"/>
+                    <label for="food">Ēst gatavošana</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><mark>Pievienojamā informācija</mark></legend>
+                <div>
+                    <label for="picture">Pievienojat foto:</label>
+                    <input type="file" id="picture" name="picture" accept="image/png, image/jpg"/>
+                </div>
+                <div>
+                    <label for="textdoc">Pievienojat aprakstu:</label>
+                    <input type="file" id="textdoc" name="textdoc" accept=".doc, .docx"/>
+                </div>
+            </fieldset>
+
+            <button type="button">Sūtīt</button>
+            
+        </form>
+
+    </body>
+</html>

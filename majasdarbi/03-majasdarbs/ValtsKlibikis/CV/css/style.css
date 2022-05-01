@@ -1,0 +1,115 @@
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: #D2D2D2;
+}
+h2{
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 5px;
+    color: #112D32 ;
+}
+.padding{
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:15px;
+}
+.margin-left{
+    margin-left: 40px;
+}
+
+/* Main block */
+.block{
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right:10vw;
+    background-image: url('https://img.freepik.com/free-vector/abstract-network-connection-dots-lines-background_120542-29.jpg?w=996');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:20px;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Navigation items*/
+.navblock{
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right:10vw;
+    font-size:22px;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+div.navdiv{
+    width: 100px;
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-grow:1;
+    flex-shrink: 1;
+    background-color: #112D32 ;
+}
+div.navdiv:hover {
+    background-color: #254E58;
+    color: white;
+  }
+.navbar{
+    height: 50px;
+    width:100%;
+    overflow:hidden;
+    display: flex;
+    align-items: stretch;
+}
+a.navigation{
+    color: #acc0c1;
+    font-weight: bold;
+    text-decoration: none;
+    display:flex;
+    flex-grow:1;
+    height: 100%;
+}
+/* ^^^ Navigation items ^^^ */
+
+/* About me section */
+.aboutme{
+    color: #646464;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 10px;
+}
+.flexbox{
+    display:flex;
+    align-items:space-between;
+    justify-content: space-between;
+}
+#soon{
+    color: #646464;
+    font-size: 17px;
+    margin-left: 370px;
+    margin-top:0;
+}
+.gray{
+    color:#404040
+}
+ 
+/* Contacts section in about me section */
+.flexbox-left{
+    display:flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* Not used. Meant for contacts section, alternative look */
+.flexbox-right{
+    display:flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+
+  
