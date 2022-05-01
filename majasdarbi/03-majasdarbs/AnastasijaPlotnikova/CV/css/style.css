@@ -4,8 +4,14 @@
   box-sizing: border-box;
 }
 
+:root {
+     --text-color: #ffffff;
+     --title-color: #000000;
+}
+
 body {
   background: #f5f7fa;
+  color:var(--text-color);
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 40px;
@@ -14,7 +20,7 @@ body {
 }
 
 .wrapper {
-  background: #ffffff;
+  background: var(--text-color);
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -28,61 +34,44 @@ body {
   padding-bottom: 40px;
 }
 
-.my-photo {
+.sidebar__photo {
   width: 370px;
 }
 
-.about-me-container {
-  padding-bottom: 110px;
-  padding-top: 110px;
-  padding-right: 90px;
-  padding-left: 90px;
-}
-
-.contact-container {
+.sidebar__contact {
   margin-top: 60px;
   margin-right: 40px;
   margin-left: 40px;
 }
 
-.contacts-title {
-  color: #ffffff;
+.sidebar__title {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 20px;
 }
 
-.contacts-link-type {
-  color: #ffffff;
+.sidebar__contact-type {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
   margin-right: 10px;
 }
 
-.contacts-link {
+.sidebar__contact-link {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: #7d838c;
 }
 
-.tech-skills-container {
+.sidebar__container {
   margin-top: 55px;
   margin-right: 40px;
   margin-left: 40px;
 }
 
-.tech-skills-title {
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 20px;
-}
-
-.tech-skill-item {
+.sidebar__item {
   color: #ff6b08;
   font-size: 14px;
   font-weight: 400;
@@ -90,96 +79,92 @@ body {
   margin-left: 15px;
 }
 
-.tech-skill-text {
+.sidebar__text--white {
   color: #dddee1;
 }
 
-.soft-skills-container {
-  margin-top: 55px;
-  margin-right: 40px;
-  margin-left: 40px;
+.myself {
+  padding-bottom: 110px;
+  padding-top: 110px;
+  padding-right: 90px;
+  padding-left: 90px;
 }
 
-.soft-skills-title {
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 20px;
+.myself__margin {
+  margin-bottom: 65px;
 }
 
-.soft-skill-item {
-  color: #ff6b08;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-left: 15px;
-}
-
-.soft-skill-text {
-  color: #dddee1;
-}
-
-.profession {
+.myself__profession {
+  color: var(--title-color);
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.name {
+.myself__name {
+  color: var(--title-color);
   font-size: 45px;
   font-weight: 700;
   line-height: 89px;
 }
 
-.description {
+.myself__description {
   color: #595959;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.info-container {
-  margin-bottom: 65px;
+.projects {
+  margin-bottom: 55px;
 }
 
-.about-me-title {
+.projects__title {
+  color: var(--title-color);
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 10px;
 }
 
-.projects-link {
-  color: #595959;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.tech-name {
-  color: #595959;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.dots {
-  color: #a8a8a8;
-  font-weight: 100;
-}
-
-.projects-item {
+.projects__item {
   font-weight: 700;
   margin-left: 18px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dotted #595959;
 }
 
-.projects-container {
-  margin-bottom: 55px;
+.projects__link {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+  bottom: -7px;
+  background: var(--text-color);
 }
 
-.profession-title {
-  color: #000000;
+.projects__link-description {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+  bottom: -9px;
+  background: var(--text-color);
+}
+
+.experience {
+  color: var(--title-color);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.experience__title {
+  color: var(--title-color);
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -187,11 +172,12 @@ body {
   margin-bottom: 10px;
 }
 
-.profession-place {
+.experience__place {
   color: #ff6b08;
 }
 
-.profession-period {
+.experience__period,
+.education__period {
   color: #a8a8a8;
   font-size: 12px;
   font-weight: 400;
@@ -199,25 +185,34 @@ body {
   margin-bottom: 20px;
 }
 
-.profession-divider {
-  color: black;
+.experience__divider,
+.education__divider {
+  color: var(--title-color);
   margin-left: 8px;
   margin-right: 8px;
 }
 
-.profession-duties {
+.experience__duties {
   margin-top: 8px;
   margin-bottom: 30px;
 }
 
-.profession-duties-text {
+.experience__duties-text {
   color: #595959;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.education-place {
+.education {
+  color: var(--title-color);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.education__place {
   color: #ff6b08;
   font-size: 16px;
   font-weight: 700;
@@ -226,8 +221,8 @@ body {
   margin-top: 10px;
 }
 
-.education-name {
-  color: #000000;
+.education__name {
+  color: var(--title-color);
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
