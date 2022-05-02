@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Valts Klibikis | Front end developer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/style.css">
+     
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="container-fluid">
+        <div class="row"> <!--ex navblock and navdiv "div" classes, a class - navigation-->
+                <div class="col-sm-6 col-lg-2 bg-nav text-center"><a class=text-nav href="#work-experience">Work experience</a></div>
+                <div class="col-sm-6 col-lg-2 bg-nav2 text-center"><a class=text-nav href="#education">Education</a> </div>
+                <div class="col-sm-6 col-lg-2 bg-nav text-center"><a class=text-nav href="#skills">Skills</a></div>
+                <div class="col-sm-6 col-lg-2 bg-nav2 text-center"><a class=text-nav href="#faq">FAQ</a></div>
+                <div class="col-sm-6 col-lg-2 bg-nav text-center"><a class=text-nav href="#languages">Languages</a></div>
+                <div class="col-sm-6 col-lg-2 bg-nav2 text-center"> <a class=text-nav href="#contactme">Contact me</a></div>
+        </div>
+    </div>
+    <!--Navigation bar end-->
+
+    <!--content block-->
+    <div class="block">
+
+        <main>
+            <!-- ABOUT ME -->
+            <section id="aboutme">
+                <div class="flexbox padding">
+                    <div> 
+                        <picture>
+                            <source media="(min-width:1200px)" scrset="./css/image.jpg">
+                            <img src="./css/image2.jpg">
+                        </picture>
+                    </div>  
+                    <div class="margin-left">
+                        <h2>Valts Klibikis | Frontend developer</h2>
+                        <p id="soon">...soon to be</p></br></br></br>
+                        <div class="gray flexbox">
+                            <p>This is my more or less IT based CV, so I will indicate my IT skills, experience and visions
+                            here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexbox-left">
+                    <div class="aboutme">Contact me:</div>
+                    <a class="aboutme" href="tel:+37128748221"><i class="material-icons"
+                            style="font-size:18px">phone_iphone</i>+371 28748221</a><br />
+                    <a class="aboutme" href="mailto:vklibikis@gmail.com"><i class="material-icons"
+                            style="font-size:18px">mail</i>vklibikis@gmail.com</a><br />
+                    <a class="aboutme" href="#contactme"><i class="material-icons"
+                            style="font-size:18px">contact_mail</i>Contact form</a>
+                </div>
+            </section>
+            <!-- /ABOUT ME -->
+
+            <hr />
+            <!-- WORK EXPERIENCE -->
+            <section id="work-experience" class="padding">
+                <h2>Work experience</h2>
+                <ul>
+                    <li>6 month at Accenture as DevOps intern - my first IT experience</li>
+                </ul>
+            </section>
+            <!-- /WORK EXPERIENCE -->
+
+            <hr />
+            <!-- EDUCATION -->
+            <section id="education" class="padding">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        Proffessional bachelor’s degree in Transport electronics and telematics at Riga Technical
+                        University (RTU) <em>2014 – 2018</em>
+                    </li>
+                    <li>
+                        Neretas Jāņa Jaunsudrabiņa secondary school - secondary education <em>2002 - 2014</em>
+                    </li>
+                </ul>
+            </section>
+            <!-- EDUCATION -->
+
+            <!-- FAQ -->
+            <section id="faq" class="padding">
+                <h2>FAQ</h2>
+                <details>
+                    <summary>My hobbies.</summary>
+                    <ul>
+                        <li>Folk dancing</li>
+                        <li>Volleyball</li>
+                        <li>All kinds of board sports</li>
+                        <li>Cars</li>
+                    </ul>
+                </details>
+                <br />
+                <details>
+                    <summary>My favorite playlist</summary>
+                    <br />
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/5znz1LJPrfBVmyY4C6U1x9?utm_source=generator"
+                        width="100%" height="380" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                    </iframe>
+                </details>
+            </section>
+            <!-- LANGUAGES -->
+
+            <hr />
+            <!-- LANGUAGES -->
+            <section id="languages" class="padding">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Latvian (native)</li>
+                    <li>English (fluent)</li>
+                    <li>Russian (beginner)</li>
+                </ul>
+            </section>
+            <!-- LANGUAGES -->
+
+            <hr />
+            <!-- CONTACT FORM -->
+            <section id="contactme" class="padding">
+                <h2>Contact me </h2>
+
+                <form action="action_page.php">
+                    <input type="text" id="firstname" name="firstname" placeholder="Your name.." style="width: 200px;">
+                    <br /><br />
+
+                    <input type="text" id="company" name="lastname" placeholder="Company name.." style="width: 200px;">
+                    <br /><br />
+
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="width: 200px; height:100px"></textarea>
+                    <br /><br />
+
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+            <!-- CONTACT FORM -->
+        </main>
+    </div>
+</body>
+
+</html>

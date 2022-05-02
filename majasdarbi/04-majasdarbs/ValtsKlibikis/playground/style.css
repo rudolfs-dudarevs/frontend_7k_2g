@@ -1,0 +1,32 @@
+.container{
+    width:80%;
+    height: 30vh;
+    display:flex;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.div3{
+    width:33.3%;
+}
+.div2{
+    width:50%;
+    height:50%;
+}
+.div1{
+    width:100%;
+    height:50%;
+}
+.div-small{
+    width:100%;
+    height:5%;
+}
