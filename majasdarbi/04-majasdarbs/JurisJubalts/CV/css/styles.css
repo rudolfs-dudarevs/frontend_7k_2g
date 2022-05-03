@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    #work-experience {
+        background-image: url(../images/pexels-pixabay-268533.jpg);
+        background-size: cover;
+    } 
+}
+
+@media (min-width: 769px) {
+    #work-experience {
+        background-image: url(../images/pexels-bri-schneiter-346529.jpg);
+        background-size: cover;
+    }
+}
