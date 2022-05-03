@@ -4,25 +4,42 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+  max-width: 75%;
+  margin: auto;
+}
+
+/* Helper classes */
+.container {
+  display: flex;
+  margin-top: 2rem;
+  box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.41);
+  gap: 2rem;
+}
+
 /* Header */
 header {
+  padding: 2rem 0 2rem;
+}
+
+.main-nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #023047;
-  height: 3.5rem;
+  justify-content: space-between;
 }
 
 .main-nav-list {
   display: flex;
   list-style: none;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .main-nav-link > a {
+  color: #6c757d;
   text-decoration: none;
-  color: #fff;
+  cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -30,33 +47,232 @@ header {
 }
 
 .main-nav-link > a:hover {
-  color: #8ecae6;
+  text-decoration: underline;
+  color: #495057;
 }
 
 /* About me */
-#about-me {
+
+#intro {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: #8ecae6;
-  padding-top: 3rem;
+  align-items: center;
+  background-image: url(../img/building.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.41);
 }
-#about-me > img {
+
+#intro > img {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   border-radius: 50%;
-  width: 12rem;
-  margin-bottom: 2rem;
+  max-width: 10rem;
+  height: auto;
 }
 
-#about-me > h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
+#intro > h1 {
+  font-size: 2.4rem;
+  padding-bottom: 0.8rem;
+  color: #fff;
 }
 
-#about-me > p {
+#intro > h3 {
   font-size: 1.2rem;
-  line-height: 1.5;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+
+.intro-logo {
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0.3rem;
+  padding-bottom: 2rem;
+}
+
+.intro-button {
+  border: 3px solid #fff;
+  margin: 3rem 0 3rem;
+  border-radius: 5%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.8rem 2.4rem;
   text-align: center;
-  margin-bottom: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s 0s linear;
+  color: #fff;
+}
+
+.intro-button:visited {
+  color: #fff;
+}
+.intro-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 21px 5px rgba(231, 226, 226, 0.65);
+}
+/* About me */
+
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2rem 1.8rem 2rem;
+}
+
+.about-me-text > h3,
+.about-me-bio > h3 {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+  color: #495057;
+}
+
+.about-me-text > p {
+  font-size: 1.2rem;
+  color: #495057;
+  line-height: 1.8rem;
+}
+
+.about-me-bio {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2rem 0.4rem 2rem;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.bio-placement {
+  display: flex;
+  gap: 4.2rem;
+}
+
+.bio-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Skills */
+
+.skills-container {
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.skills-container > h3 {
+  font-size: 2.4rem;
+  margin: 2rem 1.8rem 0 2rem;
+  color: #495057;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2rem 0.6rem 0.6rem 2rem;
+}
+
+.skills-bar {
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.css {
+  background-color: #a2d2ff;
+  width: 70%;
+  animation: css-anim 2s;
+}
+
+.html {
+  background-color: #a2d2ff;
+  width: 85%;
+  animation: html-anim 2s;
+}
+
+.js {
+  background-color: #a2d2ff;
+  width: 50%;
+  animation: js-anim 2s;
+}
+
+@keyframes js-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes css-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes html-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+/* Work experience */
+
+.work-exp,
+.education {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-exp > h3,
+.education > h3 {
+  font-size: 2.4rem;
+  margin: 2rem 1.8rem 0 2rem;
+  color: #495057;
+}
+
+.work-exp-list,
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+}
+
+.work-exp-list {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+  transition: all 0.3s 0s linear;
+}
+
+/* Contact form */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact > h3 {
+  font-size: 2.4rem;
+  margin: 2rem 1.8rem 0 2rem;
+  color: #495057;
 }

@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Curriculum vitae</title>
   </head>
@@ -11,6 +26,7 @@
     <!--Header-->
     <header>
       <nav class="main-nav">
+        <h3>Random guy</h3>
         <ul class="main-nav-list">
           <li class="main-nav-link">
             <a href="#work-experience">Work experience</a>
@@ -23,28 +39,150 @@
     </header>
     <!--Main content-->
     <main>
-      <!--About me-->
-      <section id="about-me">
+      <!--Intro-->
+      <section id="intro">
         <img src="./img/img1.jpg" alt="Random dude" />
-        <h1>Eliass Baranovs</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
-          quaerat autem mollitia tempora veritatis ducimus minima ut sint
-          maiores. Voluptate ad impedit officia alias, eum unde iste est animi?
-          Molestiae! Dicta, tempora non saepe perferendis repudiandae alias
-          magnam nesciunt maxime quia cum officia eaque commodi, quo illum,
-          aperiam eligendi ut quibusdam consequuntur. Assumenda sint nihil hic
-          enim. Minima, unde laudantium.
-        </p>
+        <h1>Random Guy</h1>
+        <h3>Front-end developer</h3>
+        <span class="social-links">
+          <a class="intro-logo" href="#"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+          <a class="intro-logo" href="#"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a class="intro-logo" href="#"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a class="intro-logo" href="#"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+        </span>
+        <a class="intro-button" href="#">Hire me</a>
       </section>
+      <!--About me-->
+      <section id="about-me" class="container">
+        <div class="about-me-text">
+          <h3>About me</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iusto
+            odio nesciunt fugit quo quod, mollitia itaque commodi qui nihil
+            maiores hic? Doloribus, ipsam dolor repellat at facere autem dolore.
+          </p>
+        </div>
+        <div class="about-me-bio">
+          <h3>Bio</h3>
+          <div class="bio-placement">
+            <div class="bio-icons">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <ion-icon name="mail-outline"></ion-icon>
+              <ion-icon name="call-outline"></ion-icon>
+              <ion-icon name="map-outline"></ion-icon>
+              <ion-icon name="logo-discord"></ion-icon>
+            </div>
+            <div class="bio-text">
+              <p>TEXT</p>
+              <p>TEXT</p>
+              <p>TEXT</p>
+              <p>TEXT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Professional skills-->
+      <div id="skills" class="container skills-container">
+        <h3>Professional skills</h3>
+        <div class="skill-list">
+          <p>HTML</p>
+          <div class="skills-bar">
+            <div id="html">85%</div>
+          </div>
+          <p>CSS</p>
+          <div class="skills-bar">
+            <div id="css">70%</div>
+          </div>
+          <p>JS</p>
+          <div class="skills-bar"><div id="js">50%</div></div>
+        </div>
+      </div>
       <!--Work experience-->
-      <section id="work-experience"></section>
+      <div class="work-exp container">
+        <h3>Work experience</h3>
+        <div class="work-exp-list active">
+          <div class="work-exp-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+          <div class="work-exp-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+          <div class="work-exp-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+        </div>
+      </div>
       <!--Education-->
-      <section id="education"></section>
-      <!--Skills-->
-      <section id="skills"></section>
-      <!--Contact-->
-      <section id="contact"></section>
+      <div class="education container">
+        <h3>Education</h3>
+        <div class="education-list">
+          <div class="education-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+          <div class="education-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+          <div class="education-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Contact form-->
+      <div class="contact container">
+        <h3>Contact me!</h3>
+        <div class="contact-form">
+          <form action="">
+            <div class="contact-form-item">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="contact-form-item">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="contact-form-item">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="contact-form-item">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
