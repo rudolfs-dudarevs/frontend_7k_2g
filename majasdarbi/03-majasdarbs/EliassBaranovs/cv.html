@@ -12,6 +12,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./js/app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -60,7 +61,7 @@
         <a class="intro-button" href="#">Hire me</a>
       </section>
       <!--About me-->
-      <section id="about-me">
+      <section id="about-me" class="container">
         <div class="about-me-text">
           <h3>About me</h3>
           <p>
@@ -89,11 +90,99 @@
         </div>
       </section>
       <!--Professional skills-->
-      <section id="skills"></section>
-      <!--Skills-->
-      <section id="skills"></section>
-      <!--Contact-->
-      <section id="contact"></section>
+      <div id="skills" class="container skills-container">
+        <h3>Professional skills</h3>
+        <div class="skill-list">
+          <p>HTML</p>
+          <div class="skills-bar">
+            <div id="html">85%</div>
+          </div>
+          <p>CSS</p>
+          <div class="skills-bar">
+            <div id="css">70%</div>
+          </div>
+          <p>JS</p>
+          <div class="skills-bar"><div id="js">50%</div></div>
+        </div>
+      </div>
+      <!--Work experience-->
+      <div class="work-exp container">
+        <h3>Work experience</h3>
+        <div class="work-exp-list active">
+          <div class="work-exp-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+          <div class="work-exp-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+          <div class="work-exp-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Education-->
+      <div class="education container">
+        <h3>Education</h3>
+        <div class="education-list">
+          <div class="education-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+          <div class="education-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+          <div class="education-item">
+            <h4>Company name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quisquam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Contact form-->
+      <div class="contact container">
+        <h3>Contact me!</h3>
+        <div class="contact-form">
+          <form action="">
+            <div class="contact-form-item">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="contact-form-item">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="contact-form-item">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="contact-form-item">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

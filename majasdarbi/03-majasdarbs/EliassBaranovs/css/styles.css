@@ -11,6 +11,14 @@ html {
   margin: auto;
 }
 
+/* Helper classes */
+.container {
+  display: flex;
+  margin-top: 2rem;
+  box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.41);
+  gap: 2rem;
+}
+
 /* Header */
 header {
   padding: 2rem 0 2rem;
@@ -25,7 +33,7 @@ header {
   display: flex;
   list-style: none;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .main-nav-link > a {
@@ -95,6 +103,7 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s 0s linear;
+  color: #fff;
 }
 
 .intro-button:visited {
@@ -105,13 +114,6 @@ header {
   box-shadow: 0px 0px 21px 5px rgba(231, 226, 226, 0.65);
 }
 /* About me */
-
-#about-me {
-  display: flex;
-  margin-top: 2rem;
-  box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.41);
-  gap: 4.8rem;
-}
 
 .about-me-text {
   display: flex;
@@ -157,4 +159,120 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
+
+/* Skills */
+
+.skills-container {
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.skills-container > h3 {
+  font-size: 2.4rem;
+  margin: 2rem 1.8rem 0 2rem;
+  color: #495057;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2rem 0.6rem 0.6rem 2rem;
+}
+
+.skills-bar {
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.css {
+  background-color: #a2d2ff;
+  width: 70%;
+  animation: css-anim 2s;
+}
+
+.html {
+  background-color: #a2d2ff;
+  width: 85%;
+  animation: html-anim 2s;
+}
+
+.js {
+  background-color: #a2d2ff;
+  width: 50%;
+  animation: js-anim 2s;
+}
+
+@keyframes js-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes css-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes html-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+/* Work experience */
+
+.work-exp,
+.education {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-exp > h3,
+.education > h3 {
+  font-size: 2.4rem;
+  margin: 2rem 1.8rem 0 2rem;
+  color: #495057;
+}
+
+.work-exp-list,
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+}
+
+.work-exp-list {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+  transition: all 0.3s 0s linear;
+}
+
+/* Contact form */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact > h3 {
+  font-size: 2.4rem;
+  margin: 2rem 1.8rem 0 2rem;
+  color: #495057;
 }
