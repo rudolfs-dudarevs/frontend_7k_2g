@@ -1,25 +1,23 @@
-html, body {
+* {
+    margin: 0;
+}
+
+html,
+body,
+.container {
     height: 100%;
 }
 
 .container {
     display: flex;
-    height: 100%;
-    text-align: center;
-    color: white;
-    font-weight: bold;
 }
 
 .item {
-    display: inline-block;
+    margin: 0 15px;
+    padding: 20% 20px 0;
     background-color: aquamarine;
-    padding-top: 20%;
-    /* margin: 0 15px; */
+    
 }
-/* 
-.item:nth-child(even) {
-    background-color: blueviolet;
-} */
 
 .col-1 {
     width: 8.33%
