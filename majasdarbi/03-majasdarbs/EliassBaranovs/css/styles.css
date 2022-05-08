@@ -119,7 +119,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 2rem 1.8rem 2rem;
+  padding: 2rem 1.8rem 2rem;
 }
 
 .about-me-text > h3,
@@ -139,7 +139,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 2rem 0.4rem 2rem;
+  padding: 2rem 0.4rem 2rem;
   gap: 0.8rem;
   font-size: 1.2rem;
 }
@@ -162,48 +162,76 @@ header {
 }
 
 /* Skills */
-
 .skills-container {
+  display: flex;
   flex-direction: column;
-  gap: 1.2rem;
 }
 
 .skills-container > h3 {
   font-size: 2.4rem;
-  margin: 2rem 1.8rem 0 2rem;
+  padding: 2rem 1.8rem 0 2rem;
   color: #495057;
 }
 
-.skill-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  padding: 2rem 0.6rem 0.6rem 2rem;
+.skills-left,
+.skills-right {
+  width: 50%;
+  padding: 1.2rem;
 }
 
-.skills-bar {
+.skill-item {
+  padding: 1.2rem;
+}
+
+.skills-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.skill-bar {
   width: 100%;
-  background-color: #e9ecef;
-  border-radius: 13px;
+  background-color: #ddd;
   text-align: center;
 }
 
+.skill {
+  background-color: red;
+}
+
 .css {
-  background-color: #a2d2ff;
+  background-color: #cdb4db;
   width: 70%;
   animation: css-anim 2s;
 }
 
 .html {
-  background-color: #a2d2ff;
-  width: 85%;
+  background-color: #cdb4db;
+  width: 90%;
   animation: html-anim 2s;
 }
 
 .js {
-  background-color: #a2d2ff;
-  width: 50%;
+  background-color: #cdb4db;
+  width: 40%;
   animation: js-anim 2s;
+}
+
+.ps {
+  background-color: #bde0fe;
+  width: 90%;
+  animation: ps-anim 2s;
+}
+
+.figma {
+  background-color: #bde0fe;
+  width: 60%;
+  animation: figma-anim 2s;
+}
+
+.sketch {
+  background-color: #bde0fe;
+  width: 70%;
+  animation: sketch-anim 2s;
 }
 
 @keyframes js-anim {
@@ -211,7 +239,7 @@ header {
     width: 0;
   }
   to {
-    width: 50%;
+    width: 40%;
   }
 }
 @keyframes css-anim {
@@ -227,10 +255,36 @@ header {
     width: 0;
   }
   to {
-    width: 85%;
+    width: 90%;
   }
 }
 
+@keyframes ps-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes sketch-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes figma-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
 /* Work experience */
 
 .work-exp,
@@ -242,7 +296,7 @@ header {
 .work-exp > h3,
 .education > h3 {
   font-size: 2.4rem;
-  margin: 2rem 1.8rem 0 2rem;
+  padding: 2rem 1.8rem 0 2rem;
   color: #495057;
 }
 
@@ -267,12 +321,18 @@ header {
 /* Contact form */
 
 .contact {
-  display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .contact > h3 {
   font-size: 2.4rem;
-  margin: 2rem 1.8rem 0 2rem;
+  padding: 2rem 1.8rem 0 2rem;
   color: #495057;
 }
