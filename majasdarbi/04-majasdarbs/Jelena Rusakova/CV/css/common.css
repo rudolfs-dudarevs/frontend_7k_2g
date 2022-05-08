@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway=swap');
+@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911=swap');
+
+body {
+    font-family: 'Goudy+Bookletter+1911', 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color: var(--font-main-color);
+    background-color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', cursive;
+    flex-basis: auto;
+}
+
+h1 {
+    padding: 20px 20px;
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--font-hover-color);
+}
+
+h2 {
+    padding: 20px 20px;
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--font-hover-color);
+}
+
+h3 {
+    font-size: 2em;
+    padding: 20px 0px;
+}
+
+h4 {
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+p {
+    color: var(--text-color);
+}
+
+section {
+    background-color: var(--color-black);
+    padding: 0 20% 30px 20%;
+}
