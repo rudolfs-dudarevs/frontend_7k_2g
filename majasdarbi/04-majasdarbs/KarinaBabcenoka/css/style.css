@@ -1,0 +1,175 @@
+body {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    border-top: 1px solid #ffd617; 
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin-top: 12px;
+}
+
+.navbar-menu li {
+    display: inline;
+    
+}
+
+.navbar-menu li:after {
+    content: "\007C";
+    color: #dfdbdb;
+    position: relative;
+    padding-left: 5px;
+}
+
+.navbar-menu li:last-child::after {
+    content: "";
+}
+
+.navbar-link {
+    text-decoration: none;
+    color:#2660a4;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.navbar-link:hover {
+    color:#ffd617;
+}
+
+/*Menu toggle*/
+
+.nav-toggle {
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+
+    width: 30px;
+    padding: 8px 0;
+
+    position: absolute;
+    top:15px;
+    right:23px;
+    z-index: 1;
+
+    display: none;
+
+}
+
+.nav-toggle_item {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ffd617;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin:auto;
+}
+
+.nav-toggle_item::before,
+.nav-toggle_item::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ffd617;
+    position: absolute;
+    left:0;
+    z-index: 1;
+}
+
+.nav-toggle_item::before {
+    top:-6px;
+}
+
+.nav-toggle_item::after {
+    bottom:-6px;
+}
+
+
+/*ABOUT ME*/
+
+#aboutme {
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: #f5f5f5;
+
+}
+
+.card {
+    margin: 17px 34px 17px 34px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap:wrap;
+    gap: 100px;
+}
+
+.card img {
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #d2d2d2;
+    padding: 0.25rem
+}
+
+/*#aboutme h2 {
+    border-bottom: 1px solid #ffd617; 
+}*/
+
+
+@media (max-width: 1230px) {
+
+}
+
+@media (max-width: 990px) {
+
+}
+@media only screen and (max-width: 768px) {
+
+    .navbar li{
+        display: none;
+    }
+    .Personal{
+        font-size: 12px;
+    }
+    .nav-toggle {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .navbar li{
+        display: none;
+    }
+    .Personal{
+    font-size: 12px;
+}
+    .nav-toggle {
+        display: block;
+}
+}
