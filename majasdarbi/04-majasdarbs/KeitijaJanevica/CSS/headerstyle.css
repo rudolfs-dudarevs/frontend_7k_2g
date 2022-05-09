@@ -17,6 +17,7 @@ body {
     text-decoration: none;
     font-size: 22px;
     color: whitesmoke;
+    font-weight: bold;
 }
 
 .navigation-item:hover {

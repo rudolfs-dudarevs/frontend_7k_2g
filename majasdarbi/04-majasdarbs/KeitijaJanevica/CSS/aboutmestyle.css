@@ -1,0 +1,8 @@
+.aboutme-item {
+    text-decoration: none;
+    color: black;
+
+}
+.aboutme-item:hover {
+    color: white;
+}
