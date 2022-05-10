@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Quicksand:wght@600&family=Vesper+Libre&display=swap');
+
+.h1 {
+    font-family: "oooh baby";
+    font-size: 50px;
+    overflow: hidden;
+    align-content: flex-end;
+    display: inline-flex;
+    margin-top: 0%;
+    margin-bottom: -7px;
+    overflow: visible;
+    position: sticky;
+    padding-left: 55px;
+}
+
+.h2 {
+    font-family: 'Vesper Libre';
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding-left: 112px;
+    background-color: rgb(227, 241, 241);
+    margin-top: 0%;
+    margin-bottom: 2%;
+    display: inline-block;
+    letter-spacing: 10px;
+    
+}
+
+.aboutme {
+    width: 25%;
+    margin-left: 0%;
+    height: 100%;
+}
+
+.info:link {
+    text-decoration: none;
+}
+
+.img {
+    padding-left: 30px;
+    height: auto;
+    width: 50%;
+}
