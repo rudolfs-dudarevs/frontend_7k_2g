@@ -1,0 +1,48 @@
+body *+* {
+  margin-top: 1.5em;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  min-height: 500px;
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-container_element-1,
+.flex-container_element-2,
+.flex-container_element-3,
+.flex-container_element-4,
+.flex-container_element-5,
+.flex-container_element-6,
+.flex-container_element-7 {
+  background-color: lightgrey;
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.flex-container_element-1 {
+  width: 75px;
+  height: 100px;
+}
+
+.flex-container_element-2 {
+  width: 75px;
+  height: 50px;
+}
+
+.flex-container_element-3 {
+  width: 75px;
+  height: 300px;
+}

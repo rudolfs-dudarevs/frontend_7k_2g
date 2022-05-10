@@ -1,3 +1,17 @@
-.btn {
-  border: 2px solid violet;
+.row div {
+    border: 1px solid grey;
+    background-color: lavender;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: blueviolet;
+    border-radius: 15px;
+}
+
+.btn-primary:hover {
+    background-color: lightpink;
 }

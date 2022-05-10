@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+    justify-content: center
+}
+
+.header-link {
+    padding: 0 15px;
+}
+
+.header-link a {
+    text-decoration: none;
+    color: var(--font-main-color);
+    text-transform: uppercase;
+}
+
+.header-link a:hover {
+    color: var(--font-hover-color);
+}

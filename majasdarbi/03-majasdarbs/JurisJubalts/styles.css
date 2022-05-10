@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+* {
+    font-family: 'Ms Madi', cursive;
+    background-color: #D8D8D8;
+}
+
+p, a, h1 {
+    font-family: 'Libre Bodoni', serif;
+}
+
+/*navigation zonas*/
+
+.navigation {
+    display: flex;
+    height: 40px;
+    justify-content: space-around;
+    background-color: darkolivegreen;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.nav_item {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: darkolivegreen;
+}
+
+.nav_item:hover {
+    color: black;
+}
+
+/*foto pluss pluss*/
+
+h1.header_item {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img.header_item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17vw;
+    height: 17vw;
+    border-radius: 40px;
+}
+
+p.header_item {
+    font-size: 12px;
+}
+
+a.header_item {
+    text-decoration: none;
+    color:green;
+}
