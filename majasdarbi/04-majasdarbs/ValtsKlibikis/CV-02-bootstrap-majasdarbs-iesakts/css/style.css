@@ -1,44 +1,60 @@
-body{
+body {
     font-family: 'Mulish', sans-serif;
     background-color: #D2D2D2;
 }
-h2{
+
+h2 {
     font-weight: bold;
     font-style: normal;
     margin-bottom: 5px;
-    color: #112D32 ;
+    color: #112D32;
 }
-.padding{
-    padding-left:15px;
-    padding-right:15px;
-    padding-top:15px;
+
+.padding {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
 }
-.margin-left{
+
+.margin-left {
     margin-left: 40px;
 }
-.gray{
-    color:#404040
+
+.gray {
+    color: #404040
 }
 
 /* Navigation */
-.bg-nav{
-    background-color: #112D32 ;
+.bg-nav {
+    background-color: #112D32;
 }
-.bg-nav2{
-    background-color: #1c2f31 ;
+
+.bg-nav2 {
+    background-color: #1c2f31;
 }
-.bg-nav:hover, .bg-nav2:hover{
+
+.bg-nav:hover,
+.bg-nav2:hover {
     background-color: #254E58;
 }
-.text-nav{
-    font-family: 'Roboto Slab', serif; 
+
+.text-nav {
+    font-family: 'Roboto Slab', serif;
     text-decoration: none;
     color: #acc0c1;
-    text-align:center;
+    /* text-align:center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.text-nav:hover{
+
+.text-nav:hover {
     color: white;
     background-color: #254E58;
+}
+
+.nav-height-100{
+    height:100%
 }
 
 
@@ -48,78 +64,108 @@ h2{
 
 /* Main block */
 
-.block{
+.block {
     width: 80vw;
     margin-left: 10vw;
-    margin-right:10vw;
+    margin-right: 10vw;
     background-image: url('https://img.freepik.com/free-vector/abstract-network-connection-dots-lines-background_120542-29.jpg?w=996');
     background-repeat: no-repeat;
     background-size: cover;
-    font-size:20px;
+    font-size: 20px;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
 
 
 /* Navigation items */
-.navblock{
+.navblock {
     width: 80vw;
     margin-left: 10vw;
-    margin-right:10vw;
-    font-size:22px;
+    margin-right: 10vw;
+    font-size: 22px;
     font-family: 'Roboto Slab', serif;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
 
-.navbar{
+.navbar {
     height: 50px;
-    width:100%;
-    overflow:hidden;
+    width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: stretch;
 }
-a.navigation{
+
+a.navigation {
     color: #acc0c1;
     font-weight: bold;
     text-decoration: none;
-    display:flex;
-    flex-grow:1;
+    display: flex;
+    flex-grow: 1;
     height: 100%;
 }
+
 /* ^^^ Navigation items ^^^ */
 
 /* About me section */
-.aboutme{
+.aboutme {
     color: #646464;
     text-decoration: none;
     font-size: 12px;
     margin: 10px;
 }
-.flexbox{
-    display:flex;
-    flex-wrap:wrap;
-    align-items:space-between;
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
 }
-#soon{
+
+#soon {
     color: #646464;
     font-size: 17px;
-    margin-left: 50vw;
-    margin-top:0;
 }
-@media only screen and (min-width:1200px){
-    .flexbox{
-        display:flex;
-        align-items:space-between;
+
+/* Testing image sizes */
+.image-size{
+width:25%;
+}
+.not-image-size{
+    height:100%;
+    width: 65%;
+}
+
+@media only screen and (min-width:576px) {
+    .navigation-container {
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .nav-height {
+        height: 8vh;
+    }
+}
+@media only screen and (min-width:992px) {
+    .nav-height {
+        height: 5vh;
+    }
+}
+@media only screen and (min-width:1200px) {
+
+    .flexbox {
+        display: flex;
+        align-items: space-between;
         justify-content: space-between;
-    }  
-    #soon{
+    }
+
+    #soon {
         color: #646464;
         font-size: 17px;
         margin-left: 370px;
-        margin-top:0;
+        margin-top: 0;
     }
-    .aboutme{
+
+    .aboutme {
         color: #646464;
         text-decoration: none;
         font-size: 17px;
@@ -128,10 +174,10 @@ a.navigation{
 }
 
 
- 
+
 /* Contacts section in about me section */
-.flexbox-left{
-    display:flex;
+.flexbox-left {
+    display: flex;
     justify-content: flex-start;
     align-items: baseline;
     margin-top: 20px;
@@ -139,4 +185,14 @@ a.navigation{
 }
 
 
+#profile-image{
+    background-image:url("./image.jpg");
+    background-size:100% 100%;
+    width: 100%;
+    height: 100%;
+  }
   
+  @media(max-width: 768px){
+    #profile-image{
+    background-image:url("./image2.jpg");
+     }
