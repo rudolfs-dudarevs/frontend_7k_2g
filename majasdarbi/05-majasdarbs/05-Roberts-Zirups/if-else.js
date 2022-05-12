@@ -38,5 +38,3 @@ switch (new Date().getDay()) {
     case 7:
         text = "Svetdiena";
         break; 
-  default:
-    text = "Error";
