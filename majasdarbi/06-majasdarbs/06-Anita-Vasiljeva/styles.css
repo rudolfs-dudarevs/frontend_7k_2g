@@ -1,0 +1,33 @@
+body {
+    background-color: lightgrey;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quote {
+   font-size: 32px;
+   color: goldenrod;
+   margin: 20px;
+   justify-content: center;
+}
+.content {
+    font-size: 80px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 22px;
+    text-shadow: 2px 2px 5px gold;
+    margin: 20px;
+    justify-content: center;
+}
+
+#end-btn {
+    display: none;
+}
