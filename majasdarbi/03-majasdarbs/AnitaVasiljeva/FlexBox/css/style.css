@@ -1,0 +1,36 @@
+body * + * { margin-top: 1.5em;}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  min-height: 500px;
+  background-color: grey;
+  flex-flow: row wrap;
+  justify-content:space-evenly;
+  align-items: center;
+  align-content: stretch; 
+  /* pēc attēla šo bija grūti saprast - center un  space between izskatījās līdzīgi.jautājums - kad strech darbojas? ja jau kastītēm ir fiksēts augstums - kas tur stiepjas */
+}
+
+.flex-container > div {
+  background-color: blueviolet;
+  margin: 10px;
+  width:75px;
+  height: 75px;
+  padding: 20px;
+  font-size: 30px;
+}
+/* uzliku  konteineriem augstumu pēc acumēra - varbūt vajadzēja kā citādi? */
+#first-container{
+  height: 100px;
+}
+#second-container{
+  height: 45px;
+}
+#third-container{
+  height: 300px;
+}
