@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:blanchedalmond;
+}
+
+h2 {
+    font-size: larger;
+    background-color: #f3d9b6;
+}
+
+.navigation  {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color:#f3d9b6;
+}
+
+.navigation-item  {
+    text text-decoration: none;
+    text-transform: capitalize;
+    font size: 50px;
+    color: black;
+}
