@@ -3,8 +3,8 @@ let person = {
     lastName: "Janevica",
     profession: "Designer",
     contacts: {
-        email: "k.janevica@gmail.com"
-
+        email: "k.janevica@gmail.com",
+   
 
     
 },
