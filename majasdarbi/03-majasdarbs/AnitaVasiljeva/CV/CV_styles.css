@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin-right: 0px;
+  margin-left: 0px;
+  /*  Vai body pēc noklusējuma ir 8 px malu atkāpe? */
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  background-color: beige;
+
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  font-size: 0.8em;
+  margin-left: 0%;
+}
+
+nav li a {
+  text-decoration: none;
+  color: darkseagreen;
+  font-weight: 400;
+  padding: 10px;
+
+}
+
+nav li a:hover {
+  color: sandybrown;
+}
+
+.main-content {
+  margin-top: 30px;
+
+}
+
+section {
+  background-color: cornsilk;
+  padding: 25px 1.2rem;
+
+}
+
+section:nth-of-type(2n) {
+  background-color: wheat;
+
+}
+
+section:last-of-type {
+  height: 100vh;
+
+}
+
+h1,
+h2,
+h3 {
+  color: darkseagreen;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+}
+
+.active {
+  color: darkseagreen;
+  font-weight: 600;
+}
+
+address a {
+  color: darkseagreen;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.moto {
+  color: goldenrod;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px darkseagreen;
+}
+
+li {
+  list-style: none;
+  font-size: 0.85em;
+  padding-bottom: 5px;
+  display: flex;
+  margin-left: 41%;
+  /* droši vien ir labāks veids, kā dabūt uzskaitījuma - ul -  rindiņas līdzinātas pa labi apmēram pa vidu ekrānam? */
+}
+
+.input {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 20%;
+  border-color: goldenrod;
+  color: darkgoldenrod;
+}
+
+#submit:hover {
+  background-color: red;
+  color: white;
+  font-weight: 900;
+  text-shadow: 2px -2px rgb(90, 1, 255);
+  box-shadow: 2px -2px rgb(90, 1, 255);
+}
