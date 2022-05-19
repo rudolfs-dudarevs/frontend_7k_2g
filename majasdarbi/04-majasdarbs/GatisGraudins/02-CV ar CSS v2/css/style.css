@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+/* lapas fons */
+
+:root {
+  --main-color: #efe3cb;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 600px;
+  margin: 0 auto;
+  background-color: #efe3cb;
+  padding: 0 20px 20px 20px;
+  border: black;
+
+}
+
+/* lapas augšas navigācija */
+
+.navigation {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  padding: 20px 0;
+  background-color: #efe3cb
+}
+
+.navigation-item {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.navigation-item {
+  color: black;
+}
+
+.navigation-item:hover {
+  color: white;
+  font-size: 30px;
+  transition: all 500ms;
+  font-size-adjust: 10px;
+
+}
+
+/* profil bildes animācija  */
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #efe3cb;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  transform: scale(1);
+}
+
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* Vārda Uzvārda teksta efekti */
+
+h1 {
+  font-weight: bold;
+  font-size: 2ch;
+  text-align: :left;
+}
+
+.pre-title {
+  font-size: 20px;
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: black;
+  }
+
+  100% {
+    color: white;
+  }
+
+}
+
+.title {
+  font-size: 40px;
+  margin: 4px 0;
+
+}
+
+.title:hover {
+  color: white;
+  font-size: 50px;
+  transition: all 500ms;
+  font-size-adjust: 20px;
+}
+
+
+
+/* kontakt informācijas bloka action */
+
+.phone {
+  color: black;
+  font-size: 20px;
+  height: 20px;
+}
+
+.phone:hover {
+  color: white;
+}
+
+.phone-img {
+  height: 1em;
+  width: 1em;
+}
+
+.mail {
+  color: black;
+  font-size: 20px;
+  height: 20px;
+}
+
+.mail-img {
+  height: 1em;
+  width: 1em;
+
+}
+
+.mail {
+  color: black;
+  font-size: 20px;
+  height: 20px;
+  var(--main-color)
+}
+
+.mail:hover {
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 0px;
+  font-size: 1vw;
+  background-color: var(--main-color);
+}
+
+.button {
+  margin-top: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px 40px;
+
+}
+
+.button:hover {
+  color: white;
+  background-color: var(--main-color);
+  border-color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
+/* H2 virsrakstu efekti */
+
+h2 {
+  color: black;
+}
+
+h2:hover {
+  color: white;
+  font-size: 30px;
+  transition: all 500ms;
+  font-size-adjust: 10px;
+
+}
+
+/* ekrānizmērmaiņas eksperimenti */
+
+@media only screen and (max-width: 768px) {
+
+  .container {
+    width: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  a,
+  em,
+  p,
+  li,
+  ul,
+  summary,
+  .navigation-item {
+    color: white;
+  }
+
+    .navigation {
+    background-color: transparent;
+  }
+
+  :root body {
+    background-image: url(../images/resize.jpg)
+  }
+
+
+  .button {
+    transform: scale(3);
+    margin-left: 100px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    
+  }
+
+  .button:hover {
+    color: #d09567;
+    background-color: transparent;
+    border-color: #d09567;
+
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/cat.jpg); 
+    background-size: contain;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+
+}
