@@ -1,0 +1,46 @@
+@import "./aboutme.css";
+@import "./navigation.css";
+@import "./exp.css";
+
+html,
+body {
+    height: 100vh;
+    margin: 0%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    font-family: 'Vesper Libre';
+    align-items: baseline;
+
+
+
+}
+
+.info {
+    text-decoration: none;
+    color: var(--font-main-color);
+}
+
+
+.info:hover {
+
+    color: var(--font-hover-color);
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+        
+        }
+   .aboutme{ 
+       padding-bottom: 300px;
+   }
+   .header {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+    }
