@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form"> 
+        <div>
+            <label for="text">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="text" 
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="text">Epasts lauks</label>
+            <input 
+                type="email" 
+                id="email"
+                pattern=".+@gmail\.com"
+                title="Epasta laukam jasatur @ un domena vardam jabut gmail.com"  
+                required
+            />
+        </div>
+
+        <div>
+            <label for="minmaxlength">Teksta lauks ar Min un Max garumu</label>
+            <input 
+                type="text" 
+                id="minmaxlength" 
+                minlength="5" 
+                maxlength="10"
+                title="Teksta lauka garums ir no 5 lidz 10 simboliem')"  
+            />
+        </div>
+      
+        <div>
+            <label for="password">Parole 1(jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                oninvalid="this.setCustomValidity('Jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')"  
+                required
+            />
+        </div>
+            
+        <div>
+            <label for="passwordcombined">Parole 2(jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="passwordcombined" 
+                minlength="8" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
+                title="Jāsatur vismaz 8 sumboli 1 lielais burts, 1 mazais burts un 1 cipars un" 
+                required
+            />
+        </div>
+
+        <div>
+            <label for="passwordcombined">Nedēļa</label>
+            <input 
+                type="week" 
+                name="week" 
+                id="camp-week"
+                min="2022-W18" 
+                max="2022-W26" 
+                required
+            />
+        </div>
+
+        <div>
+            <label for="appt">Choose a time for your meeting:</label>
+
+            <input 
+                type="time" 
+                id="time" 
+                name="time"
+                min="09:00" 
+                max="18:00" 
+                required
+            />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="ZIP">ZIP : </label>
+            <input type="text" id="ZIP">
+            <label for="Country">Valsts : </label>
+            <select id="Country">
+              <option value="lv">Latvia</option>
+              <option value=""> </option>
+              <option value=""> </option>
+              <option value=""> </option>
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Parbaudit">
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
