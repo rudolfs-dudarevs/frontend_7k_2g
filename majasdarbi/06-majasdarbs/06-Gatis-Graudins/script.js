@@ -21,7 +21,7 @@ let getValue = () => {
 
 let printValues = () => {
     output.innerText = characters[arrayId];
-    alert (`OK, tūlīt apskatīsiemies, kādam burtam atbilst skaitlis ${arrayId} ?`)
+    alert(`OK, tūlīt apskatīsiemies, kādam burtam atbilst skaitlis ${arrayId} ?`)
 }
 
 getValue();
@@ -32,7 +32,7 @@ getValue();
 // pēc burta izvades, lai paziņojuma logā būtu uzraksts - tagad nospied uz klaviatūras šo burtu?
 
 document.addEventListener("keypress", (eventObject) => {
-       
+
     if (eventObject.key === characters[arrayId]) {
         alert("Pareizi!")
         getValue();
