@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- kopējais dizains šim CV = 0, jo gribējas izmēģināt visvisādas lietas, kas īsti neiet kopā:
+advancētu mobilo izvēlni ar bultiņu, animētas ikonas, mainīga izmēra bildes utt :-)  -->
+
+<head>
+  <title>Anita | CV </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- citi stili -->
+  <link rel="stylesheet" href="./styles/cv-styles.css" />
+  <!-- bez šī nestrādāja izvēlnes mobilais hamburgers -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- fontawesome ikonas -->
+  <script src="https://kit.fontawesome.com/bbdbb9a265.js" crossorigin="anonymous"></script>
+  <!-- jquwery - izmantoju, lai rotētu mobilās izvēlnes bultiņu -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navigation " onclick="upBullet()">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/avatar.gif" class="avatar" alt="AV avatar" />
+          <span id="sp1">A</span><span id="sp2">V</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <span><i class="fa-solid fa-angles-down fa-lg myColor rotate hover-icon" id="my-nav-icon"></i></span>
+
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" href="#aboutme">Me</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work-experience">Experience</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education-languages-skills">Education & Skills</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interests">Party</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactme">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <div class="main-content">
+      <section id="aboutme">
+        <img src="./images/profilBilde.jpg" alt="Profile image Anita" class="profile-image">
+        <h1>Anita Vasiljeva</h1>
+        <h2>Maybe Future Front-end Developer</h2>
+        <div id="moto" class="moto">
+          Moto: positive mindset brings positive things
+        </div>
+        <address>
+          <a href="tel:+37129196151">+371 29196151</a><br />
+          <a href="mailto:anita.vas@icloud.com">anita.vas@icloud.com</a><br />
+          <a href="#contactme">contact me</a>
+        </address>
+      </section>
+      <!-- WORK EXPERIENCE -->
+      <section id="work-experience">
+        <h2>Work Experience</h2>
+        <p>More than 20 years of experience and competence in Latvian language and culture related projects.</p>
+        <div class="container mb-5">
+          <div class="row justify-content-center">
+            <div
+              class="col-12 text-sm-center col-md-6 text-md-end col-lg-4 text-lg-center align-self-center order-lg-2">
+              <h3>letonika.lv – education and reference resource</h3>
+            </div>
+            <div
+              class="col-12 text-sm-center col-md-6 text-md-start col-lg-4 text-lg-end align-self-center order-lg-1 padd-lr">
+              <h3 class="job-year">May/2010 – present</h3>
+            </div>
+
+            <div class="col-3 col-sm-4 col-md-4 col-lg-1 order-md-3 order-lg-4">
+            </div>
+            <div class="col-9 col-sm-8 col-md-8 text-start col-lg-4 order-md-4 order-lg-3">
+              <p class="text-padd">Main responibilities:</p>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa-solid fa-check-double"></i></span>product manager</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check-double"></i></span>client needs research</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check-double"></i></span>education activities</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check-double"></i></span>content development</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-center margin-top-20">
+            <div
+              class="col-12 text-sm-center col-md-6 text-md-end col-lg-4 text-lg-center align-self-center order-lg-2">
+              <h3>Virtual Aspazija&Rainis museum – arlugano.lv</h3>
+            </div>
+            <div
+              class="col-12 text-sm-center col-md-6 text-md-start col-lg-4 text-lg-end align-self-center order-lg-1 padd-lr">
+              <h3 class="job-year">July/2013 – October/2015</h3>
+            </div>
+
+            <div class="col-3 col-sm-4 col-md-4 col-lg-1 order-md-3 order-lg-4">
+            </div>
+            <div class="col-9 col-sm-8 col-md-8 text-start col-lg-4 order-md-4 order-lg-3">
+              <p class="text-padd">Roles in project:</p>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa-solid fa-check-double"></i></span>concept group member</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check-double"></i></span>project management</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check-double"></i></span>content development</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-center margin-top-20">
+            <div
+              class="col-12 text-sm-center col-md-6 text-md-end col-lg-4 text-lg-center align-self-center order-lg-2">
+              <h3>CD 'History of Latvia', latvian and english versions</h3>
+            </div>
+            <div
+              class="col-12 text-sm-center col-md-6 text-md-start col-lg-4 text-lg-end align-self-center order-lg-1 padd-lr">
+              <h3 class="job-year">February/1998 – May/2005</h3>
+            </div>
+
+            <div class="col-3 col-sm-4 col-md-4 col-lg-1 order-md-3 order-lg-4">
+            </div>
+            <div class="col-9 col-sm-8 col-md-8 text-start col-lg-4 order-md-4 order-lg-3">
+              <p class="text-padd">Core functions:</p>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa-solid fa-check-double"></i></span>project cooridination</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check-double"></i></span>concept group memeber</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check-double"></i></span>content development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION, LANGUAGES AND SKILLS-->
+      <section id="education-languages-skills">
+        <div>
+          <span class="edu-block">
+            <!-- šis ir tiiiiik traki garš ikonu-kods... bet, ja es neieliku to kodu inlainā html dokumentā, bet mēģināju atsaukties šādi:  <use xlink:href="./images/drone.svg"/> - nestrādāja :-( -->
+            <svg id="icon-1" class="edu-icon" width="50" height="50" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <circle cx="12" cy="15" fill="#665D4E" r=".5" />
+                <path
+                  d="M14 15.75a.25.25 0 1 0 0 .5v-.5zm-.604 1.735-.242.064.242-.064zm-.555-1.278-.152.198.152-.198zM15.75 20a.25.25 0 1 0 0-.5v.5zM8 4.25h8v-.5H8v.5zM5.25 14V6.5h-.5V14h.5zM8 15.75c-.991 0-1.68-.126-2.117-.4-.41-.256-.633-.664-.633-1.35h-.5c0 .814.278 1.406.867 1.774.563.352 1.374.476 2.383.476v-.5zm8-11.5c.994 0 1.67.128 2.1.45.41.308.65.838.65 1.8h.5c0-1.038-.26-1.758-.85-2.2-.57-.428-1.394-.55-2.4-.55v.5zm-8-.5c-1.006 0-1.83.122-2.4.55-.59.442-.85 1.162-.85 2.2h.5c0-.962.24-1.492.65-1.8.43-.322 1.106-.45 2.1-.45v-.5zM18.75 14c0 .686-.222 1.094-.633 1.35-.437.274-1.126.4-2.117.4v.5c1.009 0 1.82-.124 2.383-.476.59-.368.867-.96.867-1.774h-.5zm0-7.5V14h.5V6.5h-.5zm-7.287 9.25H8v.5h3.463v-.5zm4.537 0h-2v.5h2v-.5zm-2.846 1.8.406 1.522.484-.129-.407-1.523-.483.13zm-1.69-1.3c.375 0 .634 0 .835.024.193.023.304.065.39.131l.304-.396c-.183-.141-.392-.203-.635-.231-.237-.028-.531-.028-.895-.028v.5zm2.173 1.17c-.093-.35-.169-.635-.257-.857-.09-.227-.203-.413-.387-.554l-.304.396c.085.066.155.162.227.343.074.188.142.438.238.801l.483-.129zM14.768 20h.982v-.5h-.982v.5zm-1.208-.928a1.25 1.25 0 0 0 1.208.928v-.5a.75.75 0 0 1-.724-.557l-.484.13zM10.17 18.962l-.244-.053.245.053zm.67-1.91a.25.25 0 1 0-.49-.105l.49.106zM8.25 19.5a.25.25 0 1 0 0 .5v-.5zm.25 0a.25.25 0 1 0 0 .5v-.5zm4.5.5a.25.25 0 1 0 0-.5v.5zm-2.585-.986.425-1.961-.49-.106-.424 1.962.489.105zM8.25 20h.943v-.5H8.25v.5zm1.676-1.091a.75.75 0 0 1-.733.591v.5a1.25 1.25 0 0 0 1.222-.986l-.489-.105zM8.5 20H13v-.5H8.5v.5z"
+                  fill="#665D4E" />
+                <rect fill="#665D4E" height="9" rx="2" width="12" x="6.5" y="5.25" />
+                <path
+                  d="M6 8c0-1.414 0-2.121.44-2.56C6.878 5 7.585 5 9 5h6c1.414 0 2.121 0 2.56.44C18 5.878 18 6.585 18 8v3c0 1.414 0 2.121-.44 2.56-.439.44-1.146.44-2.56.44H9c-1.414 0-2.121 0-2.56-.44C6 13.122 6 12.415 6 11V8z"
+                  stroke="#1A6A83" stroke-width=".2" />
+              </g>
+            </svg>
+          </span>
+          <span class="edu-block">
+            <h2>Education</h2>
+          </span>
+        </div>
+
+        <div class="container mb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 text-sm-center col-md-4 offset-md-2 text-md-end align-self-center ">
+              <h4>Latvia University (LU), Applied mathematics – Masters degree</h4>
+            </div>
+            <div class="col-12 text-sm-center col-md-6 text-md-start align-self-center padd-lr">
+              <h4 class="job-year">September/1986 – May/1991</h4>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 text-sm-center col-md-4 offset-md-2 text-md-end align-self-center ">
+              <h4>Riga secondary school Nr 50 – secondary education</h4>
+            </div>
+            <div class="col-12 text-sm-center col-md-6 text-md-start align-self-center padd-lr">
+              <h4 class="job-year">September/1975 – June/1986</h4>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="edu-block">
+            <!-- šis ir tiiiiik traki garš ikonu-kods... bet, ja es neieliku to kodu inlainā html dokumentā, bet mēģināju atsaukties šādi:  <use xlink:href="./images/drone.svg"/> - nestrādāja :-( -->
+            <svg id="icon-2" class="edu-icon" width="50" height="50" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <path
+                  d="m8 7 .586.586A4.828 4.828 0 0 0 12 9v0c1.28 0 2.509-.509 3.414-1.414L16 7m0 10-.586-.586A4.828 4.828 0 0 0 12 15v0c-1.28 0-2.509.509-3.414 1.414L8 17M21 6a3 3 0 0 1-3 3m-3-3a3 3 0 0 1 3-3M8.5 6A2.5 2.5 0 0 0 6 3.5m0 5A2.5 2.5 0 0 1 3.5 6M18 21a3 3 0 0 1-3-3m3-3a3 3 0 0 1 3 3M9 18a3 3 0 0 1-3 3m-3-3a3 3 0 0 1 3-3"
+                  stroke="#1A6A83" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" />
+                <path
+                  d="m18 6-2.586 2.586A4.828 4.828 0 0 0 14 12v0c0 1.28.509 2.509 1.414 3.414L18 18M6 6l2.586 2.586A4.828 4.828 0 0 1 10 12v0c0 1.28-.509 2.509-1.414 3.414L6 18"
+                  stroke="#1A6A83" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" />
+                <path
+                  d="M7.75 6.25a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM7.75 18.25a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM19.75 6.25a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM19.75 18.25a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                  fill="#665D4E" />
+                <path
+                  d="M7.5 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM7.5 18a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM19.5 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM19.5 18a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                  stroke="#1A6A83" stroke-linecap="round" stroke-width=".2" />
+              </g>
+            </svg>
+          </span>
+
+          <span class="edu-block">
+            <h2>Skills</h2>
+          </span>
+        </div>
+        <p>Some of the most important skills to put on my CV:</p>
+        <div class="container pb-4">
+          <div class="row">
+            <div class="offset-2 offset-sm-3 offset-md-4 offset-lg-5 text-start">
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa-solid fa-feather-pointed"></i></span>presentation and communication
+                </li>
+                <li><span class="fa-li"><i class="fa-solid fa-feather-pointed"></i></span>analytic thinking and problem
+                  solving</li>
+                <li><span class="fa-li"><i class="fa-solid fa-feather-pointed"></i></span>management and team job</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="edu-block">
+            <!-- šis ir tiiiiik traki garš ikonu-kods... bet, ja es neieliku šo kodu inlainā html dokumentā, bet mēģināju atsaukties šādi:  <use xlink:href="./images/drone.svg"/> - nestrādāja :-( -->
+            <svg id="icon-3" class="edu-icon" width="50" height="50" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <path d="M4 12V11C4 6.58172 7.58172 3 12 3V3C16.4183 3 20 6.58172 20 11V12" stroke="#1A6A83"
+                  stroke-linecap="round" stroke-width="0.5" />
+                <path
+                  d="M16.6567 5.37241C16.3847 5.49251 16.0252 5.51842 15.8674 5.37241C15.1057 4.66727 13.8865 4 12 4C10.1136 4 8.89437 4.66727 8.13264 5.37241C7.97492 5.51842 7.61537 5.49251 7.34338 5.37241"
+                  stroke="#1A6A83" stroke-linecap="round" stroke-width="0.5" />
+                <path
+                  d="M4.13414 14.1831L6.63414 18.5132C6.91028 18.9915 7.38414 19.1801 8.00017 18.8793C8.36283 18.7021 8.44701 18.2976 8.4549 17.9949C8.45673 17.9243 8.58091 17.8851 8.61619 17.9462C8.75426 18.1854 9.06006 18.2673 9.29921 18.1293C9.53835 17.9912 9.62029 17.6854 9.48222 17.4462L6.48222 12.2501C6.34415 12.0109 6.03835 11.929 5.79921 12.0671C5.56006 12.2051 5.47812 12.5109 5.61619 12.7501L5.86619 13.1831C5.59005 12.7048 4.97846 12.5409 4.50017 12.8171C4.02187 13.0932 3.858 13.7048 4.13414 14.1831Z"
+                  fill="#665D4E" />
+                <path
+                  d="M21.1341 14.1831L18.6341 18.5132C18.358 18.9915 18.0362 19.2585 17.2681 18.8792C16.8245 18.6602 16.7503 18.2746 16.7669 17.9879C16.7689 17.9521 16.67 17.9152 16.6521 17.9462C16.514 18.1854 16.2082 18.2673 15.9691 18.1292C15.7299 17.9912 15.648 17.6854 15.786 17.4462L18.786 12.2501C18.9241 12.0109 19.2299 11.929 19.4691 12.0671C19.7082 12.2051 19.7901 12.5109 19.6521 12.7501C19.17 13.5851 19.9995 12.3733 20.7681 12.8171C21.2464 13.0932 21.4103 13.7048 21.1341 14.1831Z"
+                  fill="#665D4E" />
+                <path
+                  d="M5.23204 13.085C4.95589 12.6067 4.3443 12.4428 3.86601 12.7189C3.38772 12.9951 3.22384 13.6067 3.49999 14.085L5.99999 18.4151C6.27613 18.8934 6.88772 19.0573 7.36601 18.7811C7.8443 18.505 8.00818 17.8934 7.73204 17.4151M5.23204 13.085L4.98204 12.6519C4.84397 12.4128 4.9259 12.107 5.16505 11.9689C5.4042 11.8309 5.70999 11.9128 5.84806 12.1519L8.84806 17.3481C8.98613 17.5872 8.9042 17.893 8.66505 18.0311C8.4259 18.1692 8.12011 18.0872 7.98204 17.8481L7.79454 17.5233M5.23204 13.085L6.73204 15.683M18.7679 13.085C19.0441 12.6067 19.6557 12.4428 20.1339 12.7189C20.6122 12.9951 20.7761 13.6067 20.5 14.085L18 18.4151C17.7238 18.8934 17.1122 19.0572 16.6339 18.7811C16.1557 18.505 15.9918 17.8934 16.2679 17.4151M18.7679 13.085L19.0179 12.6519C19.156 12.4128 19.0741 12.107 18.8349 11.9689C18.5958 11.8309 18.29 11.9128 18.1519 12.1519L15.1519 17.3481C15.0138 17.5872 15.0958 17.893 15.3349 18.0311C15.5741 18.1692 15.8798 18.0872 16.0179 17.8481L16.2054 17.5233M18.7679 13.085L17.2679 15.683"
+                  stroke="#1A6A83" stroke-linecap="round" stroke-width="0.2" />
+              </g>
+            </svg>
+          </span>
+          <span class="edu-block">
+            <h2>Languages</h2>
+          </span>
+        </div>
+        <p>The languages I have learned && || am learning now:</p>
+        <div class="container">
+          <div class="row">
+            <div class="offset-2 offset-sm-3 offset-md-4 offset-lg-5 text-start">
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa-solid fa-feather-pointed"></i></span>English (fluent)</li>
+                <li><span class="fa-li"><i class="fa-solid fa-feather-pointed"></i></span>Russian (fluent)</li>
+                <li><span class="fa-li"><i class="fa-solid fa-feather-pointed"></i></span>Latvian (native)</li>
+                <li><span class="fa-li"><i class="fa-solid fa-feather-pointed"></i></span>HTML (few documents)</li>
+                <li><span class="fa-li"><i class="fa-solid fa-feather-pointed"></i></span>CSS (beginner)</li>
+                <li><span class="fa-li"><i class="fa-solid fa-feather-pointed"></i></span>JavaScript (few code lines)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- free time activities -->
+
+      <section id="interests">
+        <div class="image-wrap">
+          <div class="party-content">
+            <div class="row justify-content-center">
+              <div>
+                <h2>Party time </h2>
+              </div>
+              <div>
+                <details>
+                  <summary class="summary"><i class="fa-solid  fa-chevron-down hover-icon padd-right up-down"></i> My
+                    hobbies</summary>
+                  <ul class="">
+                    <li>Beach volleyball</li>
+                    <li>Tennis</li>
+                    <li>Swimming</li>
+                    <li>Traveling</li>
+                    <li>Theater</li>
+                    <li>Literature</li>
+                  </ul>
+                </details>
+              </div>
+
+              <div>
+                <details>
+                  <summary class="summary"><i class="fa-solid fa-chevron-down hover-icon padd-right up-down"></i> My
+                    favorite playlist</summary>
+
+                  <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/0sX2c1sTcSUc5iimuQgBIy?utm_source=generator"
+                    width="100%" height="380" frameborder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                  </iframe>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- free time -->
+      <!-- CONTACT FORM -->
+      <section id="contactme">
+        <h2>Contact me </h2>
+
+        <form action="action_page.php">
+
+          <div class="row justify-content-center">
+
+            <div class="m-3 col-8 col-sm-6 col-md-5 col-lg-4 col-xl-2">
+              <label class="visually-hidden" for="who">Leave your name</label>
+              <div class="input-group">
+                <div class="input-group-text transp"><i class="fa-solid fa-person-circle-question fa-lg"></i></div>
+                <input type="text" class="form-control input" id="who" name="name" placeholder="Who are you?">
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="m-3 col-10 col-sm-8 col-md-7 col-lg-6 col-xl-4">
+              <label class="visually-hidden" for="message">Leave your message</label>
+              <div class="input-group">
+                <div class="input-group-text transp"><i class="fa-solid fa-comment-dots fa-lg"></i></div>
+                <textarea class="form-control input" id="message" name="message"
+                  placeholder="Write your message here..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" id="submit" class="btn btn-outline-success m-3">DO NOT SUBMIT</button>
+        </form>
+      </section>
+      <!-- CONTACT FORM -->
+    </div>
+  </main>
+  <script src="./js/nav-script.js"></script>
+  <script src="./js/nav-bar-collapse.js"></script>
+  <script src="./js/toggle.js"></script>
+</body>
+
+</html>

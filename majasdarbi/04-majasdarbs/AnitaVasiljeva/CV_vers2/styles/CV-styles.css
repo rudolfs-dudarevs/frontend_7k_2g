@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+:root {
+  --olive: #60935D;
+  --cofee: #665D4E;
+  --sage: #FFEBC6;
+  --eggshell: #FFF9EE;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  /* parasti shos abus ieliek, lai nav lieku marginu utt. */
+  text-align: center;
+  scroll-behavior: smooth;
+  color: var(--cofee);
+  overflow-x: clip;
+  /* bez šī lapai uzradās scrollbar... nez kāpēc... */
+}
+
+.navigation {
+  background-color: var(--cofee);
+}
+
+/* krāsiņa mobila menu bultiņai*/
+.myColor {
+  color: var(--eggshell);
+}
+
+.hover-icon:hover {
+  transition: transform .5s;
+  transform: scale(1.3);
+}
+
+/* rotē mobilās izvēlne bultiņu*/
+
+.rotate {
+  -moz-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.rotate.down {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* lai nav kaste apkārt nospiestai menu ikonai */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  box-shadow: none;
+  outline: 0;
+
+}
+
+
+.nav-item>.nav-link {
+  text-decoration: none;
+  color: var(--eggshell);
+  box-shadow: inset 0 0 0 0 var(--eggshell);
+  transition: color 0.5s ease-in, box-shadow 0.5s ease-out;
+  margin: 0 30%;
+}
+
+.nav-item>.nav-link:hover {
+  box-shadow: inset 750px 0 0 5px var(--eggshell);
+  color: var(--cofee);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-item>.nav-link {
+    margin: 0 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-item>.nav-link {
+    padding: 8px 20px;
+    width: 220px;
+  }
+}
+
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+
+p::first-letter {
+  font-size: 150%;
+  color: var(--olive);
+  font-family: 'Patrick Hand';
+}
+
+#sp1 {
+  color: var(--sage);
+  font-family: 'Patrick Hand';
+}
+
+#sp2 {
+  color: var(--eggshell);
+  font-family: 'Patrick Hand';
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50% 20% / 10% 40%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  transform-origin: 100px 100px;
+}
+
+.profile-image:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  transform: rotate(360deg);
+}
+
+section {
+  background-color: var(--eggshell);
+  padding: 100px 1.2rem 40px;
+  margin: 0;
+}
+
+section:nth-of-type(even) {
+  background-color: var(--sage);
+}
+
+section:last-of-type {
+  height: 100vh;
+  background-color: var(--sage);
+}
+
+#interests {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--olive);
+  font-family: 'Patrick Hand';
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 180%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+h4 {
+  font-size: 130%;
+}
+
+p {
+  font-size: 110%;
+}
+
+.active {
+  color: var(--sage);
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+address a {
+  color: var(--olive);
+  text-decoration: none;
+  font-size: 90%;
+}
+
+address a:hover {
+  color: var(--cofee);
+  text-decoration: none;
+  font-size: 90%;
+  font-weight: bolder;
+}
+
+.moto {
+  color: var(--sage);
+  padding-bottom: 10px;
+  text-shadow: 1px 1px var(--cofee);
+  font-size: 110%;
+}
+
+li {
+  font-size: 90%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+main li {
+  padding-bottom: 3px;
+}
+
+.text-padd {
+  text-align: left;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.padd-lr {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.padd-right {
+  padding-right: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.job-year {
+  color: var(--cofee);
+  padding-left: 20px;
+}
+
+
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.edu-icon {
+  width: 60px;
+  height: 60px;
+  transform-origin: center;
+  transform: scale(0.8);
+  animation: icon-grow 3s infinite;
+  padding-bottom: 10px;
+}
+
+.edu-icon:hover {
+  animation: icon-color 5s infinite;
+}
+
+
+@keyframes icon-grow {
+  0% {
+    transform: scale(0.8);
+  }
+
+  40% {
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  80% {
+    transform: scale(1.3) rotate(-5deg);
+  }
+
+  100% {
+    transform: scale(0.8) rotate(0);
+  }
+}
+
+@keyframes icon-color {
+  0% {
+    fill: gold;
+    transform: scale(1.3);
+  }
+
+  50% {
+    fill: tomato;
+    transform: scale(1.3);
+  }
+
+  100% {
+    fill: gold;
+    transform: scale(1.3);
+  }
+}
+
+.edu-block {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* image-wrap klase un pseidoklase, lai varētu uzlikt opacity tikai sekcijas fona attēlam, bet ne tekstam  */
+.image-wrap {
+  position: relative;
+}
+
+.image-wrap:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url(../images/image-fons-sm.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .image-wrap:before {
+    background-image: url(../images/image-fons-md.jpg);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .image-wrap:before {
+    background-image: url(../images/image-fons-lg.jpg);
+
+  }
+}
+
+.party-content {
+  position: relative;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.summary {
+  background-color: var(--sage);
+  padding: 3px;
+  margin: 20px 20%;
+  border-radius: 15px;
+
+}
+
+details ul {
+  background-color: rgba(255, 235, 198, 0.8);
+  border-radius: 15px;
+}
+
+details li {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+}
+
+.up-down {
+  -moz-transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+.up-down.down {
+  -moz-transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.transp {
+  background: transparent;
+}
+
+.input {
+  color: var(--cofee);
+  background-color: var(--eggshell);
+}
+
+#submit:hover {
+  text-shadow: 1px -1px var(--sage);
+  color: var(--eggshell);
+  text-transform: lowercase;
+  content: "aiaiai";
+  cursor: not-allowed;
+  background-color: var(--olive);
+}
+
+.fa-person-circle-question,
+.fa-comment-dots {
+  color: var(--olive);
+}
