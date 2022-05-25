@@ -1,0 +1,109 @@
+.container,
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.lead {
+    max-width: 40vw;
+    margin: 10px 0;
+    text-align: center;
+}
+.container {
+    padding: 20px 0;
+    flex-direction: column;
+    min-width: 35vw;
+
+
+}
+
+span.task-text {
+   text-align: left;
+   flex: 1 0 auto;
+}
+
+.input-group {
+    margin: 0 0 50px;
+}
+
+.form-check-input {
+    cursor: pointer;
+    border-color: olive;
+    width: 20px;
+    height: 20px;
+
+}
+
+.form-check-input:checked {
+    background-color: olivedrab;
+    border-color: olive;
+}
+
+.task-text {
+    margin: 0 15px;
+    min-width: 200px;
+}
+
+
+.list-group .list-group-item {
+    cursor: move;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    background: linear-gradient(0.3turn, #3f87a6, #f69d3c , #ebf8e1);
+    color:azure;
+   
+}
+
+.list-group .list-group-item:hover {
+    background-color: aliceblue;
+
+}
+
+.task-text.taskdone {
+    color: greenyellow;
+}
+
+.fa-trash-can {
+    cursor: pointer;
+    margin: 0 5px;
+    color:orangered;
+}
+
+.fa-pen-to-square {
+    cursor: pointer;
+    margin: 0 10px;
+    color:dodgerblue;
+}
+
+
+
+[data-tooltip]:before {
+    /* needed - do not touch */
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0;
+    
+    /* customizable */
+    transition: all 0.15s ease;
+    padding: 5px;
+    color:olivedrab;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px silver;    
+}
+
+[data-tooltip]:hover:before {
+    /* needed - do not touch */
+    opacity: 1;
+    
+    /* customizable */
+    background:gold;
+    margin-top: -40px;
+    margin-left: 20px;    
+}
+
+[data-tooltip]:not([data-tooltip-persistent]):before {
+    pointer-events: none;
+}
