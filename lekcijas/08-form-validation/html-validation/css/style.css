@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form {
+    width: 40vw;
+}
+
+.form-control:invalid {
+    border-color: #ff0000;
+}
+
+.form-control:invalid:focus {
+    box-shadow: 0 0 4px #ff0000;
+}
+
+.form-control:valid {
+    border-color: #91ee91;
+}
+
+.form-control:valid:focus {
+    box-shadow: 0 0 4px #91ee91;
+}
