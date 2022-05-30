@@ -1,0 +1,51 @@
+8 majasdarbs
+
+
+ 2 laukam "Epasta lauks"  
+        - pievienot atbilstošo ievadlauka tipa atribūta vērtību (type)
+       ???? - pievienot atbilstošo RegEx kā pattern atribūta vērtību (pattern)
+            -- nepiciešams parbaudīt vai vērtiba satur "@" un beidzās ar "gmail.com" 
+            -- .+@gmail\.com
+        - pievinot atbilstošu kļūdas paziņojumu
+
+    3 laukam "Teksta lauks ar Min un Max garumu"
+        - pievienot atbilstošo ievadlauka tipa atribūta vērtību (type)
+        - pievienot atbilstošo pārbaudi atļautajam simbolu skaitam (minlength un maxlength)
+            -- min garums 5 simboli
+            -- max garums 10 simboli
+        - pievinot atbilstošu kļūdas paziņojumu
+
+
+
+       7 laukam "Laiks"
+        - pievienot atbilstošo ievadlauka tipa atribūta vērtību (type)
+        - pievienot min max laiku robežu vērtības (min un max)
+            -- no 9:00
+            -- lid 18:00
+        - pievinot atbilstošu kļūdas paziņojumu
+
+    8 laukam "Zip un Valsts"
+        - pievienot atbilstošo tipa atribūta vērtību (type)
+        - pievienot atbilstošo ievadlauka id atribūta vērtību
+        - pievienot vēl 3 valstis
+            -- script.js pievinot validācijas opcijas priekš kartas no valstīm
+        - pievinot atbilstošu kļūdas paziņojumu
+
+    9 Pievienot funkciju printValues()
+        - izvada formas ievadlauku vērtibas alert logā
+            -- izveidtot tukšu masīvu kurā saglabāsim ievadlauku vērtības
+            -- izmantojot getElementsByTagName('input') iegūt visu ievadlauku vērtības
+            -- ar for(let key in inputs) ciklu priekš katras no ievadlauku vertibām
+                -- iegūstam vertību ar inputs[key].value
+                -- ja value eksistē (ir true Boolean kontekstā), pievinojam vertibu masiva .push(value);
+                -- izvadām masīva vērtības uz ekrāna alert() logā;
+
+
+Šī dokumentācija var jums palīdzēt!
+https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Constraint_validation
+            
+
+    
+
+
+        
