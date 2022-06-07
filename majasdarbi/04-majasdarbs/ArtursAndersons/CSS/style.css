@@ -3,6 +3,7 @@
 body {font-family: sans-serif;}
 
 .about-me {
+
     height: 55vh;
     display: flex;
     align-items: center;
@@ -13,8 +14,7 @@ body {font-family: sans-serif;}
     text-align: center;
     padding-bottom: 5vh;
     padding-top: 5vh;
-    background-color: antiquewhite;
-    
+
 }
 
 .about-me > ul {
@@ -25,14 +25,15 @@ body {font-family: sans-serif;}
     display: flex;
     text-align: left;
     justify-content: space-between;
+    padding: 5px 30px;
 }
 
 .profile-img {
-    display: inline-block;
-    height: 175px;
-    width: 175px;
+    display: block;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
-    margin-left: 50px;
+    margin-left: 444px;
 }
 
 .pre-title { 
@@ -45,6 +46,7 @@ margin: 6px 0;}
 
 .vards2 {
     font-style: normal;
+    text-decoration: none;
 }
 
 .navigation {
@@ -67,6 +69,21 @@ margin: 6px 0;}
 .navigation-item:hover {
     color: black
 }
+
+#about-me {background-color: antiquewhite;}
+#darba-pieredze {background-color:burlywood;
+        padding: 5px 30px;}
+#izglitiba {background-color: antiquewhite; padding: 5px 30px;
+}
+#prasmes {background-color:burlywood;padding: 5px 30px;}
+#valodas {background-color: burlywood; padding: 5px 30px;
+}
+#faq {background-color:antiquewhite;padding: 5px 30px;}
+#sazinies-ar-mani {background-color: antiquewhite; padding: 2px 30px;
+}
+
+.mazie-virsraksti {font-size: 2em;}
+.svitra {background-color: antiquewhite;}
 
 
 
