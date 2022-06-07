@@ -1,0 +1,19 @@
+.profilephoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about_me {
+    display: flex;
+    justify-content: center;
+}
+.aboutme-item {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+
+}
+.aboutme-item:hover {
+    color: white;
+}

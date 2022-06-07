@@ -5,33 +5,30 @@
     <meta name="description" content="Keitija Janevica | Designer">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/headerstyle.css">
+    <link rel="stylesheet" href="./css/aboutmestyle.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects and other works</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="faq">FAQ</a></li>
-                <li><a href="#contact-me">Contact me</a></li>
-
-            </ul>
+        <nav class="navigation">
+            <a class="navigation-item" href="#education">Education</a>
+            <a class="navigation-item" href="#projects">Projects and experience</a>
+            <a class="navigation-item" href="#skills">Skills</a>
+            <a class="navigation-item" href="#faq">FAQ</a>
+            <a class="navigation-item" href="#contact-me">Contact me</a>
         </nav>
     </header>
 
     <main>
         <!-- ABOUT ME -->
         <section id="aboutme">
-            <img src="./profilephotokeitijajanevica.jpg" alt="" width="100px" height="100px">
+            <h1 class="about_me">Keitija Janevica | Designer</h1>
+            <img src="./profilephoto.jpg" alt="profilephoto" width="150px" height="150px" class="profilephoto">
             <address>
-                <h1>Keitija Janevica | Designer</h1>
-                <a href="tel.+3712597880">+3712597880</a><br>
-                <a href="mailto:k.janevica@gmail.com">k.janevica@gmail.com</a><br>
-                <a href="https://www.linkedin.com/in/keitija-janevica-120368224/" target="blank">LinkedIn</a><br>
-                <a href="https://instagram.com/artistinsubordinate?igshid=YmMyMTA2M2Y=" target="blank">Instagram</a>
-
+                <h1 class="about_me">Contact me:</h1>
+                <a class="aboutme-item" href="mailto:k.janevica@gmail.com">k.janevica@gmail.com</a>
+                <a class="aboutme-item" href="https://www.linkedin.com/in/keitija-janevica-120368224/" target="blank">LinkedIn</a>
+                <a class="aboutme-item" href="https://instagram.com/artistinsubordinate?igshid=YmMyMTA2M2Y=" target="blank">Instagram</a>
             </address>
         </section>
         <!-- /ABOUT ME -->
@@ -53,8 +50,9 @@
         <hr>
         <!-- PROJECTS -->
         <section id="projects">
-            <h2>Projects</h2>
-            <p>Body jewelry collection "Line stays"</p>
+            <h2>Projects and experience</h2>
+            <h3>Body jewelry collection "Line stays"</h3>
+            <p>The work aims to provide insight into how modern women view corsets and the possibilities of making them a body adornment. The jewelry collection was inspired by corsets of different periods. The artist has rejected the body-modifying function but preserved the visual outlines characteristic of a corset.</p>
         </section>
         <!-- PEOJECTS -->
 
@@ -77,9 +75,20 @@
         <!-- FAQ -->
         <section id="faq">
             <h2>FAQ</h2>
+            
             <details>
-                <summary></summary>
+                <summary>Do you work with gold?</summary>
+                <p>No, only precious metal I work with is silver.</p>
             </details>
+            <details>
+                <summary>What are your corsets made of?</summary>
+                <p>My corsets are made of steel.</p>
+            </details>
+            <details>
+                <summary>What size are your corsets?</summary>
+                <p>My corsets are custom made according to your measures.</p>
+            </details>
+
         </section>
         <!-- LANGUAGES -->
 
@@ -87,6 +96,11 @@
         <!-- LANGUAGES -->
         <section id="languages">
             <h2>Languages</h2>
+            <h4>You can contact me in the following languages:</h4>
+            <ul>
+                <li>Latvian</li>
+                <li>English</li>
+            </ul>
         </section>
         <!-- LANGUAGES -->
 
@@ -103,9 +117,6 @@
                 <input type="submit" value="Submit">
             </form>
 
-            <form>
-                            
-            </form>
         </section>
         <!-- CONTACT FORM -->
     </main>

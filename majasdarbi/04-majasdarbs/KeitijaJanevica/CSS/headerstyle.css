@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap);
+
+body {
+    background-color: lightgrey;
+    font-family: 'Noto Sans', sans-serif; 
+}
+
+.navigation {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #908585;
+}
+
+.navigation-item {
+    text-decoration: none;
+    font-size: 22px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.navigation-item:hover {
+    color: black;
+}
