@@ -1,0 +1,21 @@
+.list-group list-group-horizontal-lg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+    justify-content: center
+}
+
+.list-group-item list-group-item-action {
+    padding: 0 15px;
+}
+
+.list-group-item list-group-item-action a {
+    text-decoration: none;
+    color: var(--font-main-color);
+    text-transform: uppercase;
+}
+
+.list-group-link a:hover {
+    color: var(--font-hover-color);
+}

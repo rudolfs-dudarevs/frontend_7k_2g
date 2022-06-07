@@ -1,0 +1,66 @@
+.personal information {
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap;
+
+    text-align: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+.personal information>ul {
+    text-align: left;
+}
+
+.title-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.profile-img {
+    display: inline-box;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 0%;
+}
+
+.pre-title {
+    font-size: 5vw;
+    font-style: oblique;
+    text-align: center;
+}
+
+.title {
+    font-size: 5vw;
+}
+
+.contact-btn,
+.contact-info {
+    display: inline-flex;
+    padding: 15px 0px;
+    font-size: 3vw;
+    color: var(--font-hover-color);
+    text-decoration: none;
+}
+
+.contact-btn {
+    margin-top: 15px;
+    border: 1px solid var(--font-hover-color);
+    border-radius: 5px;
+    padding: 10px 70px;
+}
+
+.contact-info:hover {
+    color: var(--font-main-color);
+}
+
+.contact-btn:hover {
+    color: var(--color-black);
+    background-color: var(--font-main-color);
+    border-color: var(--font-main-color);
+}
