@@ -4,11 +4,10 @@ let output = document.getElementById('main');
 
 let getValue = () => {
     arrayId = Number(prompt("Ievadiet skaitli no 1 lidz 26"));
-    arrayId -= 1;
-    if (isNaN(arrayId)) {
+        if (isNaN(arrayId)) {
         alert("Ievadītā vērtība nav skaitlis!");
         getValue();
-    } else if (arrayId > 0 && arrayId <= characters.length +1) {
+    } else if (arrayId >= 0 && arrayId <= characters.length + 1) {
         printValues();
     } else {
         alert("Ievadītā vērtība nav intervālā no 1-26!");
@@ -17,6 +16,7 @@ let getValue = () => {
 }
 
 let printValues = () => {
+    arrayId -= 1;
     output.innerText = characters[arrayId];
 };
 
