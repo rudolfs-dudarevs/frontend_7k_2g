@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form id="form">
+        <div>
+            <label for="">Vārds Uzvārds</label>
+            <input type="name" id="name" required />
+        </div>
+
+        <div>
+            <label for="text">E-pasts</label>
+            <input type="email" id="email" pattern=".+@gmail\.com" title="Izmantot var tikai ...@gmail.com epastu"
+                required />
+        </div>
+
+        <div>
+            <label for="username">Lietotājvārds (ar Min un Max garumu)</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="10"
+                title="Lietotājvārdam jāsatur vismaz 5 simboli, maksimālais garums 10 simboli."
+                oninvalid="this.setCustomValidity('Lietotājvārdam jāsatur vismaz 5 simboli, maksimālais garums 10 simboli')"
+                required />
+        </div>
+
+        <div>
+            <label for="password">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input type="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                oninvalid="this.setCustomValidity('Jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')"
+                required />
+        </div>
+
+        <div>
+            <label for="passwordcombined">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1
+                cipars)</label>
+            <input type="password" id="passwordcombined" minlength="8"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                title="Jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars un 1 cipars"
+                oninvalid="this.setCustomValidity('Jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')"
+                required />
+        </div>
+
+        <div>
+            <label for="week">Nedēļa</label>
+            <input type="week" name="week" id="week" min="2022-W18" max="2022-W26"
+                title="Nedēļai jābūt no laika perioda 2022-w18 līdz 2022-w26."
+                oninvalid="this.setCustomValidity('Nedēļai jābūt no laika perioda 2022-w18 līdz 2022-w26')" required />
+        </div>
+
+        <div>
+            <label for="time">Laiks</label>
+
+            <input id="time" type="time" name="time" min="09:00" max="18:00"
+                title="Vēlamais laiks janorāda laika periodā no 09:00 līdz 18:00."
+                oninvalid="this.setCustomValidity('Vēlamais laiks janorāda laika periodā no 09:00 līdz 18:00')"
+                required />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="ZIP">ZIP : </label>
+            <input type="text" id="ZIP">
+            <label for="Country">Valsts : </label>
+            <select id="Country">
+                <option value="lv">Latvia</option>
+                <option value="lt">Lithuania</option>
+                <option value="ee">Estonia</option>
+                <option value="fin">Finland</option>
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Parbaudīt">
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
