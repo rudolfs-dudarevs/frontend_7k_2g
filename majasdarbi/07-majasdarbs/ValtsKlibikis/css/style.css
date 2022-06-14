@@ -1,0 +1,38 @@
+.container,
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.container {
+    padding: 100px 0 ;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.input-group {
+    margin: 0 0 50px;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+.task-text {
+    margin: 0 15px;
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+}
+.btn-danger{
+    background-color: #e50000;
+}
+.btn-danger:hover{
+    background-color: #b21111;
+}
+.text-task-list{
+    font-size: 30px;
+}
