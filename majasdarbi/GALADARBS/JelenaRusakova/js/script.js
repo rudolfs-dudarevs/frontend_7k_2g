@@ -114,7 +114,7 @@ function handleResultValidation() {
 
 function handlePlayerChange() {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
-    statusDisplay.innerHTML = currentPlayerTurn();
+    statusDisplay.innerHTML = currentPlayerTurn(); 
 }
 
 function handleRestartGame() {
