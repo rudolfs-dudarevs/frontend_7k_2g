@@ -1,0 +1,45 @@
+body {
+    background-color: lightgray;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.calculator {
+    width: 100%;
+    font-family: "Arial", sans-serif;
+    max-width: 500px;
+    padding: 3%;
+    margin: 40px auto;
+    display: block;
+}
+
+.output {
+    width: 94%;
+    text-align: right;
+}
+
+.history {}
+.history__item {}
+
+.btn {
+    width: 110px;
+    color: black;
+    text-align: center;
+    float: left;
+
+}
+
+
+.btn[data-type="operator"]
+.btn[data-type="symbol"] {
+    background-color: #333;
+}
+
+.btn[data-type="equal"] {
+}
+
+.btn:hover {
+    opacity: 0.75;
+}
+

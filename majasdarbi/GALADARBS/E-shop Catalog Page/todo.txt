@@ -1,0 +1,10 @@
+Izveidot internet veikala katalogu lapu
+
+- Izveidot JSON objektu ar datiem 
+- Izveidot iespejas filtret un produktus pec kategorijam un cenam
+- Izveidot iespeju izveleties veirakas produktus
+- Izveidot iespeju ievadit pasūtījuma klienta datus ar formas validaciju
+
+
+- Var izmanton dummyJSON api 
+- https://dummyjson.com/

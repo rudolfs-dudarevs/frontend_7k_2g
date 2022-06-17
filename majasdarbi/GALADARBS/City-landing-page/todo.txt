@@ -1,0 +1,5 @@
+Izveidot skaistu lapu savam pilsetam.
+
+Majaslapam jasatur informaciju par pilsetas skaistakam vietam 
+- lapai jabut adaptivai un pielagotai priekš mobilas ierices
+- var izmantot boostrap vai citu UI framework

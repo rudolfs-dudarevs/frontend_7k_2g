@@ -1,0 +1,51 @@
+:root {
+    --card-margin: 10px;
+}
+
+.container {
+    display: flex;
+    padding: 100px 0;
+}
+
+#side-panel {
+    width: 20vw;
+    min-width: 160px;
+    margin: 0 50px 0 0;
+}
+
+#person-grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.person-card {
+    box-sizing: border-box;
+    display: flex;
+    max-width: calc(50% - var(--card-margin) *2);
+    flex-direction: column;
+    align-items: center;
+    background-color: lemonchiffon;
+    padding: 40px;
+    flex: 1;
+    margin: var(--card-margin);
+}
+
+.person-image {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.person-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.person-email {
+    text-decoration: none;
+    font-size: 20px;
+    color:rebeccapurple;
+}

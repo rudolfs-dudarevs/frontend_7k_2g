@@ -1,0 +1,4 @@
+Izveidot tic tac toe speli (desas spēle)
+
+- ir iespejams spelet divam spetajiem
+- ir iespejams spelet ar datoru :)

@@ -1,0 +1,6 @@
+Izvejtot restorana edienkatri
+
+- ir iespejams apskatit izvēlnes kategorijas
+- ir iespejams rezervet galdiņu
+- lapai jabut adaptivai un pielagotai priekš mobilas ierices
+- var izmantot boostrap vai citu UI framework

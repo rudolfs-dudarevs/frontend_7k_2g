@@ -1,0 +1,7 @@
+Nepiecišams izvedot js kalkulatoru ar iespeju 
+- pievienot 
+- atņemt
+- dalīt 
+- reizināt
+- Lietotajam ir iespeja pievienot skaitli izmantojot UI gan ari no tastaturas
+- pievinot iespeju saglabat ieprekšejos darbibas localStorage

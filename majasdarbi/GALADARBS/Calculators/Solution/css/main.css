@@ -1,0 +1,78 @@
+body {
+    background-color: lightgray;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.calculator {
+    width: 100%;
+    font-family: "Arial", sans-serif;
+    max-width: 500px;
+    padding: 3%;
+    margin: 40px auto;
+    display: block;
+}
+
+.output {
+    width: 94%;
+    background-color: white;
+    font-size: 32px;
+    color: #333;
+    text-align: right;
+    padding: 5% 1.5%;
+    margin: 1.5%;
+    float: left;
+}
+
+.history {
+    width: 94%;
+    background-color: white;
+    font-size: 16px;
+    color: #333;
+    text-align: right;
+    padding: 0% 1.5%;
+    margin: 1.5%;
+    float: left;
+    list-style-type: none;
+}
+.history__item {
+    padding: 5px 10px;
+}
+
+.btn {
+    width: 110px;
+    background-color: #555;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 28px 0px;
+    margin: 1.5%;
+    float: left;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
+    -moz-transition: 0.25s all ease-in-out;
+    -webkit-transition: 0.25s all ease-in-out;
+    border-radius: 5px;
+}
+
+.btn[data-type="operator"]
+.btn[data-type="symbol"] {
+    background-color: #333;
+}
+
+.btn[data-type="equal"] {
+    background-color: #070707;
+    padding: 168px 0px;
+    float: right;
+}
+
+.btn:hover {
+    opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+    .btn[data-type="equal"] {
+        padding: 33.5% 0px;
+    }
+}

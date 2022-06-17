@@ -1,0 +1,3 @@
+Izveidot laika prognoze aplikaciju 
+
+var izmantot api https://openweathermap.org/

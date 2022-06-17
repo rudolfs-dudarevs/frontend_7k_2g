@@ -1,0 +1,5 @@
+Izvejtot lapu priekš kaut kada notikumu (koncerts, filmu izrāde ...)
+
+- ir iespejams nopirkt bileti 
+- lapai jabut adaptivai un pielagotai priekš mobilas ierices
+- var izmantot boostrap vai citu UI framework
