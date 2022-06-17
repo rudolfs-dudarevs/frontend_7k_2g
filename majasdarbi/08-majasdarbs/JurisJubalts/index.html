@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form id="form"
+        autocomplete="off"
+    > 
+    
+        <div>
+            <label for="name">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="name"
+                name="name"
+                required
+            />
+        </div>
+  
+        <div>
+            <label for="email">Epasta lauks</label>
+            <input 
+                type="email" 
+                id="email"
+                name="email"
+                pattern=".+@gmail\.com"
+                title="Jābūt norādītam ..@gmail.com epastam."
+                required  
+            />
+<!--/(\W|^)[\w.+\-]*@gmail\.com(\W|$)/ tādu atradu regEX opciju check-->
+        </div>
+
+        <div>
+            <label for="username">Teksta lauks ar Min un Max garumu</label>
+            <input 
+                type="text" 
+                id="username"
+                name="username"                
+                minlength="5"
+                maxlength="10"
+                title="Lietotājvārdam jāsatur vismaz 5 simboli, maksimālais garums 10 simboli."
+                required  
+            />
+        </div>
+
+        <div>
+            <label for="password-1">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password-1"
+                name="password-1" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                oninvalid="this.setCustomValidity('Parolei jāsatur vismaz 1 lielo butu, 1 mazo burtu un 1 ciparu.')"
+                required  
+            />
+        </div>
+        
+        <div>
+            <label for="password-2">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password-2"
+                name="password-2" 
+                minlength="8"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                title="Parolei jāsatur vismaz 8 simboli, jābūt vismaz 1 lielajam burtam, 1 mazajam burtam un 1 ciparam."
+                required 
+            />
+        </div>
+
+        <div>
+            <label for="week">Nedēļa</label>
+            <input
+                type="week" 
+                name="week" 
+                id="week"
+                min="2022-W18"
+                max="2022-W26"
+                title="Nedēļai jābūt no laika perioda 2022-w18 līdz 2022-w26."
+                required
+            />
+
+        </div>
+
+        <div>
+            <label for="time">Laiks</label>
+
+            <input 
+                type="time" 
+                id="time" 
+                name="time"
+                min="09:00"
+                max="18:00"
+                title="Vēlamais laiks janorāda laika periodā no 09:00 līdz 18:00."
+                required
+            />
+        </div>  
+        </hr>
+
+        <div>
+            <label for="ZIPcode">ZIP : </label>
+            <input 
+                type="text"
+                name="ZIPcode" 
+                id="ZIPcode"
+                required
+            />
+            <label for="country">Valsts : </label>
+            <select id="country" name="Country">
+              <option value="lv">Latvia</option>
+              <option value="lt">Lithuania</option>
+              <option value="se">Zviedrija</option>
+              <option value="fi">Somija</option>
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Parbaudit">
+      </form>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
