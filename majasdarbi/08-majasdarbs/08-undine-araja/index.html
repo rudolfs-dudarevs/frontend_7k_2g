@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form" autocomplete="off"> 
+        <div>
+            <label for="texta-lauks">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="texta-lauks"
+                title="Aizpildams lauks"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="epasts">E-pasta lauks</label>
+            <input 
+                type="email" 
+                id="epasts"
+                title='E-pasta laukam jasatur @, un domena vardam jabut gmail.com'
+                oninvalid="this.setCustomValidity('E-pasta laukam jāsatur @, un domēna vārdam jābut gmail.com')"
+                oninput="setCustomValidity('')"
+                pattern=".+@gmail.com"
+                required 
+            />
+        </div>
+
+        <div>
+            <label for="min-max">Teksta lauks ar Min un Max garumu</label>
+            <input 
+                type="text" 
+                id="min-max" 
+                title="Teksta lauka garums ir no 5 lidz 10 simboliem" 
+                minlength="5"
+                maxlength="10"
+                oninvalid="this.setCustomValidity('Teksta lauka garums ir no 5 līdz 10 simboliem')"
+                oninput="setCustomValidity('')"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="parole1">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="parole1" 
+                title="Parolei jasatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
+                oninvalid="this.setCustomValidity('Parolei jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')"
+                oninput="setCustomValidity('')"
+                required
+            />
+        </div>
+            
+        <div>
+            <label for="parole2">Parole 2 (jāsatur vismaz 8 simboli, 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="parole2" 
+                title="Parolei jasatur vismaz 8 simboli, 1 lielais burts, 1 mazais burts un 1 cipars" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                minlength="8"
+                oninvalid="this.setCustomValidity('Parolei jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')"
+                oninput="setCustomValidity('')"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="nedela">Nedēļa</label>
+            <input 
+                type="week" 
+                name="nedela" 
+                id="nedela"
+                min="2022-W18"
+                max="2022-W26"
+                oninvalid="this.setCustomValidity('Jāizvēlas nedēļa periodā no 18. līdz 26. nedēļai')"
+                oninput="setCustomValidity('')"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="laiks">Laiks</label>
+
+            <input 
+                type="time" 
+                id="laiks" 
+                name="laiks"
+                min="9:00"
+                max="18:00"
+                oninvalid="this.setCustomValidity('Jāizvēlas laiks periodā no plkst. 9.00 līdz 18.00')"
+                oninput="setCustomValidity('')"
+                required
+            />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="zip">ZIP:</label>
+            <input 
+                type="text" 
+                id="zip"
+                oninvalid="this.setCustomValidity('Norādiet pareizu ZIP')"
+                oninput="setCustomValidity('')"
+                required
+            />
+            <label for="valsts">Valsts:</label>
+            <select id="valsts">
+              <option value="lv">Latvija</option>
+              <option value="lt">Lietuva</option>
+              <option value="ee">Igaunija</option>
+              <option value="fi">Somija</option>
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Parbaudit">
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
