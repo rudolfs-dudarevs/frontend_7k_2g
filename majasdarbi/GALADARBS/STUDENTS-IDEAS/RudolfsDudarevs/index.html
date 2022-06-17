@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <i class="fa-thin fa-magnifying-glass"></i>
+        <div>
+            <img class="header__logo" src="./images/tukums.png">
+            <div class="header__menu-btn">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Home</a></li>
+                    <li><a class="menu__item" href="#">About</a></li>
+                    <li><a class="menu__item" href="#">Team</a></li>
+                    <li><a class="menu__item" href="#">Contact</a></li>
+                    <li><a class="menu__item" href="#">Twitter</a></li>
+
+                    <div class="menu__weather">
+                        <p id="description"></p>
+                        <p id="temp"></p>
+                        <p id="wind"></p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="search">
+        <i class="fa fa-search"></i>
+        <input class="search__input" name="search" placeholder="Meklēt mājaslapā..." />
+    </div>
+    <div class="hero">
+        <div class="hero__image">
+            <div class="hero__text-container">
+                <h1 class="hero__text">
+                    Sabiedriskā apspriešana par plānoto koku ciršanu Kurzemes ielā.
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="tickets">
+        <h2 class="tickets__title">
+            Iegādāties biļetes
+        </h2>
+        <label class="form-label mt-3" for="name">
+            Vārds, uzvārds
+        </label>
+        <input id="name" class="form-control" type="text" name="name" minlength="3" maxlength="24" required />
+        <label class="form-label mt-3" for="email">
+            Epasts
+        </label>
+        <input id="email" class="form-control" type="email" name="email" pattern=".+@gmail.com" required />
+        <div class="tickets__counter-container mt-3">
+            <div id="decrement-btn" class="tickets__decrement">-</div>
+            <p id="tickets-count">1</p>
+            <input id="tickets-count-input" name="tickets-count" min="0" value="1" type="text"/>
+            <div id="increment-btn" class="tickets__increment">+</div>
+        </div>
+        <button id="buy-tickets-btn" class="btn btn-primary mt-4" type="submit">
+            Pirkt
+        </button>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

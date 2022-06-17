@@ -1,0 +1,22 @@
+.hero {
+    position: relative;
+    height: 600px;
+}
+
+.hero__image {
+    height: 100%;
+    background: url(https://www.tukums.lv/sites/tukums/files/styles/front_bg/public/gallery_images/imgonline-com-ua-resize-vr56dzn1tjg.jpg?itok=PBYXOoqr) no-repeat center center; 
+    background-size: cover;
+}
+
+.hero__text-container {
+    height: 220px;
+    width: 80%;
+    background-color: #D1D0CD;
+    position: absolute;
+    bottom: 70px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    opacity: 0.9;
+}

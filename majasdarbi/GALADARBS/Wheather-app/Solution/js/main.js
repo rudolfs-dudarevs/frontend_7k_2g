@@ -17,15 +17,12 @@ btn.addEventListener('click', function(){
   fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputval.value+'&appid='+apik)
   .then(response => response.json())
   .then(data => {
-    let nameval = data['name']
     let descrip = data['weather']['0']['description']
     let tempature = data['main']['temp']
     let wndspd = data['wind']['speed']
-    city.innerHTML=`Weather of <span>${nameval}<span>`
     temp.innerHTML = `Temperature: <span>${ toCelcius(tempature)} C</span>`
     description.innerHTML = `Sky Conditions: <span>${descrip}<span>`
     wind.innerHTML = `Wind Speed: <span>${wndspd} km/h<span>`
-
   })
 
   .catch(err => alert('You entered Wrong city name'))

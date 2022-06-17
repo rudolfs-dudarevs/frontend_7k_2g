@@ -1,0 +1,36 @@
+.tickets {
+    padding: 20px;
+    background-color: ghostwhite;
+}
+
+.tickets__counter-container {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+
+.tickets__increment, .tickets__decrement {
+    width: 40px;
+    height: 40px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+#tickets-count {
+    margin: 0 15px;
+    font-size: 32px;
+}
+
+#tickets-count-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+
+.btn {
+    width: 100px;
+}

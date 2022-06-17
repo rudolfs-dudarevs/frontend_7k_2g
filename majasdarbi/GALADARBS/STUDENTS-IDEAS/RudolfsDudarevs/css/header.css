@@ -1,0 +1,14 @@
+.header {
+    height: 90px;
+    border-bottom: 1px solid #dbdee4;
+}
+
+.header__logo {
+    position: absolute;
+    left: -30px;
+    transform: scale(0.6);
+}
+
+.header__menu-btn {
+    position: absolute;
+}

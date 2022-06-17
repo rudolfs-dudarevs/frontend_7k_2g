@@ -1,0 +1,22 @@
+.search {
+    position: absolute;
+    width: 100vw;
+    padding: 10px 30px;
+    z-index: 2;
+}
+
+.search .fa-search {
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search__input {
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
