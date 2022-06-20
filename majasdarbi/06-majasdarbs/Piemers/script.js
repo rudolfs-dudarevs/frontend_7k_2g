@@ -13,6 +13,12 @@ document.addEventListener("keypress", (eventObject) => {
     }
 })
 
+<script>
+function myFunction(event) {
+  var x = event.key;
+  document.getElementById("demo").innerHTML = "The pressed key was: " + x;
+}
+</script>
 
 
 
