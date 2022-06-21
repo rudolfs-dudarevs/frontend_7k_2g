@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    background: url('img/weatherbg.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+
+
+/* Header and search bar*/
+.weather-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#city {
+    border-radius: 5px;
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Weather container*/
+.weather-container {
+    max-width: 80%;
+    min-width: 50%;
+    height: auto;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    border-radius: 10px;
+    padding: 2rem;
+    background: rgba(189, 224, 254, 0.3);
+    animation: append-animate .3s linear;
+}
+
+@keyframes append-animate {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/*Current weather card*/
+.current-weather {
+    display: flex;
+    padding: 2rem;
+    gap: 3rem;
+    color: rgb(0, 0, 0);
+}
+
+.current-degrees {
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 50%;
+}
+
+.current-degrees>img {
+    width: 8rem;
+}
+
+.overall-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    border-right: 1px solid rgb(20, 33, 61, 0.5);
+}
+
+.weather-span>img {
+    width: 8rem;
+}
+
+
+/*Text styles*/
+.overall-weather>h2,
+.overall-weather>p {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.current-degrees>p:first-child {
+    font-size: 2.5rem;
+}
+
+.current-degrees>p {
+    font-size: 0.8rem;
+}
+
+#current-last-updated {
+    font-weight: bold;
+}
+
+#current-weather-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*Forecast weather card*/
+.forecast-weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+}
+
+.weather-span {
+    border-top: 1px solid rgb(20, 33, 61, 0.5);
+}
+
+
+
+/*Media queries*/
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .weather-container {
+        display: flex;
+        max-width: 90%;
+        margin-bottom: 3rem;
+    }
+
+    .weather-header {
+        margin-top: 5rem;
+    }
+
+    .current-weather {
+        display: flex;
+    }
+
+    .current-temperature {
+        display: flex;
+        min-width: 50%;
+    }
+
+
+    .overall-weather {
+        min-width: 50%;
+        border-top: none;
+    }
+
+    .current-degrees>img {
+        width: 8rem;
+    }
+
+    .overall-weather {
+        border-right: 1px solid rgb(20, 33, 61, 0.5);
+    }
+
+    .forecast-weather {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: none;
+    }
+
+    .weather-span {
+        border-top: 1px solid rgb(20, 33, 61, 0.5);
+    }
+
+    .weather-span>img {
+        width: 8rem;
+    }
+
+}

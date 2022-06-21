@@ -1,35 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather app</title>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link type="text/css" href="./css/style.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="container-fluid">
-        <section class="main"> 
-            <section class="inputs">
-                <input type="text" placeholder="Enter any city..." id="cityinput">
-                <input type="submit" value="Submit" id="add">
-                <button placeholder="submit" id="add"></button>
-            </section>
-
-            <section class="display">
-                <div class="wrapper">
-                    <h2 id="cityoutput"></h2>
-                    <p id="description"></p>
-                    <p id="temp"></p>
-                    <p id="wind"></p>
-                </div>
-            </section>
-        </section>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather forecast</title>
+  </head>
+  <body>
+    <div class="weather-header">
+      <h1>Weather API</h1>
+      <!--City selector-->
+      <div class="city-selector">
+        <form
+          action="#"
+          id="get-data"
+          onsubmit="getValue(city); event.preventDefault();"
+        >
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="City"
+            value=""
+          />
+        </form>
+      </div>
     </div>
-    <script src="./js/main.js"></script>
-</body>
+    <!--Weather forecast-->
+    <div class="weather-container">
+      <div class="current-weather"></div>
+      <div class="forecast-weather"></div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>
-
-
-
