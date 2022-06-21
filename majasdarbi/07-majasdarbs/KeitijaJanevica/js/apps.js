@@ -87,20 +87,3 @@ let saveStorage = () => {
 
     listContainer.innerHTML = tasksToRender.join("");
 }; 
-
-
-
-
- /* const lis = document.createElement("li");
-    let taskText.forEach()
-
-    lis.innerHTML = `
-        <li>
-           <span>${taskText}</span>
-        </li>
-    `;
-document.getElementById("myTasks").appendChild(lis);
-*/
-
-
-
