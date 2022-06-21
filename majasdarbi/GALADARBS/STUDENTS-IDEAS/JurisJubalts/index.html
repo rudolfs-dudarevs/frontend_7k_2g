@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Juris Jubalts"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Restorant</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap');
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/styles.css"/>
+
+    </head>
+    <body>
+        <!--Navigācija
+            logo
+            switch to menu
+            rezervācija
+        -->
+            <nav class="navbar">
+                <h1 class="navbar__title">Restorāns</h1>
+                <a href="#" class="navbar__toggle-button">
+                    <span class="toggle-button"></span>
+                    <span class="toggle-button"></span>
+                    <span class="toggle-button"></span>
+                </a>
+                <div class="navbar__menu">
+                    <ul>
+                        <li><a href="#">Par restorānu</a></li>
+                        <li><a href="#">Ēdienkarte</a></li>
+                        <li><a href="#">Rezervācija</a></li>
+                        <li><a href="#">Kontakti</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        <!--menu
+            starter
+            main
+            desert
+        -->
+            <div class="menu__items">
+                <div class="menu__items-starter">
+                    <img src="./images/menu-items/starter/bread.jpg">
+                    <div class="menu__items-info">  
+                        <div class="menu__items-info-sub">
+                            <h5>Supermaizīte</h5>
+                            <h5 class="menu__items-price">4€</h5>
+                        </div>
+                        <p>
+                            Pilngraudu maizīte ar avokado un varītu olu.
+                        </p>
+                        <button>Pasūtīt</button>
+                    </div>
+                </div>
+                <div class="menu__items-starter">
+                    <img src="./images/menu-items/starter/fries.jpg">
+                    <div class="menu__items-info">  
+                        <div class="menu__items-info-sub">
+                            <h5>Frī kartupeļi</h5>
+                            <h5 class="menu__items-price">2€</h5>
+                        </div>
+                        <p>
+                            Frī kartupeļi ar īpašo mērcīti.
+                        </p>
+                        <button>Pasūtīt</button>
+                    </div>
+                </div>
+                <div class="menu__items-starter">
+                    <img src="./images/menu-items/starter/salad.jpg">
+                    <div class="menu__items-info">  
+                        <div class="menu__items-info-sub">
+                            <h5>Salāti</h5>
+                            <h5 class="menu__items-price">5€</h5>
+                        </div>
+                        <p>
+                            Salātu mix no svaigiem produktiem.
+                        </p>
+                        <button>Pasūtīt</button>
+                    </div>
+                </div>
+                <div class="menu__items-main">
+                    <img src="./images/menu-items/main/burger.jpg">
+                    <div class="menu__items-info">  
+                        <div class="menu__items-info-sub">
+                            <h5>Burgers</h5>
+                            <h5 class="menu__items-price">12€</h5>
+                        </div>
+                        <p>
+                            Lielopu gaļas burgers ar frī kartupeļiem.
+                        </p>
+                        <button>Pasūtīt</button>
+                    </div>
+                </div>
+                <div class="menu__items-main">
+                    <img src="./images/menu-items/main/pica.jpg">
+                    <div class="menu__items-info">  
+                        <div class="menu__items-info-sub">
+                            <h5>Pica</h5>
+                            <h5 class="menu__items-price">10€</h5>
+                        </div>
+                        <p>
+                            Pica ar mocarellu un tomātiem.
+                        </p>
+                        <button>Pasūtīt</button>
+                    </div>
+                </div>
+                <div class="menu__items-main">
+                    <img src="./images/menu-items/main/steak.jpg">
+                    <div class="menu__items-info">  
+                        <div class="menu__items-info-sub">
+                            <h5>Steiks</h5>
+                            <h5 class="menu__items-price">22€</h5>
+                        </div>
+                        <p>
+                            Steiks ar kartupeļiem.
+                        </p>
+                        <button>Pasūtīt</button>
+                    </div>
+                </div>
+                <div class="menu__items-desserts">
+                    <img src="./images/menu-items/desserts/cake.jpg">
+                    <div class="menu__items-info">  
+                        <div class="menu__items-info-sub">
+                            <h5>Šokolādes kūciņa</h5>
+                            <h5 class="menu__items-price">6€</h5>
+                        </div>
+                        <p>
+                            Šokolādes kuciņa.
+                        </p>
+                        <button>Pasūtīt</button>
+                    </div>
+                </div>
+                <div class="menu__items-desserts">
+                    <img src="./images/menu-items/desserts/cupcake.jpg">
+                    <div class="menu__items-info">  
+                        <div class="menu__items-info-sub">
+                            <h5>Muffins</h5>
+                            <h5 class="menu__items-price">3€</h5>
+                        </div>
+                        <p>
+                            Muffins.
+                        </p>
+                        <button>Pasūtīt</button>
+                    </div>
+                </div>
+                <div class="menu__items-desserts">
+                    <img src="./images/menu-items/desserts/sorbet.jpg">
+                    <div class="menu__items-info">  
+                        <div class="menu__items-info-sub">
+                            <h5>Sorberts</h5>
+                            <h5 class="menu__items-price">5€</h5>
+                        </div>
+                        <p>
+                            Sorberts ar...
+                        </p>
+                        <button>Pasūtīt</button>
+                    </div>
+                </div>
+            </div>
+        <!--
+            rezervācija
+        -->
+        <div class="container mt-5">
+            <h3>Veiciet rezervāciju restorānam.</h3>
+            <form class="row g-3 pb-5">
+                <div class="col-md-6">
+                    <label for="reservation-date" class="form-label">Norādiet datumu:</label>
+                    <input 
+                        type="date" 
+                        id="reservation-date" 
+                        name="reservation-date"
+                        class="form-control"
+                        required
+                    />
+                </div>
+                <div class="col-md-6">
+                    <label for="treservation-time" class="form-label">Norādiet laiku:</label>
+                    <input 
+                        type="time" 
+                        id="reservation-time" 
+                        name="reservation-time"
+                        class="form-control"
+                        min="16:00"
+                        max="20:00"
+                        value="16:00"
+                        required
+                    />
+                </div>
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Jūsu vārds:</label>
+                    <input 
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="form-control"
+                        required
+                    />
+                </div>
+                <div class="col-md-6">
+                    <label for="phone-number" class="form-label">Jūsu tālruņa numurs:</label>
+                    <input 
+                        type="tel"
+                        id="phone-number"
+                        name="phone-number"
+                        class="form-control"
+                        required
+                    />
+                </div>
+                <div class="col-md-6">
+                    <label for="guest-count" class="form-label">Viesu skaits:</label>
+                    <input 
+                        type="number"
+                        id="guest-count"
+                        name="guest-count"
+                        class="form-control"
+                        min="1"
+                        required
+                    />
+                </div>
+                <div class="col-md-6">
+                    <label for="location-opt" class="form-label">Telpās vai uz terases:</label>
+                    <select name="location-opt" id="location-opt" class="form-control">
+                        <option value="indoors">Telpās</option>
+                        <option value="terrace">Uz terases</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-secondary">Pieteikt rezervāciju</button>
+            </form>
+        </div>
+
+
+
+
+        <script src="./js/navbar.js"></script>
+
+    </body>
+</html>
