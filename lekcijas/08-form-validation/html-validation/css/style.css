@@ -11,6 +11,11 @@
     border-color: #ff0000;
 }
 
+.form-control:hover {
+    background-color:blanchedalmond;
+    color:blueviolet;
+}
+
 .form-control:invalid:focus {
     box-shadow: 0 0 4px #ff0000;
 }
@@ -21,4 +26,8 @@
 
 .form-control:valid:focus {
     box-shadow: 0 0 4px #91ee91;
+}
+
+.form-control::placeholder {
+    color:lawngreen;
 }
