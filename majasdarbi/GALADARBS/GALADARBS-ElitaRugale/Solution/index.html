@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/chief-slider.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon"> <!-- Favicon-->
+
+</head>
+<body>
+    <!-- Header-->
+    <div class="page">
+     <header class="header">
+            <a href="#"  class="header_log"><img src="img/logo.jpg" alt=""></a> 
+            <nav class="header_menu">
+                <ul class="header_list">
+                   <a href="#"><li>Sortiments</li></a> 
+                   <a href="#"><li>Jaunumi</li></a> 
+                    <a href="#"><li>Par mums</li></a> 
+                    <a href="#"><li>Kontakti</li></a> 
+                    <a href="#"><li>LV</li></a> 
+                    
+                    <!-- Form search-->
+
+                    <form action="" method="get">
+                        <input name="s" placeholder="Meklēt..." type="search">
+                        <button type="submit"></button>
+                    </form>
+                </ul>
+            </nav>   
+        </header> 
+
+         <main class="main">
+            <div class="container">
+                <!-- Slider-->
+                <div class="slider">
+                    <div class="slider-line">
+                        <img src="img/nappe_croisiere.jpg" alt="">
+                        <img src="img/banner-news.jpg" alt="">
+                        <img src="img/duchess.jpg" alt="">
+                        <img src="img/francais.jpg" alt=""> 
+                    </div>
+                    <!-- slider buttons-->
+                    <div class="slider-next">
+                        <svg class="arrow-right" viewBox="0 0 5 9">
+
+                            <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" ></path>
+
+                        </svg>
+                    </div>
+                    <div class="slider-prev">
+                        <svg class="arrow-left" viewBox="0 0 5 9">
+
+                            <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" ></path>
+
+                        </svg>
+                     </div>
+                </div>
+            
+        
+                     <!-- Gallery -->
+            
+                <div class="gallery_title">PIEŠĶIRAM GARŠU JŪSU DZĪVES ĪPAŠAJIEM BRĪŽIEM</div>
+                    <div class="gallery_items">
+                   
+                        <div class="gallery_item">Kafija un kafijas dzērieni
+                            <img src="img/coffeepink.jpg" width="300px" height="250px" alt="">
+                        </div>
+                        <div class="gallery_item">Burvīga tēja
+                            <img src="img/tableset.jpg"  width="300px" height="250px" alt="">
+                        </div>
+                        <div class="gallery_item">Vitaminizētas Sūlas
+                            <img src="img/strawberry.jpg"  width="300px" height="250px" alt="">
+                        </div>
+                        
+                    </div>
+                
+                    <!-- products-->
+                 <div class="products_title">Katru Dienu Pieejams</div>
+                    <div class="products_items">
+                         <div class="products_item">
+                          <a href="" class="products_image">
+                              <img src="img/bananovij.jpg" width="250px" height="250px" alt="">
+                          </a>
+                          <a href="" class="products_name">Svētku galda karaliene</a>
+                          <a href="" class="products_button">Pirkt</a>
+                      </div>
+                      <div class="products_item">
+                        <a href="" class="products_image">
+                            <img src="img/fistashka.jpg" width="250px" height="250px" alt="">
+                        </a>
+                        <a href="" class="products_name">Sulīgas un gardas glazūrkūciņas</a>
+                        <a href="" class="products_button">Pirkt</a>
+                    </div>
+                    <div class="products_item">
+                        <a href="" class="products_image">
+                            <img src="img/beze.jpg" width="250px" height="250px" alt="">
+                        </a>
+                        <a href="" class="products_name">Maigās garšas bezē cepumi</a>
+                        <a href="" class="products_button">Pirkt</a>
+                    </div>
+                    <div class="products_item">
+                        <a href="" class="products_image">
+                            <img src="img/green.jpg" width="250px" height="250px" alt="">
+                        </a>
+                        <a href="" class="products_name">Kraukšķīgs cepums macarons</a>
+                        <a href="" class="products_button">Pirkt</a>
+                    </div>
+                  </div>  
+                <!-- Request form-->
+                  <div class="form">
+                     <div class="container">
+                              <div class="form-form">
+                          <form>
+                          <div class="form-title">Pierakstīties jaunumiem
+                                <input type="hidden" name="project_name" value="Site Name">
+                                <input type="hidden" name="admin_email" value="info@freshcake.com">
+                                <input type="hidden" name="form_subject" value="Form Subject">
+                            <div class="form-item">
+                            <input name="name" type="text" value="Vārds Uzvārds"  class="form-input" onfocus="this.value = '';"
+                             onblur="if (this.value == ''){this.value = 'Vārds Uzvārds ';}">
+                            </div>
+                            <div class="form-item">
+                            <input name="email" type="text" value="Email"  class="form-input" onfocus="this.value = '';"
+                             onblur="if (this.value == ''){this.value = 'Email ';}">
+                           <div class="form-item">
+                           <input name="phone" type="text" value="Telefons"  class="form-input" onfocus="this.value = '';"
+                            onblur="if (this.value == ''){this.value = 'Telefons ';}">
+                           </div>
+                           <div class="form-item">
+                          <textarea name="message" value="Zinas teksts" class="form-input" onfocus="this.value = '';"
+                           onblur="if (this.value == ''){this.value = 'Zinas teksts ';}">Zinas teksts</textarea>
+                          </div>
+                          
+                          <button type="submit" value="SEND" class="form-button">Nosūtīt</button>
+                          </form>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+        </main>
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="footer_copy">
+                Copyright by Elita, 2022
+            </div>
+            <div class="footer_text">
+                <a href="https://www.facebook.com/freshcake111/"  target="_blank">Facebook</a><br><br>
+                <a href="https://www.instagram.com/freshcake111/" itemprop="sameAs" target="_blank">Instagram</a><br><br>
+                <a class="footer-text" href="mailto:info@freshcake.com">info@freshcake.com</a><br><br>
+                <a class="footer-text" href="tel:+3715550100">+371 5550100</a>
+            </div>
+            <div class="footer_maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2173.6619437619884!2d24.122396416072412!3d56.9888498034507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecf0a850efae9%3A0xeb47c1d0791803d9!2sDambja%20iela%203a%2C%20Zieme%C4%BCu%20rajons%2C%20R%C4%ABga%2C%20LV-1005!5e0!3m2!1sru!2slv!4v1654672198540!5m2!1sru!2slv" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+    </div>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/main.js"></script>
+
+        
+</body>
+</html>
