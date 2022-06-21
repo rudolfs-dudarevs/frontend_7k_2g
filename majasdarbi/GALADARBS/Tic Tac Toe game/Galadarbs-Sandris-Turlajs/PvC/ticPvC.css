@@ -1,0 +1,58 @@
+
+	h1 {
+		color: orangered;
+		font-size: 60px;
+	}
+
+	/* Režģis */
+	#b1, #b2, #b3, #b4, #b5,
+	#b6, #b7, #b8, #b9 {
+		width: 90px;
+		height: 90px;
+		margin: auto;
+		border: 2px solid gray;
+		border-radius: 20px;
+		font-size: 50px;
+		text-align: center;
+        cursor: pointer;
+	}
+
+	/* Reset poga */
+	#but, #return {
+		box-sizing: border-box;
+		width: 300px;
+		height: 100px;
+		border: 1px solid green;
+		margin: auto;
+		border-radius: 20px;
+		font-family: Verdana,
+			Geneva, Tahoma, sans-serif;
+
+		background-color: green;
+		color: white;
+		font-size: 30px;
+		cursor: pointer;
+	}
+
+	/* kam gājiens */
+	#print {
+		font-family: Verdana,
+			Geneva, Tahoma, sans-serif;
+
+		color: green;
+		font-size: 40px;
+	}
+
+	
+	#main {
+		text-align: center;
+	}
+
+	/* Intrukcija */
+	#ins {
+		font-family: Verdana,
+			Geneva, Tahoma, sans-serif;
+			
+		color: green;
+		font-size: 22px;
+	}

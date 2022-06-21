@@ -1,0 +1,31 @@
+
+	#main {
+		text-align: center;
+	}
+
+	.title {
+		font-size: 60px;
+		color: Red;
+	}
+	
+	.text {
+		font-size: 40px;
+		color: Black;
+	}
+	
+	#PvP, #PvC {
+		box-sizing: border-box;
+		width: 300px;
+		height: 70px;
+		border: 1px solid green;
+		margin: auto;
+		border-radius: 20px;
+		font-family: Verdana,
+			Geneva, Tahoma, sans-serif;
+	
+		background-color: green;
+		color: white;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	
