@@ -1,0 +1,86 @@
+body {
+    background-color: lightgrey;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 20px 0;
+    flex-direction: column;
+    min-width: 35vw;
+}
+
+.lead {
+    max-width: 40vw;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.input-group {
+    margin: 0 0 50px;
+}
+
+
+.btn {
+    font-size: 22px;
+    text-shadow: 2px 2px 5px gold;
+    justify-content: center;
+}
+
+#end-btn {
+    display: none;
+}
+
+#playerGreeting {
+    display: none;
+}
+
+#playerID {
+    display: none;
+}
+
+#playerTable {
+    display: none;
+}
+
+#country-grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.country-card {
+    box-sizing: border-box;
+    display: flex;
+    max-width: 35%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff3cd;
+    padding: 40px;
+    flex: 1;
+    margin: 20px;
+}
+
+.country-image {
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.country-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.thead-dark {
+    color: darkolivegreen;
+}
+
+#quizName {
+    color: goldenrod;
+}
